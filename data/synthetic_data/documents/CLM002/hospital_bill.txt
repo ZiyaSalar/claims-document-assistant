@@ -1,0 +1,5 @@
+FICTIONAL HOSPITAL BILL
+Claim ID: CLM002
+Provider: Sample Medical Centre
+Patient: Fictional Person B
+Total amount: INR 8500

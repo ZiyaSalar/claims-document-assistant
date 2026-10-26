@@ -1,0 +1,8 @@
+document_id,claim_id,filename,document_type,file_path,content_type,processing_status
+DOC001,CLM001,hospital_bill.pdf,hospital_bill,data/synthetic_data/documents/CLM001/hospital_bill.pdf,application/pdf,pending
+DOC002,CLM001,discharge_summary.txt,discharge_summary,data/synthetic_data/documents/CLM001/discharge_summary.txt,text/plain,pending
+DOC003,CLM001,admission_advice.txt,admission_advice,data/synthetic_data/documents/CLM001/admission_advice.txt,text/plain,pending
+DOC004,CLM001,signed_claim_form.pdf,signed_claim_form,data/synthetic_data/documents/CLM001/signed_claim_form.pdf,application/pdf,pending
+DOC005,CLM002,hospital_bill.txt,hospital_bill,data/synthetic_data/documents/CLM002/hospital_bill.txt,text/plain,pending
+DOC006,CLM002,discharge_summary.pdf,discharge_summary,data/synthetic_data/documents/CLM002/discharge_summary.pdf,application/pdf,pending
+DOC007,CLM002,admission_advice.txt,admission_advice,data/synthetic_data/documents/CLM002/admission_advice.txt,text/plain,pending

@@ -1,0 +1,2 @@
+{"case_id": "EVAL001", "claim_id": "CLM001", "scenario": "complete_packet", "expected_status": "complete", "expected_missing_documents": []}
+{"case_id": "EVAL002", "claim_id": "CLM002", "scenario": "missing_signed_claim_form", "expected_status": "incomplete", "expected_missing_documents": ["signed_claim_form"]}

@@ -1,0 +1,4 @@
+FICTIONAL ADMISSION ADVICE
+Claim ID: CLM002
+Patient: Fictional Person B
+Service: Inpatient admission

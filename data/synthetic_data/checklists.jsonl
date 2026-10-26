@@ -1,0 +1,1 @@
+{"checklist_id": "CHK001", "version": "1.0", "plan": "BASIC_PLUS", "service_type": "inpatient", "required_document_types": ["hospital_bill", "discharge_summary", "admission_advice", "signed_claim_form"]}
