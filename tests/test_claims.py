@@ -2,10 +2,17 @@ from fastapi.testclient import TestClient
 
 from backend.app.main import app
 
-client = TestClient(app)
+import pytest
 
 
-def test_create_claim():
+@pytest.fixture
+def client():
+    return TestClient(app)
+
+# client = TestClient(app)
+
+
+def test_create_claim(client):
     response = client.post(
         "/api/claims/",
         json={
@@ -25,7 +32,7 @@ def test_create_claim():
     assert "claim_id" in data
 
 
-def test_get_claims():
+def test_get_claims(client):
     created = client.post(
         "/api/claims/",
         json={
@@ -42,7 +49,7 @@ def test_get_claims():
     assert any(c["claim_id"] == claim_id for c in response.json())
 
 
-def test_get_claim_by_id():
+def test_get_claim_by_id(client):
     created = client.post(
         "/api/claims/",
         json={
@@ -59,13 +66,13 @@ def test_get_claim_by_id():
     assert response.json()["claim_id"] == claim_id
 
 
-def test_get_missing_claim():
+def test_get_missing_claim(client):
     response = client.get("/api/claims/nonexistent-id")
 
     assert response.status_code == 404
 
 
-def test_create_claim_with_missing_fields():
+def test_create_claim_with_missing_fields(client):
     response = client.post(
         "/api/claims/",
         json={"claimant_name": "Aarav Sharma"},
@@ -74,8 +81,72 @@ def test_create_claim_with_missing_fields():
     assert response.status_code == 422
 
 
-def test_health_endpoint_still_works():
+def test_health_endpoint_still_works(client):
     response = client.get("/health")
 
     assert response.status_code == 200
     assert response.json() == {"status": "healthy"}
+
+
+
+
+def test_mark_document_missing(client):
+    response = client.post(
+        "/api/claims/",
+        json={
+            "claimant_name": "Test User",
+            "policy_number": "POL-001",
+            "claim_type": "health",
+        },
+    )
+    claim_id = response.json()["claim_id"]
+
+    response = client.patch(
+        f"/api/claims/{claim_id}/documents/discharge_summary/missing"
+    )
+
+    assert response.status_code == 200
+    data = response.json()
+    assert data["claim_status"] == "submitted"
+    assert data["document_status"]["discharge_summary"]["status"] == "missing"
+    assert data["verification"]["verification_status"] == "incomplete"
+
+
+def test_mark_unsupported_document_missing(client):
+    response = client.post(
+        "/api/claims/",
+        json={
+            "claimant_name": "Test User",
+            "policy_number": "POL-002",
+            "claim_type": "health",
+        },
+    )
+    claim_id = response.json()["claim_id"]
+
+    response = client.patch(
+        f"/api/claims/{claim_id}/documents/passport/missing"
+    )
+
+    assert response.status_code == 400
+    assert response.json()["detail"] == "Unsupported document type"
+
+
+def test_get_claim_verification(client):
+    response = client.post(
+        "/api/claims/",
+        json={
+            "claimant_name": "Test User",
+            "policy_number": "POL-003",
+            "claim_type": "health",
+        },
+    )
+    claim_id = response.json()["claim_id"]
+
+    response = client.get(f"/api/claims/{claim_id}/verification")
+
+    assert response.status_code == 200
+    data = response.json()
+    assert data["verification_status"] == "incomplete"
+    assert data["received_count"] == 0
+    assert data["required_count"] == 4
+    assert data["can_proceed"] is False

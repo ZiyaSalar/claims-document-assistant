@@ -1,9 +1,12 @@
+
 import pymupdf
 
 from fastapi.testclient import TestClient
 
 from backend.app.main import app
 from backend.app.services import document_storage
+from backend.app.services.claim_store import claims
+from backend.app.api.documents import documents
 
 client = TestClient(app)
 
@@ -21,10 +24,10 @@ def create_claim():
     return response.json()["claim_id"]
 
 
-def make_pdf():
+def make_pdf(text="Synthetic hospital bill"):
     pdf = pymupdf.open()
     page = pdf.new_page()
-    page.insert_text((72, 72), "Synthetic hospital bill")
+    page.insert_text((72, 72), text)
     content = pdf.tobytes()
     pdf.close()
     return content
@@ -158,3 +161,97 @@ def test_list_documents(tmp_path, monkeypatch):
 
     assert response.status_code == 200
     assert len(response.json()) == 1
+
+
+def test_matching_document_type_is_received(tmp_path, monkeypatch):
+    monkeypatch.setattr(document_storage, "UPLOAD_DIR", tmp_path)
+    claim_id = create_claim()
+
+    response = client.post(
+        f"/api/claims/{claim_id}/documents",
+        data={"document_type": "hospital_bill"},
+        files={
+            "file": (
+                "bill.txt",
+                b"Hospital bill invoice total amount room charges",
+                "text/plain",
+            )
+        },
+    )
+
+    assert response.status_code == 201
+    data = response.json()
+    assert data["document_status"] == "received"
+    assert data["classification"]["predicted_type"] == "hospital_bill"
+
+    claim = claims[claim_id]
+    assert claim["document_status"]["hospital_bill"]["status"] == "received"
+    assert claim["status"] == "submitted"
+    assert claim["verification_status"] == "incomplete"
+
+
+def test_mismatched_document_type_needs_review(tmp_path, monkeypatch):
+    monkeypatch.setattr(document_storage, "UPLOAD_DIR", tmp_path)
+    claim_id = create_claim()
+
+    response = client.post(
+        f"/api/claims/{claim_id}/documents",
+        data={"document_type": "hospital_bill"},
+        files={
+            "file": (
+                "discharge.txt",
+                b"Discharge summary date of discharge discharge diagnosis",
+                "text/plain",
+            )
+        },
+    )
+
+    assert response.status_code == 201
+    data = response.json()
+    assert data["document_status"] == "needs_review"
+    assert data["classification"]["predicted_type"] == "discharge_summary"
+    assert claims[claim_id]["document_status"]["hospital_bill"]["status"] == "pending"
+    assert claims[claim_id]["verification_status"] == "incomplete"
+
+
+def test_ambiguous_document_needs_review(tmp_path, monkeypatch):
+    monkeypatch.setattr(document_storage, "UPLOAD_DIR", tmp_path)
+    claim_id = create_claim()
+
+    response = client.post(
+        f"/api/claims/{claim_id}/documents",
+        data={"document_type": "hospital_bill"},
+        files={
+            "file": (
+                "unclear.txt",
+                b"Unrelated synthetic document text",
+                "text/plain",
+            )
+        },
+    )
+
+    assert response.status_code == 201
+    data = response.json()
+    assert data["document_status"] == "needs_review"
+    assert data["classification"]["predicted_type"] == "unknown"
+    assert claims[claim_id]["document_status"]["hospital_bill"]["status"] == "pending"
+
+
+def test_reject_unsupported_document_type(tmp_path, monkeypatch):
+    monkeypatch.setattr(document_storage, "UPLOAD_DIR", tmp_path)
+    claim_id = create_claim()
+
+    response = client.post(
+        f"/api/claims/{claim_id}/documents",
+        data={"document_type": "passport"},
+        files={
+            "file": (
+                "passport.txt",
+                b"Synthetic document",
+                "text/plain",
+            )
+        },
+    )
+
+    assert response.status_code == 400
+    assert response.json()["detail"] == "Unsupported document type"
