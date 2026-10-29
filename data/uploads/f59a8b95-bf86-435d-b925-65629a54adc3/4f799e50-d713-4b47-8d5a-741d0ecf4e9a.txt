@@ -1,0 +1,6 @@
+FICTIONAL DISCHARGE SUMMARY
+Claim ID: CLM001
+Patient: Fictional Person A
+Admission: 2026-10-10
+Discharge: 2026-10-13
+Status: Discharged for routine follow-up.
