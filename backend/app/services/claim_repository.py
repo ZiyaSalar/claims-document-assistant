@@ -303,3 +303,60 @@ def update_document(document: dict) -> dict:
         raise ValueError("Document not found")
 
     return document
+
+# -------------------- DELETE OPERATIONS --------------------
+
+def delete_document(document_id: str, claim_id: str) -> None:
+    if not _use_azure():
+        from backend.app.api.documents import documents
+
+        document = documents.get(document_id)
+
+        if document is None or document.get("claim_id") != claim_id:
+            raise ValueError("Document not found")
+
+        del documents[document_id]
+        return
+
+    query = text("""
+        DELETE FROM dbo.Documents
+        WHERE document_id = :document_id
+          AND claim_id = :claim_id
+    """)
+
+    with get_engine().begin() as conn:
+        result = conn.execute(
+            query,
+            {
+                "document_id": document_id,
+                "claim_id": claim_id,
+            },
+        )
+
+    if result.rowcount == 0:
+        raise ValueError("Document not found")
+
+
+def delete_claim(claim_id: str) -> None:
+    if not _use_azure():
+        claim = claims.get(claim_id)
+
+        if claim is None:
+            raise ValueError("Claim not found")
+
+        del claims[claim_id]
+        return
+
+    query = text("""
+        DELETE FROM dbo.Claims
+        WHERE claim_id = :claim_id
+    """)
+
+    with get_engine().begin() as conn:
+        result = conn.execute(
+            query,
+            {"claim_id": claim_id},
+        )
+
+    if result.rowcount == 0:
+        raise ValueError("Claim not found")

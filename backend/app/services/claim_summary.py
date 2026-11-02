@@ -1,30 +1,30 @@
-
 def generate_claim_summary(
     claim: dict,
     checklist_result: dict,
     documents: list[dict],
 ) -> dict:
+ 
     classified_documents = []
     review_flags = []
-
+ 
     for document in documents:
         classification = document.get("classification")
-
+ 
         if not classification:
             review_flags.append({
                 "document_id": document["document_id"],
                 "reason": "Document has not been classified",
             })
             continue
-
+ 
         doc_type = classification.get("predicted_type", "unknown")
-
+ 
         if classification.get("needs_review", True):
             review_flags.append({
                 "document_id": document["document_id"],
                 "reason": "Document classification requires review",
             })
-
+ 
         classified_documents.append({
             "document_id": document["document_id"],
             "filename": document["filename"],
@@ -32,9 +32,14 @@ def generate_claim_summary(
             "confidence": classification.get("confidence", 0.0),
             "needs_review": classification.get("needs_review", True),
         })
-
+ 
     missing = checklist_result["missing_documents"]
-
+ 
+    # Determine whether human review is required
+    human_review_required = (
+        checklist_result["review_required"] or bool(review_flags)
+    )
+ 
     if missing:
         summary = (
             f"Claim {claim['claim_id']} has "
@@ -47,16 +52,13 @@ def generate_claim_summary(
             "types recorded in the checklist. This does not establish "
             "claim eligibility or guarantee that the documents are valid."
         )
-
-        human_review_required = (
-            checklist_result["review_required"] or bool(review_flags)
-        )
-        decision=""
-        if human_review_required:
-            decision = "human_review_required"
-        else:
-            decision = "ready_for_review"
-
+ 
+    decision = (
+        "human_review_required"
+        if human_review_required
+        else "ready_for_review"
+    )
+ 
     return {
         "claim_id": claim["claim_id"],
         "summary": summary,
@@ -67,3 +69,5 @@ def generate_claim_summary(
         "human_review_required": human_review_required,
         "decision": decision,
     }
+ 
+ 

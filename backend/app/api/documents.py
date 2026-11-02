@@ -4,6 +4,7 @@ from fastapi import APIRouter, File, Form, HTTPException, UploadFile, status
 from backend.app.services.document_processing import validate_and_extract
 from backend.app.services.document_storage import (
     StorageUploadError,
+    delete_document_from_blob,
     delete_local_document,
     save_document as save_local_document,
     upload_document_to_blob,
@@ -24,6 +25,7 @@ from backend.app.services.claim_repository import (
     get_document_by_id,
     get_documents_for_claim,
     update_document,
+    delete_document,
 )
 
 router = APIRouter(prefix="/api/claims", tags=["Documents"])
@@ -140,8 +142,29 @@ async def upload_document(
         else:
             metadata["document_status"] = "needs_review"
 
-    # Save metadata only after the file has passed validation and upload.
-    persist_document(metadata)
+
+    # Save metadata after the file has been uploaded.
+    # If database persistence fails, remove the uploaded blob
+    # to avoid leaving an orphaned file in storage.
+    try:
+        persist_document(metadata)
+
+    except Exception as exc:
+        try:
+            if metadata.get("storage_backend") == "azure":
+                delete_document_from_blob(
+                    metadata.get("blob_name")
+                )
+        except StorageUploadError:
+            pass
+
+        raise HTTPException(
+            status_code=500,
+            detail="Could not save document metadata",
+        ) from exc
+
+
+
 
     if metadata.get("document_status") == "received" and document_type:
         mark_document_received(
@@ -171,6 +194,54 @@ def list_documents(claim_id: str):
         _public_document(document)
         for document in get_documents_for_claim(claim_id)
     ]
+
+
+@router.delete(
+    "/{claim_id}/documents/{document_id}",
+    status_code=status.HTTP_200_OK,
+)
+def remove_document(claim_id: str, document_id: str):
+    claim = get_claim_by_id(claim_id)
+
+    if claim is None:
+        raise HTTPException(status_code=404, detail="Claim not found")
+
+    document = get_document_by_id(document_id)
+
+    if document is None or document["claim_id"] != claim_id:
+        raise HTTPException(
+            status_code=404,
+            detail="Document not found",
+        )
+
+    try:
+        # Delete the actual file first.
+        if document.get("storage_backend") == "azure":
+            delete_document_from_blob(
+                document.get("blob_name")
+            )
+
+        # Delete document metadata after successful blob deletion.
+        delete_document(document_id, claim_id)
+
+    except StorageUploadError as exc:
+        raise HTTPException(
+            status_code=503,
+            detail="Document storage is temporarily unavailable",
+        ) from exc
+
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=404,
+            detail=str(exc),
+        ) from exc
+
+    return {
+        "message": "Document deleted successfully",
+        "document_id": document_id,
+        "claim_id": claim_id,
+    }
+
 
 
 @router.get("/{claim_id}/documents/{document_id}/text")
