@@ -118,6 +118,52 @@ def upload_document_to_blob(
         ) from exc
 
 
+
+def delete_document_from_blob(blob_name: str | None) -> None:
+    """Delete a document from Azure Blob Storage when Azure is enabled."""
+
+    if not blob_name:
+        return
+
+    backend = os.getenv("STORAGE_BACKEND", "local").strip().lower()
+
+    if backend == "local":
+        return
+
+    if backend != "azure":
+        raise StorageUploadError("Unsupported storage backend configuration")
+
+    connection_string = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
+    container_name = os.getenv(
+        "AZURE_STORAGE_CONTAINER",
+        "claim-documents",
+    )
+
+    if not connection_string:
+        raise StorageUploadError(
+            "Azure storage is enabled but its connection string is not configured"
+        )
+
+    try:
+        service = BlobServiceClient.from_connection_string(
+            connection_string
+        )
+
+        blob_client = service.get_blob_client(
+            container=container_name,
+            blob=blob_name,
+        )
+
+        blob_client.delete_blob(delete_snapshots="include")
+
+    except Exception as exc:
+        raise StorageUploadError(
+            "Azure document deletion failed"
+        ) from exc
+
+
+
+
 def delete_local_document(file_path: str) -> None:
     """Remove a temporary local processing copy when appropriate."""
     try:
