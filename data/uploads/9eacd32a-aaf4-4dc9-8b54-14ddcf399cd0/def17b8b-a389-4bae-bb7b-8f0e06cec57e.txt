@@ -1,0 +1,5 @@
+FICTIONAL ADMISSION ADVICE
+Claim ID: CLM001
+Patient: Fictional Person A
+Service: Inpatient admission
+This document is a synthetic test fixture.

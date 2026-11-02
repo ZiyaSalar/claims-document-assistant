@@ -9,9 +9,9 @@ REQUIRED_DOCUMENTS = [
 
 def generate_checklist(documents: list[dict]) -> dict:
     present_types = {
-        document.get("classification", {}).get("predicted_type")
+        (document.get("classification") or {}).get("predicted_type")
         for document in documents
-        if document.get("classification", {}).get("needs_review") is False
+        if (document.get("classification") or {}).get("needs_review") is False
     }
 
     checklist = {

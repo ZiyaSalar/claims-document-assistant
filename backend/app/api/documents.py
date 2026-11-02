@@ -23,7 +23,6 @@ from backend.app.services.claim_repository import (
     save_document as persist_document,
     get_document_by_id,
     get_documents_for_claim,
-    get_all_documents,
     update_document,
 )
 
@@ -106,7 +105,7 @@ async def upload_document(
     duplicate_of = next(
         (
             doc["document_id"]
-            for doc in get_all_documents()
+            for doc in get_documents_for_claim(claim_id)
             if doc.get("sha256") == processing["sha256"]
         ),
         None,

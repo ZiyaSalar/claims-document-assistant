@@ -48,6 +48,15 @@ def generate_claim_summary(
             "claim eligibility or guarantee that the documents are valid."
         )
 
+        human_review_required = (
+            checklist_result["review_required"] or bool(review_flags)
+        )
+        decision=""
+        if human_review_required:
+            decision = "human_review_required"
+        else:
+            decision = "ready_for_review"
+
     return {
         "claim_id": claim["claim_id"],
         "summary": summary,
@@ -55,8 +64,6 @@ def generate_claim_summary(
         "checklist": checklist_result["checklist"],
         "missing_documents": missing,
         "review_flags": review_flags,
-        "human_review_required": (
-            checklist_result["review_required"] or bool(review_flags)
-        ),
-        "decision": "human_review_required",
+        "human_review_required": human_review_required,
+        "decision": decision,
     }
