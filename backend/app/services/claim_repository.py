@@ -147,6 +147,7 @@ def _document_from_row(row):
         "duplicate": bool(data.get("is_duplicate", False)),
         "duplicate_of": data.get("duplicate_of"),
         "extracted_text": data.get("extracted_text") or "",
+        "pages": json.loads(data.get("pages_json") or "[]"),
         "document_type": data.get("document_type"),
         "document_status": data.get("document_status"),
         "classification": classification or None,
@@ -169,7 +170,7 @@ def save_document(document: dict) -> dict:
             sha256, page_count, text_length, processing_status,
             is_duplicate, duplicate_of, document_type,
             predicted_type, needs_review, classification_json,
-            extracted_text, document_status
+            extracted_text, document_status, pages_json
         )
         VALUES (
             :document_id, :claim_id, :file_name, :content_type,
@@ -177,7 +178,7 @@ def save_document(document: dict) -> dict:
             :sha256, :page_count, :text_length, :processing_status,
             :is_duplicate, :duplicate_of, :document_type,
             :predicted_type, :needs_review, :classification_json,
-            :extracted_text, :document_status
+            :extracted_text, :document_status, :pages_json
         )
     """)
 
@@ -202,6 +203,7 @@ def save_document(document: dict) -> dict:
         "classification_json": json.dumps(classification),
         "extracted_text": document.get("extracted_text"),
         "document_status": document.get("document_status"),
+        "pages_json": json.dumps(document.get("pages") or []),
     }
 
     with get_engine().begin() as conn:
@@ -279,9 +281,10 @@ def update_document(document: dict) -> dict:
             needs_review = :needs_review,
             classification_json = :classification_json,
             document_status = :document_status,
-            extracted_text = :extracted_text
+            extracted_text = :extracted_text,
+            pages_json = :pages_json
         WHERE document_id = :document_id
-          AND claim_id = :claim_id
+            AND claim_id = :claim_id
     """)
 
     params = {
@@ -294,6 +297,7 @@ def update_document(document: dict) -> dict:
         "classification_json": json.dumps(classification),
         "document_status": document.get("document_status"),
         "extracted_text": document.get("extracted_text"),
+        "pages_json": json.dumps(document.get("pages") or []),
     }
 
     with get_engine().begin() as conn:

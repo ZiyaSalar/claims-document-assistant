@@ -3,6 +3,7 @@ from fastapi import APIRouter, File, Form, HTTPException, UploadFile, status
 
 from backend.app.services.document_processing import validate_and_extract
 from backend.app.services.document_storage import (
+    MAX_FILE_SIZE,
     StorageUploadError,
     delete_document_from_blob,
     delete_local_document,
@@ -27,6 +28,7 @@ from backend.app.services.claim_repository import (
     update_document,
     delete_document,
 )
+from azure.core.exceptions import AzureError
 
 router = APIRouter(prefix="/api/claims", tags=["Documents"])
 
@@ -38,7 +40,7 @@ def _public_document(document: dict) -> dict:
     return {
         key: value
         for key, value in document.items()
-        if key not in {"extracted_text", "storage_path"}
+        if key not in {"extracted_text", "pages", "storage_path"}
     }
 
 
@@ -62,7 +64,14 @@ async def upload_document(
     if document_type is not None and document_type not in REQUIRED_DOCUMENTS:
         raise HTTPException(status_code=400, detail="Unsupported document type")
 
-    content = await file.read(10 * 1024 * 1024 + 1)
+    MAX_FILE_SIZE = 10 * 1024 * 1024
+    content = await file.read(MAX_FILE_SIZE + 1)
+
+    if len(content) > MAX_FILE_SIZE:
+        raise HTTPException(
+            status_code=413,
+            detail="File size exceeds the 10 MB limit",
+        )
     metadata = None
 
     try:
@@ -96,6 +105,14 @@ async def upload_document(
             detail="Document storage is temporarily unavailable",
         ) from exc
 
+    except(AzureError, RuntimeError) as exc:
+        if metadata:
+            delete_local_document(metadata["storage_path"])
+        raise HTTPException(
+            status_code=503,
+            detail="Document analysis service is temporarily unavailable",
+        ) from exc
+
     except OSError as exc:
         if metadata:
             delete_local_document(metadata["storage_path"])
@@ -125,6 +142,7 @@ async def upload_document(
         "duplicate": duplicate_of is not None,
         "duplicate_of": duplicate_of,
         "extracted_text": processing["extracted_text"],
+        "pages": processing.get("pages", []),
         "storage_backend": storage_info["storage_backend"],
         "blob_name": storage_info["blob_name"],
     })

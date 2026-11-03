@@ -2,15 +2,25 @@ import hashlib
 import os
 from pathlib import Path
 from uuid import uuid4
+import logging
+
+
 
 from azure.storage.blob import BlobServiceClient, ContentSettings
 from dotenv import load_dotenv
 
 load_dotenv()
+logger = logging.getLogger(__name__)
 
 UPLOAD_DIR = Path("data/uploads")
 MAX_FILE_SIZE = 10 * 1024 * 1024
-ALLOWED_EXTENSIONS = {".pdf", ".txt"}
+ALLOWED_EXTENSIONS = {
+    ".pdf",
+    ".txt",
+    ".png",
+    ".jpg",
+    ".jpeg",
+}
 
 
 class StorageUploadError(Exception):
@@ -22,7 +32,7 @@ def save_document(claim_id: str, filename: str, content: bytes) -> dict:
     extension = Path(filename).suffix.lower()
 
     if extension not in ALLOWED_EXTENSIONS:
-        raise ValueError("Only PDF and TXT files are allowed")
+        raise ValueError("Only PDF, TXT, PNG, JPG, and JPEG files are allowed")
 
     if not content:
         raise ValueError("Empty files are not allowed")
@@ -50,7 +60,6 @@ def save_document(claim_id: str, filename: str, content: bytes) -> dict:
         "sha256": file_hash,
         "storage_path": str(file_path),
     }
-
 
 def upload_document_to_blob(
     file_path: str,
@@ -86,6 +95,9 @@ def upload_document_to_blob(
     content_types = {
         ".pdf": "application/pdf",
         ".txt": "text/plain; charset=utf-8",
+        ".png": "image/png",
+        ".jpg": "image/jpeg",
+        ".jpeg": "image/jpeg",
     }
 
     try:
@@ -113,6 +125,7 @@ def upload_document_to_blob(
         }
 
     except Exception as exc:
+        logger.exception("Failed to upload document to Azure Blob Storage")
         raise StorageUploadError(
             "Azure document upload failed"
         ) from exc
