@@ -23,3 +23,19 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Machine Learning models and checkpoints
+models/
+*.safetensors
+*.pt
+*.pth
+
+# Training artifacts
+runs/
+wandb/
+
+# Uploaded documents
+data/uploads/
+
+# Python cache
+*.egg-info/

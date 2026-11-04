@@ -1,0 +1,2491 @@
+text,label,split
+DISCHARGE NOTE Patient Details: Riya Patel Claim ID: CLM0201 Hospital: Sunrise Multispeciality Hospital Diagnosis: Community acquired pneumonia Treatment Course: Medication and clinical observation Discharged On: 13/05/2026 Discharge Condition: Stable Follow-up Instructions: Attend the outpatient department,discharge_summary,train
+PATIENT ADMISSION CONFIRMATION Name of Patient: Reyansh Shah Hospital: Metro Health Centre Reference ID: CLM0962 Date: 05/01/2026 Status: Admitted Medical Department: General Medicine The patient is registered for hospital treatment.,admission_advice,train
+PATIENT INSURANCE DECLARATI0N Name of Policy Holder Ishaan Gupta Claim Reference: CLM0475 Treatment Provider: Metro Health Centre Requested Coverage: Hospitalization Expenses I declare that the attached claim information is correct. Authorized Signature: SIMUL ATED SIGNATURE,signed_claim_form,validation
+"HEALTH INSURANCE CLAIM FORM
+Insured Patient Name: Kabir Mehta
+Claim Number: CLM0068
+Hospital Name: Green Valley Hospital
+Type of Claim: Inpatient Treatment
+Bank and Policy Details: Provided separately
+Declaration: I confirm that the information provided is accurate.
+Signature of Claimant: SIMULATED SIGNATURE",signed_claim_form,train
+MEDICAL CLAIM FORM Patient Name: Diya Iyer Claim Reference Number: CLM0121 Hospital: Hopewell Hospital Requested Benefit: Hospitalization Expenses Authorization: I authorize processing of this claim. Signed By: Diya Iyer Signature: SIMULATED SIGNATURE,signed_claim_form,train
+"INPATIENT BILLING SUMMARY
+Patient Name: Kabir Mehta
+Hospital Name: Sunrise Multispeciality Hospital
+Bill Reference: CLM0301
+Room and Nursing: INR 21500
+Medical Services: INR 4500
+Drugs and Supplies: INR 8000
+Total Invoice Value: INR 34000
+Payment: Pending",hospital_bill,test
+INPATIENT REGISTRATION SLIP Patient: Ananya Verma Facility: Green Valley Hospital Case Reference: CLM0721 Admission Time: 2I/02/2026 Current Status: Patient admitted Assigned Department: Emergency Medicine,admission_advice,test
+SUMMARY OF PATIENT CARE Patient: Arjun Malhotra Provider: Silverline Hospital Case Reference: CLM0397 Inpatient Period: 01/04/2026 - 13/04/2026 Medical Assessment: Acute abdominal pain Care Administered: Supportive care and observation Disposition: Discharged,discharge_summary,validation
+"FINAL INVOICE
+Billed To: Ananya Verma
+Invoice Reference: CLM0888
+Provider: Green Valley Hospital
+Bed and Nursing Charges: INR 24500
+Doctor Fees: INR 4500
+Pharmacy: INR 12000
+Amount Payable: INR 41000",hospital_bill,train
+FINAL INVOICE Billed To: Aarav Sharma Invoice Reference: CLM0654 Provider: Green Valley Hospital Bed and Nursing Charges: INR 24000 Doctor Fees: INR 6000 Pharmacy: INR 4000 Amount Payable: INR 34000,hospital_bill,train
+HEALTH INSURANCE CLAIM FORM Insured Patient Name Ananya Verma Claim Number: CLM0698 Hospital Name: Silverline Hospital Type of Claim: Inpatient Treatment Bank and Policy Details: Provided separately Declaration: I confirm that the information provided is accurate. Signature of Claimant: SIMULATED SIGNATURE,signed_claim_form,train
+INPATIENT ADMISSION NOTICE This is to inform that Reyansh Shah was admitted to City Care Medical Centre. Reference Number: CLM0566 Admission Date: 16/05/2026 Reason for Admission: Gastrointestinal infection Consultant: Dr. Neha Kapoor Department: General Medicine,admission_advice,train
+PATIENT INSURANCE DECLARATION Name of Policy Holder: Diya Iyer Claim Reference: CLM0080 Treatment Provider: Green Valley Hospital Requested Coverage: Inpatient Treatment I declare that the attached claim information is correct. Authorized Signature: SIMULATED SIGNATURE,signed_claim_form,validation
+DISCHARGE NOTE Patient Details: Aarav Sharma Claim ID: CLM0534 Hospital: Sunrise Multispeciality Hospital Diagnosis: Viral fever Treatment Course: Diagnostic tests and medical management Discharged On: 07/08/2026 Discharge Condition: Stable Follow-up Instructions: Continue prescribed medicines,discharge_summary,train
+"ADMISSION ADVICE
+Patient Name: Reyansh Shah
+Claim Reference: CLM0668
+Hospital: Silverline Hospital
+Date of Admission: 18/05/2026
+Department: Cardiology
+Reason for Admission: Community acquired pneumonia
+The patient has been admitted for inpatient treatment.
+Attending Doctor: Dr. Karan Rao",admission_advice,train
+"INPATIENT REG1STRATION SLIP
+Patient: Reyansh Shah
+Facility: Hopewell Hospital
+Case Reference: CLM0018
+Admission Time: 09/01/2026
+Current Status: Patient admitted
+Assigned Department: Orthopaedics",admission_advice,test
+INPATIENT ADMISSION NOTICE This is to inform that Riya Patel was admitted to Metro Health Centre. Reference Number: CLM0816 Admission Date: 05/05/2026 Reason for Admission: Acute respiratory infection Consultant: Dr. Amit Shah Department: Neurology,admission_advice,train
+"TAX INVOICE - HOSPITAL SERVICES
+Customer Name Ananya Verma
+Bill Number: CLM0214
+Hospital Name: National Medical Institute
+Inpatient Room: INR 19500
+Medical Consultation: INR 1500
+Pharmacy Expenses: INR 9000
+Net Bill Amount: INR 30000",hospital_bill,train
+"ADMISSION ADVICE
+Patient Name: Ishaan Gupta
+Claim Reference: CLM0661
+Hospital: Hopewell Hospital
+Date of Admission: 20/08/2O26
+Department: Neurology
+Reason for Admission: Gastrointestinal infection
+The patient has been admitted for inpatient treatment.
+Attending Doctor: Dr. Amit Shah",admission_advice,train
+PATIENT INSURANCE DECLARATION Name of Policy Holder Ishaan Gupta Claim Reference: CLM0171 Treatment Provider: Silverline Hospital Requested Coverage: Inpatient Treatment I declare that the attached claim information is correct. Authorized Signature: SIMULATED SIGNATURE,signed_claim_form,validation
+"FINAL INPATIENT CARE REPORT
+Patient Name: Diya Iyer
+Hospital: Sunrise Multispeciality Hospital
+Claim Reference: CLM0184
+Principal Diagnosis: Acute abdominal pain
+Treatment Administered: Supportive care and observation
+Date of Admission: 23/07/2026
+Date of Release: 27/07/2O26
+Status on Release: Stable",discharge_summary,test
+"MEDICAL CLAIM FORM
+Patient Name: Meera Nair
+Claim Reference Number: CLM0240
+Hospital: City Care Medical Centre
+Requested Benefit: Medical Reimbursement
+Authorization: I authorize processing of this claim.
+Signed By: Meera Nair
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+"FINAL INVOICE
+Billed To: Aditi Joshi
+Invoice Reference: CLM0912
+Provider: National Medical Institute
+Bed and Nursing Charges: INR 19500
+Doctor Fees: INR 50O0
+Pharmacy: INR 2000
+Amount Payable: INR 26500",hospital_bill,train
+PATIENT BILLING RECORD Name: Reyansh Shah Reference Number: CLM0627 Hospital: Sunrise Multispeciality Hospital Treatment Charges: INR 1500 Room Charges: 1NR 16000 Supplies and Medicines: INR 10000 Total Bill: INR 27500 Balance Due: INR 0,hospital_bill,train
+"ADMISSION INTIMATION
+Insured Person: Ishaan Gupta
+Claim ID: CLM0852
+Hospital Name: Green Valley Hospital
+Admission Date: 27/07/2026
+Treatment Category: Inpatient
+Ward: General Surgery
+This document confirms the patient's hospital admission.",admission_advice,train
+INPATIENT REGISTRATION SLIP Patient: Sara Khan Facility: City Care Medical Centre Case Reference: CLM0121 Admission Time: 20/06/2026 Current Status: Patient admitted Assigned Department: Emergency Medicine,admission_advice,test
+PATIENT ADMISSION CONFIRMATION Name of Patient: Aarav Sharma Hospital: Green Valley Hospital Reference ID: CLM0886 Date: 02/05/2026 Status: Admitted Medical Department: Cardiology The patient is registered for hospital treatment.,admission_advice,train
+"MEDICAL EXPENSE STATEMENT
+Patient: Arjun Malhotra
+Claim ID: CLM0562
+Healthcare Facility: Hopewell Hospital
+Accommodation: INR 18000
+Professional Services: INR 2500
+Medical Supplies: INR 10500
+Grand Total: INR 31000",hospital_bill,train
+"CLINICAL DISCHARGE DOCUMENT
+Name of Patient: Meera Nair
+Medical Facility: Sunrise Multispeciality Hospital
+Reference: CLM0188
+Diagnosis: Gastrointestinal infection
+Procedures and Treatment: Surgical treatment and monitoring
+Date Released: 23/08/2026
+Clinical Condition: Stable
+Next Review: Return for clinical assessment",discharge_summary,validation
+"FINAL INPATIENT CARE REPORT
+Patient Name: Sara Khan
+Hospital: Silverline Hospital
+Claim Reference: CLM0821
+Principal Diagnosis: Acute respiratory infection
+Treatment Administered: Intravenous fluids and medication
+Date of Admission: 24/03/2026
+Date of Release: 26/03/2026
+Status on Release: Stable",discharge_summary,test
+INPATIENT BILLING SUMMARY Patient Name: Aditi Joshi Hospital Name: City Care Medical Centre Bill Reference: CLM0865 Room and Nursing: INR 11000 Medical Services: INR 3500 Drugs and Supplies: INR 4000 Total Invoice Value: INR 18500 Payment: Pending,hospital_bill,test
+"SUMMARY OF PATIENT CARE
+Patient: Sara Khan
+Provider: Silverline Hospital
+Case Reference: CLM0539
+Inpatient Period: 21/10/2026 - 30/10/2026
+Medical Assessment: Dehydration
+Care Administered: Intravenous fluids and medication
+Disposition: Discharged",discharge_summary,validation
+MEDICAL EXPENSE STATEMENT Patient: Ananya Verma Claim ID: CLM0445 Healthcare Facility: Sunrise Multispeciality Hospital Accommodation: INR 11500 Professional Services: INR 1500 Medical Supplies: INR 4500 Grand Total: INR 17500,hospital_bill,train
+"INPATIENT BILLING SUMMARY
+Patient Name: Reyansh Shah
+Hospital Name: Sunrise Multispeciality Hospital
+Bill Reference: CLM0360
+Room and Nursing: INR 18500
+Medical Services: INR 3500
+Drugs and Supplies: INR 6500
+Total Invoice Value: INR 28500
+Payment: Paid",hospital_bill,test
+"NOT1CE OF INPATIENT REGISTRATION
+Patient Details: Riya Patel
+Provider: Green Valley Hospital
+Authorization Reference: CLM0269
+Registered On: 06/04/2026
+Admission Reason: Post-operative recovery
+The patient has been accepted for inpatient care.",admission_advice,validation
+STATEMENT OF MEDICAL CHARGES Patient: Sara Khan Facility: Metro Health Centre Account Number: CLM0083 Ward Charges: INR 7000 Professional Fees: INR 2500 Medication Cost: INR 8000 Amount Due: INR 17500,hospital_bill,validation
+"REIMBURSEMENT CLAIM APPLICATION
+Insured Member: Ananya Verma
+Reference Number: CLM0335
+Hospital Attended: Hopewell Hospital
+Benefit Requested: Medical Reimbursement
+Declaration of Claimant: I request payment under my policy.
+Signature of Applicant: SIMULATED SIGNATURE",signed_claim_form,validation
+"DISCHARGE SUMMARY
+Patient Name Meera Nair
+Claim Reference: CLM0751
+Hospital: Sunrise Multispeciality Hospital
+Date of Admission: 25/02/2026
+Date of Discharge: 09/03/2026
+Final Diagnosis: Urinary tract infection
+Treatment Provided: Intravenous fluids and medication
+Discharge Status: Stable
+Consultant: Dr. Priya Mehta",discharge_summary,train
+"INSURANCE CLAIM SUBMISSION FORM
+Policy Holder Reyansh Shah
+Claim ID: CLM0216
+Healthcare Provider: Sunrise Multispeciality Hospital
+Patient Relationship: Self
+Declaration by Insured: Details submitted are true to my knowledge.
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+"SUMMARY OF HOSPITALIZATION
+Name: Ishaan Gupta
+Reference ID: CLM0009
+Hospital Name: City Care Medical Centre
+Admission: 15/07/2026
+Discharge: 18/07/2026
+Clinical Findings: Viral fever
+Advice: Continue prescribed medicines
+Treating Doctor: Dr. Karan Rao",discharge_summary,train
+ADMISSION ADVICE Patient Name: Arjun Malhotra Claim Reference: CLM0541 Hospital: Silverline Hospital Date of Admission: 06/03/2026 Department: Neurology Reason for Admission: Urinary tract infection The patient has been admitted for inpatient treatment. Attending Doctor: Dr. Rahul Nair,admission_advice,train
+"SIGNED MEDICAL INSURANCE FORM
+Applicant Name Vivaan Rao
+Claim Identifier: CLM0112
+Healthcare Institution: Sunrise Multispeciality Hospital
+Claim Purpose: Inpatient Treatment
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+"HOSPITALIZATION ADMISSION LETTER To Whom It May Concern, This conf irms the admission of Riya Patel at Silverline Hospital. Claim Reference: CLM0430 Date of Entry: 28/05/2026 Unit: General Medicine Attending Consultant: Dr. Neha Kapoor",admission_advice,validation
+PATIENT INSURANCE DECLARATION Name of Policy Holder: Ananya Verma Claim Reference: CLM0670 Treatment Provider: City Care Medical Centre Reques ted Coverage: Medical Reimbursement I declare that the attached claim information is correct. Authorized Signature: SIMULATED SIGNATURE,signed_claim_form,validation
+"SUMMARY OF PATIENT CARE
+Patient: Reyansh Shah
+Provider: City Care Medical Centre
+Case Reference: CLM0145
+Inpatient Period: 02/06/2026 - 13/06/2026
+Medical Assessment: Gastrointestinal infection
+Care Administered: Medication and clinical observation
+Disposition: Discharged",discharge_summary,validation
+"ITEMIZED HOSPITAL INVOICE
+Account Holder: Meera Nair
+Billing Reference: CLM0114
+Medical Provider: City Care Medical Centre
+Accommodation Charges: INR 23000
+Clinical Services: INR 1000
+Pharmacy Expenses: INR 5000
+Invoice Total: INR 29000
+Status: Partially Paid",hospital_bill,validation
+"FINAL INPATIENT CARE REPORT
+Patient Name: Sara Khan
+Hospital: Sunrise Multispeciality Hospital
+Claim Reference: CLM0783
+Principal Diagnosis: Post-operative recovery
+Treatment Administered: Surgical treatment and monitoring
+Date of Admission: I1/06/2026
+Date of Release: 19/06/2026
+Status on Release: Stable",discharge_summary,test
+PATIENT ADMISSION CONFIRMATION Name of Patient: Diya Iyer Hospital: City Care Medical Centre Reference ID: CLM06I4 Date: 20/03/2026 Status: Admitted Medical Department: General Medicine The patient is registered for hospital treatment.,admission_advice,train
+FINAL INVOICE Billed To: Ishaan Gupta Invoice Reference: CLM0087 Provider: Silverline Hospital Bed and Nursing Charges: INR 10500 Doctor Fees: INR 5000 Pharmacy: INR 1500 Amount Payable: INR 17000,hospital_bill,train
+"ADMISSI0N INTIMATION
+Insured Person: Ishaan Gupta
+Claim ID: CLM0553
+Hospital Name: Silverline Hospital
+Admission Date: 04/08/2026
+Treatment Category: Inpatient
+Ward: Cardiology
+This document confirms the patient's hospital admission.",admission_advice,train
+SUMMARY OF PATIENT CARE Patient: Aditi Joshi Provider: Green Valley Hospital Case Reference: CLM0739 Inpatient Period: 24/01/2026 - 27/01/2026 Medical Assessment: Urinary tract infection Care Administered: Medication and clinical observation Disposition: Discharged,discharge_summary,validation
+"ITEMIZED HOSPITAL INVOICE
+Account Holder: Aditi Joshi
+Billing Reference: CLM0434
+Medical Provider: Silverline Hospital
+Accommodation Charges: INR 16000
+Clinical Services: INR 3000
+Pharmacy Expenses: INR 9000
+Invoice Total: INR 28000
+Status: Partially Paid",hospital_bill,validation
+"PATIENT BILLING RECORD
+Name: Kabir Mehta
+Reference Number: CLM0483
+Hospital: Silverline Hospital
+Treatment Charges: INR 1500
+Room Charges: INR 15500
+Supplies and Medicines: INR 5500
+Total Bill: INR 22500
+Balance Due: INR 0",hospital_bill,train
+HEALTH INSURAN CE CLAIM FORM Insured Patient Name: Sara Khan Claim Number: CLM0219 Hospital Name: City Care Medical Centre Type of Claim: Hospitalization Expenses Bank and Policy Details: Provided separately Declaration: I confirm that the information provided is accurate. Signature of Claimant: SIMULATED SIGNATURE,signed_claim_form,train
+"INSURANCE CLAIM SUBMISSI0N FORM
+Policy Holder: Diya Iyer
+Claim ID: CLM0333
+Healthcare Provider: National Medical Institute
+Patient Relationship: Self
+Declaration by Insured: Details submitted are true to my knowledge.
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+INPATIENT BILLING SUMMARY Patient Name Meera Nair Hospital Name: Hopewell Hospital Bill Reference: CLM0373 Room and Nursing: INR 15500 Medical Services: INR 2000 Drugs and Supplies: INR 10500 Total Invoice Value: INR 28000 Payment: Pending,hospital_bill,test
+HOSPITAL BILL Patient Name: Ananya Verma Claim Reference: CLM0857 Hospital: Green Valley Hospital Room Charges: INR 80O0 Consultation Charges: INR 1000 Medicine Charges: INR 10000 Total Amount: INR 19000 Payment Status: Pending,hospital_bill,train
+INPATIENT BILLING SUMMARY Patient Name: Reyansh Shah Hospital Name: Sunrise Multispeciality Hospital Bill Reference: CLM0361 Room and Nursing: INR 9500 Medical Services: INR 3000 Drugs and Supplies: INR 10000 Total Invoice Value: INR 22500 Payment: Paid,hospital_bill,test
+"FINAL INPATIENT CARE REPORT
+Patient Name: Diya Iyer
+Hospital: National Medical Institute
+Claim Reference: CLM0117
+Principal Diagnosis: Community acquired pneumonia
+Treatment Administered: Diagnostic tests and medical management
+Date of Admission: O2/03/2026
+Date of Release: 13/03/2026
+Status on Release: Stable",discharge_summary,test
+"HOSPITALIZATION ADMISSION LETTER
+To Whom It May Concern,
+This confirms the admission of Kabir Mehta at Hopewell Hospital.
+Claim Reference: CLM0502
+Date of Entry: 03/06/2026
+Unit: General Medicine
+Attending Consultant: Dr. Karan Rao",admission_advice,validation
+"SIGNED MEDICAL INSURANCE FORM
+Applicant Name Reyansh Shah
+Claim Identifier: CLM0820
+Healthcare Institution: Green Valley Hospital
+Claim Purpose: Medical Reimbursement
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+MEDICAL CLAIM FORM Patient Name: Ananya Verma Claim Reference Number: CLM0958 Hospital: Hopewell Hospital Requested Benefit: Cashless Hospitalization Authorization: 1 authorize processing of this claim. Signed By: Ananya Verma Signature: SIMULATED SIGNATURE,signed_claim_form,train
+"SIGNED MEDICAL 1NSURANCE FORM
+Applicant Name: Vivaan Rao
+Claim Identifier: CLM0073
+Healthcare Institution: Hopewell Hospital
+Claim Purpose: Inpatient Treatment
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+"FINAL DISCHARGE RECORD
+Patient Name: Kabir Mehta
+Hospital: Sunrise Multispeciality Hospital
+Claim Number: CLM0970
+Admission Date: 19/02/2026
+Discharge Date: 27/02/2026
+Diagnosis at Discharge: Acute abdominal pain
+Outcome: Discharged after completion of treatment.
+Physician: Dr. Neha Kapoor",discharge_summary,train
+"MEDICAL EXPENSE STATEMENT
+Patient: Kabir Mehta
+Claim ID: CLM0O26
+Healthcare Facility: Green Valley Hospital
+Accommodation: INR 11000
+Professional Services: INR 1500
+Medical Supplies: INR 8000
+Grand Total: INR 20500",hospital_bill,train
+"HEALTH INSURANCE CLAIM FORM
+Insured Patient Name Arjun Malhotra
+Claim Number: CLM0724
+Hospital Name: Sunrise Multispeciality Hospital
+Type of Claim: Cashless Hospitalization
+Bank and Policy Details: Provided separately
+Declaration: I confirm that the information provided is accurate.
+Signature of Claimant: SIMULATED SIGNATURE",signed_claim_form,train
+PATIENT DISCHARGE REPORT Patient: Aarav Sharma Case Number: CLM0319 Facility: National Medical Institute Final Diagnosis: Post-operative recovery Hospital Stay: 01/09/2026 to 06/09/2026 Treatment Course: Surgical treatment and monitoring Condition at Discharge: Stable Follow-up: Review after seven days,discharge_summary,train
+SUMMARY OF PATIENT CARE Patient Reyansh Shah Provider: City Care Medical Centre Case Reference: CLM0833 Inpatient Period: 22/08/2026 - 27/08/2026 Medical Assessment: Viral fever Care Administered: Medicati on and clinical observation Disposition: Discharged,discharge_summary,validation
+"FINAL INPATIENT CARE REPORT
+Patient Name: Meera Nair
+Hospital: Silverline Hospital
+Claim Reference: CLM0589
+Principal Diagnosis: Acute respiratory infection
+Treatment Administered: Antibiotic therapy
+Date of Admission: 22/05/2026
+Date of Release: 26/05/2O26
+Status on Release: Stable",discharge_summary,test
+SUMMARY OF PATIENT CARE Patient: Vivaan Rao Provider: Hopewell Hospital Case Reference: CLM0636 Inpatie nt Period: 10/06/2026 - 19/06/2O26 Medical Assessment: Community acquired pneumonia Care Administered: Intravenous fluids and medication Disposition: Discharged,discharge_summary,validation
+"S1GNED MEDICAL INSURANCE FORM
+Applicant Name: Ananya Verma
+Claim Identifier: CLM0349
+Healthcare Institution: City Care Medical Centre
+Claim Purpose: Medical Reimbursement
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+"HOSPITALIZATION ADMISSION LETTER To Whom It May Concern, This confirms the admission of Riya Patel at Silverline Hospital. Claim Reference: CLM0298 Date of Entry: 13/06/2026 Unit: Emerge ncy Medicine Attending Consultant: Dr. Karan Rao",admission_advice,validation
+"PATIENT BILLING RECORD
+Name: Diya Iyer
+Reference Number: CLM0939
+Hospital: Green Valley Hospital
+Treatment Charges: INR 3500
+Room Charges: INR 15500
+Supplies and Medicines: INR 11500
+Total Bill: INR 30500
+Balance Due: INR 0",hospital_bill,train
+FINAL DISCHARGE RECORD Patient Name: Sara Khan Hospital: City Care Medical Centre Claim Number: CLM0647 Admission Date: 11/06/2026 Discharge Date: 23/06/2026 Diagnosis at Discharge: Viral fever Outcome: Discharged after completion of treatment. Physician: Dr. Rahul Nair,discharge_summary,train
+"SUMMARY OF HOSPITALIZATION
+Name Aarav Sharma
+Reference ID: CLM0916
+Hospital Name: Hopewell Hospital
+Admission: 18/10/2026
+Discharge: 21/10/2026
+Clinical Findings: Gastrointestinal infection
+Advice: Follow up with the treating consultant
+Treating Doctor: Dr. Amit Shah",discharge_summary,train
+"FINAL INPATIENT CARE REPORT
+Patient Name: Meera Nair
+Hospital: Metro Health Centre
+Claim Reference: CLM0776
+Principal Diagnosis: Viral fever
+Treatment Administered: Surgical treatment and monitoring
+Date of Admission: 06/01/2026
+Date of Release: 17/01/2026
+Status on Release: Stable",discharge_summary,test
+"FINAL INPATIENT CARE REPORT
+Patient Name: Sara Khan
+Hospital: National Medical Institute
+Claim Reference: CLM0208
+Principal Diagnosis: Dehydration
+Treatment Administered: Supportive care and observation
+Date of Admission: 13/04/2026
+Date of Release: 17/04/2026
+Status on Release: Stable",discharge_summary,test
+"FINAL INPATIENT CARE REPORT
+Patient Name: Sara Khan
+Hospital: Hopewell Hospital
+Claim Reference: CLM0462
+Principal Diagnosis: Viral fever
+Treatment Administered: Supportive care and observation
+Date of Admission: 18/04/2026
+Date of Release: 25/04/2026
+Status on Release: Stable",discharge_summary,test
+"PATIENT DISCHARGE REPORT
+Patient: Aditi Joshi
+Case Number: CLM0314
+Facility: Sunrise Multispeciality Hospital
+Final Diagnosis: Viral fever
+Hospital Stay: 09/06/2026 to 12/06/2026
+Treatment Course: Medication and clinical observation
+Condition at Discharge: Stable
+Follow-up: Attend the outpatient department",discharge_summary,train
+STATEMENT OF MEDICAL CHARGES Patient: Reyansh Shah Facility: Silverline Hospital Account Number: CLM0754 Ward Charges: INR 23500 Professional Fees: INR 2500 Medication Cost: INR 2000 Amount Due: INR 28000,hospital_bill,validation
+SIGNED MEDICAL INSURANCE FORM Applicant Name: Reyansh Shah Claim Identifier: CLM0893 Healthcare Institution: City Care Medical Centre Claim Purpose: Inpatient Treatment I certify the information in this application is correct. Applicant Authorization: SIMULATED SIGNATURE,signed_claim_form,test
+NOTICE OF INPATIENT REGISTRATION Patient Details: Reyansh Shah Provider: National Medical Institute Authorization Reference: CLM0185 Registered On: 05/08/2026 Admission Reason: Dehydration The patient has been accepted for inpatient care.,admission_advice,validation
+"FINAL INVOICE
+Billed To: Ananya Verma
+Invoice Reference: CLM0572
+Provider: Metro Health Centre
+Bed and Nursing Charges: INR 25000
+Doctor Fees: INR 2000
+Pharmacy: INR 9500
+Amount Payable: INR 36500",hospital_bill,train
+SIGNED MEDICAL INSURANCE FORM Applicant Name: Arjun Malhotra Claim Identifier: CLM0255 Healthcare Institution: Sunrise Multispeciality Hospital Claim Purpose: Hospitalization Expenses I certify the information in this application is correct. Applicant Authorization: SIMULATED SIGNATURE,signed_claim_form,test
+SUMMARY OF HOSPITALIZATION Name: Riya Patel Reference ID: CLM0192 Hospital Name: National Medical Institute Admission: 06/10/2026 Discharge: 13/10/2026 Clinical Findings: Community acquired pneumonia Advice: Return for clinical assessment Treating Doctor: Dr. Rahul Nair,discharge_summary,train
+1NPATIENT REGISTRATION SLIP Patient: Meera Nair Facility: Sunrise Multispeciality Hospital Case Reference: CLM0250 Admission Time: 23/07/2026 Current Status: Patient admitted Assigned Department: Emergency Medicine,admission_advice,test
+REIMBURSEMENT CLAIM APPLICATION Insured Member: Vivaan Rao Reference Number: CLM0657 Hospital Attended: Hopewell Hospital Benefit Requested: Medical Reimbursement Declaration of Claimant: I request payment under my policy. Signature of Applicant: SIMULATED SIGNATURE,signed_claim_form,validation
+PATIENT DISCHARGE REPORT Patient: Diya Iyer Case Number: CLM0215 Facility: Metro Health Centre Final Diagnosis: Community acquired pneumonia Hospital Stay: O3/04/2026 to 14/04/2026 Treatment Course: Antibiotic therapy Condition at Discharge: Stable Follow-up: Review after seven days,discharge_summary,train
+"COMPLETED CLAIM APPLICATION
+Insured Person: Vivaan Rao
+Claim Reference: CLM0669
+Hospital Details: Metro Health Centre
+Claim Type: Inpatient Treatment
+Declaration: I certify that the attached details are correct.
+Signature of Insured: SIMULATED SIGNATURE",signed_claim_form,train
+"FINAL INPATIENT CARE REPORT
+Patient Name: Diya 1yer
+Hospital: City Care Medical Centre
+Claim Reference: CLM0089
+Principal Diagnosis: Post-operative recovery
+Treatment Administered: Surgical treatment and monitoring
+Date of Admission: 19/01/2026
+Date of Release: 25/01/2026
+Status on Release: Stable",discharge_summary,test
+INSURANCE CLAIM SUBMISSION FORM Policy Holder: Ishaan Gupta Claim ID: CLM0243 Healthcare Provider: Hopewell Hospital Patient Relationship: Self Declaration by Insured: Details submitted are true to my knowledge. Signature: SIMULATED SIGNATURE,signed_claim_form,train
+"SUMMARY OF PATIENT CARE
+Patient: Meera Nair
+Provider: Sunrise Multispeciality Hospital
+Case Reference: CLM0844
+Inpatient Period: 31/05/2026 - 04/06/2026
+Medical Assessment: Acute respiratory infection
+Care Administered: Medication and clinical observation
+Disposition: Discharged",discharge_summary,validation
+"FINAL DISCHARGE RECORD
+Patient Name: Diya Iyer
+Hospital: Green Valley Hospital
+Claim Number: CLM0707
+Admission Date: 25/01/2026
+Discharge Date: 05/02/2026
+Diagnosis at Discharge: Gastrointestinal infection
+Outcome: Discharged after completion of treatment.
+Physician: Dr. Amit Shah",discharge_summary,train
+"DISCHARGE SUMMARY
+Patient Name: Riya Patel
+Claim Reference: CLM0001
+Hospital: Green Valley Hospital
+Date of Admission: 30/04/2026
+Date of Discharge: 1O/05/2026
+Final Diagnosis: Acute abdominal pain
+Treatment Provided: Supportive care and observation
+Discharge Status: Stable
+Consultant: Dr. Priya Mehta",discharge_summary,train
+"HOSPITAL BILL
+Patient Name: Aditi Joshi
+Claim Reference: CLM0465
+Hospital: City Care Medical Centre
+Room Charges: INR 19500
+Consultation Charges: INR 6000
+Medicine Charges: INR 2000
+Total Amount: INR 27500
+Payment Status: Partially Paid",hospital_bill,train
+MEDICAL EXPENSE STATEME NT Patient Ishaan Gupta Claim ID: CLM0183 Healthcare Facility: City Care Medical Centre Accommodation: INR 20500 Professional Services: INR 2500 Medical Supplies: INR 10500 Grand Total: INR 33500,hospital_bill,train
+PATIENT DISCHARGE REPORT Patient: Meera Nair Case Number: CLM0390 Facility: Metro Health Centre Final Diagnosis: Gastrointestinal infection Hospital Stay: 12/07/2026 to 19/07/2026 Treatment Course: Supportive care and observation Condition at Discharge: Stable Follow-up: Continue prescribed medicines,discharge_summary,train
+"FINAL INPATIENT CARE REPORT
+Patient Name: Aditi Joshi
+Hospital: Hopewell Hospital
+Claim Reference: CLM0059
+Principal Diagnosis: Viral fever
+Treatment Administered: Diagnostic tests and medical management
+Date of Admission: 25/07/2026
+Date of Release: 04/O8/2026
+Status on Release: Stable",discharge_summary,test
+INPATIENT BILLING SUMMARY Patient Name: Diya Iyer Hospital Name: Metro Health Centre Bill Reference: CLM0721 Room and Nursing: INR 22500 Medical Services: INR 2000 Drugs and Supplies: INR 1000 Total Invoice Value: INR 25500 Payment: Pending,hospital_bill,test
+"INPATIENT REGISTRATION SLIP
+Patient: Kabir Mehta
+Facility: Hopewell Hospital
+Case Reference: CLM0986
+Admission Time: 01/04/2026
+Current Status: Patient admitted
+Assigned Department: General Medicine",admission_advice,test
+PATIENT BILLING RECORD Name: Arjun Malhotra Reference Number: CLM0365 Hospital: Metro Health Centre Treatment Charges: INR 1500 Room Charges: INR 9500 Supplies and Medicines: INR 1500 Total Bill: INR 12500 Balance Due: INR 0,hospital_bill,train
+INPATIENT REGISTRATION SLIP Patient: Aditi Joshi Facility: Metro Health Centre Case Reference: CLM0895 Admission Time: 30/08/2026 Current Status: Patient admitted Assigned Department: General Surgery,admission_advice,test
+"INSURANCE CLAIM SUBMISSION FORM
+Policy Holder: Aarav Sharma
+Claim ID: CLM0323
+Healthcare Provider: Hopewell Hospital
+Patient Relationship: Self
+Declaration by Insured: Details submitted are true to my knowledge.
+Signature: SIMULATED S1GNATURE",signed_claim_form,train
+PATIENT BILLING RECORD Name: Reyansh Shah Reference Number: CLM0886 Hospital: City Care Medical Centre Treatment Charges: INR 4500 Room Charges: INR 6000 Supplies and Medicines: INR 7000 Total Bill: INR 17500 Balance Due: INR 0,hospital_bill,train
+INSURANCE CLAIM SUBMISSION FORM Policy Holder: Reyansh Shah Claim ID: CLM0400 Healthcare Provider: Hopewell Hospital Patient Relationship: Self Declaration by Insured: Details submitted are true to my knowledge. Signature: SIMULATED SIGNATU RE,signed_claim_form,train
+"ITEMIZED HOSPITAL INVOICE
+Account Holder: Aarav Sharma
+Billing Reference: CLM0776
+Medical Provider: Metro Health Centre
+Accommodation Charges: INR 7000
+Clinical Services: INR 1500
+Pharmacy Expenses: INR 5000
+1nvoice Total: INR 13500
+Status: Pending",hospital_bill,validation
+INPATIENT BILLING SUMMARY Patient Name: Arjun Malhotra Hospital Name: Sunrise Multispeciality Hospital Bill Reference: CLM0274 Room and Nursing: INR 18500 Medical Services: INR 5500 Drugs and Supplies: INR 9000 Total Invoice Value: INR 33000 Payment: Paid,hospital_bill,test
+ITEMIZED HOSPITAL INVOICE Account Holder: Diya Iyer Billing Reference: CLM0024 Medical Provider: National Medical Institute Accommodation Charges: INR 21500 Clinical Services: INR 2500 Pharmacy Expenses: INR 5000 Invoice Total: INR 29000 Status: Pending,hospital_bill,validation
+ADMISSION INTIMATION Insured Person: Aditi Joshi Claim ID: CLM0607 Hospital Name: City Care Medical Centre Admission Date: 28/08/2026 Treatment Category: Inpatient Ward: Emergency Medicine This document confirms the patient's hospital admission.,admission_advice,train
+"REIMBURSEMENT CLAIM APPLICATION
+Insured Member: Ananya Verma
+Reference Number: CLM0660
+Hospital Attended: Metro Health Centre
+Benefit Requested: Medical Reimbursement
+Declaration of Claimant: I request payment under my policy.
+Signature of Applicant: SIMULATED SIGNATURE",signed_claim_form,validation
+"FINAL DISCHARGE RECORD
+Patient Name Diya Iyer
+Hospital: Metro Health Centre
+Claim Number: CLM08O3
+Admission Date: 07/04/2026
+Discharge Date: 19/04/2026
+Diagnosis at Discharge: Dehydration
+Outcome: Discharged after completion of treatment.
+Physician: Dr. Amit Shah",discharge_summary,train
+TAX INVOICE - HOSPITAL SERVICES Customer Name Vivaan Rao Bill Number: CLM0783 Hospital Name: City Care Medical Centre Inpatient Room: INR 18500 Medical Consultation: INR 60O0 Pharmacy Expenses: INR 4500 Net Bill Amount: INR 29000,hospital_bill,train
+FINAL INVOICE Billed To: Meera Nair Invoice Reference: CLM0010 Provider: Sunrise Multispeciality Hospital Bed and Nursing Charges: INR 5000 Doctor Fees: INR 4500 Pharmacy: INR 8500 Amount Payable: INR 18000,hospital_bill,train
+"HOSPITAL ADMISSION RECORD
+Patient: Aditi Joshi
+Case ID: CLM0886
+Facility: Sunrise Multispeciality Hospital
+Admission Details:
+The above patient has been registered for inpatient care
+beginning 12/01/2026.
+Initial Assessment: Acute respiratory infection
+Responsible Physician: Dr. Karan Rao",admission_advice,train
+MEDICAL EXPENSE STATEMENT Patient: Reyansh Shah Claim ID: CLM0888 Healthcare Facility: Hopewell Hospital Accommodation: INR 21000 Professional Services: INR 1500 Medical Supplies: INR 6000 Grand Total: INR 28500,hospital_bill,train
+DISCHARGE NOTE Patient Details Meera Nair Claim ID: CLM0523 Hospital: Silverline Hospital Diagnosis: Dehydration Treatment Course: Surgical treatment and monitoring Discharged On: 11/08/2026 Discharge Condition: Stable Follow-up Instructions: Return for clinical assessment,discharge_summary,train
+CLINICAL DISCHARGE DOCUMENT Name of Patient: Arjun Malhotra Medical Facility: Metro Health Centre Reference: CLM0597 Diagnosis: Urinary tract infe ction Procedures and Treatment: Diagnostic tests and medical management Date Released: 27/O6/2026 Clinical Condition: Stable Next Review: Follow up with the treating consultant,discharge_summary,validation
+"INPATIENT REGISTRATION SLIP
+Patient: Ishaan Gupta
+Facility: Sunrise Multispeciality Hospital
+Case Reference: CLM0481
+Admission Time: 04/07/2026
+Current Status: Patient admitted
+Assigned Department: Orthopaedics",admission_advice,test
+"SUMMARY OF HOSPITALIZATION
+Name: Ishaan Gupta
+Reference ID: CLM0306
+Hospital Name: National Medical Institute
+Admission: 16/06/2026
+Discharge: 21/06/2026
+Clinical Findings: Dehydration
+Advice: Continue prescribed medicines
+Treating Doctor: Dr. Anjali Verma",discharge_summary,train
+INSURANCE CLA1M SUBMISSION FORM Policy Holder Diya Iyer Claim ID: CLM0990 Healthcare Provider: National Medical Institute Patient Relationship: Self Declaration by Insured: Details submitted are true to my knowledge. Signature: SIMULA TED SIGNATURE,signed_claim_form,train
+"PATIENT ADMISSION CONFIRMATION
+Name of Patient: Reyansh Shah
+Hospital: National Medical Institute
+Reference ID: CLM0594
+Date: 07/09/2026
+Status: Admitted
+Medical Department: Orthopaedics
+The patient is registered for hospital treatment.",admission_advice,train
+PATIENT DISCHARGE REPORT Patient Vivaan Rao Case Number: CLM0782 Facility: Silverline Hospital Final Diagnosis: Community acquired pneumonia Hospital Stay: 19/10/2026 to 26/10/2026 Treatment Course: Medication and clinical observation Condition at Discharge: Stable Follow-up: Follow up with the treating consultant,discharge_summary,train
+FINAL INVOICE Billed To: Vivaan Rao Invoice Reference: CLM0463 Provider: Sunrise Multispeciality Hospital Bed and Nursing Charges: INR 21500 Doctor Fees: INR 2000 Pharmacy: INR 8000 Amount Payable: INR 31500,hospital_bill,train
+REIMBURSEMENT CLAIM APPLICATION Insured Member Ananya Verma Reference Number: CLM0826 Hospital Attended: Sunrise Multispeciality Hospital Benefit Requested: Medical Reimbursement Declaration of Claimant: I request payment under my policy. Signature of Applicant: SIMULATED SIGNATURE,signed_claim_form,validation
+"HOSPITAL ADMISSION RECORD
+Patient: Sara Khan
+Case ID: CLM0076
+Facility: Sunrise Multispeciality Hospital
+Admission Details:
+The above patient has been registered for inpatient care
+beginning 07/02/2026.
+Initial Assessment: Dehydration
+Responsible Physician: Dr. Amit Shah",admission_advice,train
+"ADMISSION ADVICE
+Patient Name Aarav Sharma
+Claim Reference: CLM0236
+Hospital: Hopewell Hospital
+Date of Admission: 09/08/2026
+Department: General Surgery
+Reason for Admission: Acute abdominal pain
+The patient has been admitted for inpatient treatment.
+Attending Doctor: Dr. Anjali Verma",admission_advice,train
+"NOTICE OF INPATIENT REGISTRATION
+Patient Details: Aditi Joshi
+Provider: Silverline Hospital
+Authorization Reference: CLM0461
+Registered On: 22/09/2026
+Admission Reason: Viral fever
+The patient has been accepted for inpatient care.",admission_advice,validation
+SIGNED MEDICAL INSURANCE FORM Applicant Name: Sara Khan Claim Identifier: CLM0632 Healthcare Institution: Hopewell Hospital Claim Purpose: Inpatient Treatment I certify the information in this application is correct. Applicant Authorization: SIMULATED SIGNATURE,signed_claim_form,test
+"FINAL INPATIENT CARE REPORT
+Patient Name Aditi Joshi
+Hospital: Metro Health Centre
+Claim Reference: CLM0824
+Principal Diagnosis: Gastrointestinal infection
+Treatment Administered: Surgical treatment and monitoring
+Date of Admission: 08/08/2026
+Date of Release: 12/08/2026
+Status on Release: Stable",discharge_summary,test
+"CLAIM REIMBURSEMENT APPLICATION
+Name of 1nsured: Meera Nair
+Reference ID: CLM0998
+Name of Hospital: Metro Health Centre
+Claim Category: Hospitalization Expenses
+Patient Declaration: I request reimbursement of eligible expenses.
+Claimant Signature: SIMULATED SIGNATURE
+Date of Submission: 23/08/2026",signed_claim_form,train
+"PATIENT BILLING RECORD
+Name Arjun Malhotra
+Reference Number: CLM0787
+Hospital: City Care Medical Centre
+Treatment Charges: INR 3500
+Room Charges: 1NR 23500
+Supplies and Medicines: INR 1500
+Total Bill: INR 28500
+Balance Due: INR 0",hospital_bill,train
+DISCHARGE SUMMARY Patient Name: Aditi Joshi Claim Reference: CLM0495 Hospital: City Care Medical Centre Date of Admission: 28/06/2026 Date of Discharge: 03/07/2O26 Final Diagnosis: Acute abdominal pain Treatment Provided: Surgical treatment and monitoring Discharge Status: Stable Consultant: Dr. Karan Rao,discharge_summary,train
+TAX INVOICE - HOSPITAL SERVICES Customer Name: Vivaan Rao Bill Number: CLM0656 Hospital Name: Green Valley Hospital Inpatient Room: INR 2250O Medical Consultation: INR 6000 Pharmacy Expenses: INR 4000 Net Bill Amount: INR 32500,hospital_bill,train
+ITEMIZED HOSPITAL INVOICE Account Holder: Sara Khan Billing Reference: CLM0610 Medical Provider: Metro Health Centre Accommodation Charges: INR 7000 Clinical Services: INR 1500 Pharmacy Expenses: INR 2500 Invoice Total: INR 110O0 Status: Partially Paid,hospital_bill,validation
+FINAL DISCHARGE RECORD Patient Name: Ananya Verma Hospital: National Medical Institute Claim Number: CLM0080 Admi ssion Date: 17/10/2026 Discharge Date: 19/10/2026 Diagnosis at Discharge: Dehydration Outcome: Discharged after completion of treatment. Physician: Dr. Anjali Verma,discharge_summary,train
+INPATIENT BILLING SUMMARY Patient Name: Kabir Mehta Hospital Name: Silverline Hospital Bill Reference: CLM0487 Room and Nursing: INR 8000 Medical Services: INR 2500 Drugs and Supplies: INR 9000 Total Invoice Value: INR 19500 Payment: Partially Paid,hospital_bill,test
+"SUMMARY OF HOSPITALIZATION
+Name: Vivaan Rao
+Reference ID: CLM0694
+Hospital Name: Hopewell Hospital
+Admission: 28/06/2026
+Discharge: 06/07/2026
+Clinical Findings: Urinary tract infection
+Advice: Review after seven days
+Treating Doctor: Dr. Rahul Nair",discharge_summary,train
+"SUMMARY OF HOSPITALIZATION
+Name: Meera Nair
+Reference ID: CLMO578
+Hospital Name: Green Valley Hospital
+Admission: 11/10/2026
+Discharge: 19/10/2026
+Clinical Findings: Post-operative recovery
+Advice: Continue prescribed medicines
+Treating Doctor: Dr. Rahul Nair",discharge_summary,train
+HEALTH INSURANCE CLAIM FORM Insured Patient Name: Aditi Joshi Claim Number: CLM0982 Hospital Name: Silverline Hospital Type of Claim: Hospitalization Expenses Bank and Policy Details: Provided separately Declaration: I confirm that the information provided is accurate. Signature of Claimant: SIMULATED SIGNATURE,signed_claim_form,train
+"SUMMARY OF HOSPITALIZATION
+Name Arjun Malhotra
+Reference ID: CLM0048
+Hospital Name: Metro Health Centre
+Admission: 08/03/2026
+Discharge: 18/03/2026
+Clinical Findings: Gastrointestinal infection
+Advice: Review after seven days
+Treating Doctor: Dr. Amit Shah",discharge_summary,train
+"HOSPITALIZATION ADMISSION LETTER
+To Whom It May Concern,
+This confirms the admission of Vivaan Rao at Sunrise Multispeciality Hospital.
+Claim Reference: CLM0821
+Date of Entry: 06/04/2026
+Unit: General Surgery
+Attending Consultant: Dr. Rahul Nair",admission_advice,validation
+"TAX INVOICE - HOSPITAL SERVICES
+Customer Name: Arjun Malhotra
+Bill Number: CLM0645
+Hospital Name: City Care Medical Centre
+Inpatient Room: INR 6500
+Medical Consultation: INR 1500
+Pharmacy Expenses: INR 10000
+Net Bill Amount: INR 18000",hospital_bill,train
+SUMMARY OF PAT1ENT CARE Patient: Vivaan Rao Provider: Silverline Hospital Case Reference: CLM0934 Inpatient Period: 28/02/2026 - 07/03/2026 Medical Assessment: Acute abdominal pain Care Administered: Supportive care and observation Disposition: Discharged,discharge_summary,validation
+"FINAL INPATIENT CARE REPORT
+Patient Name: Diya Iyer
+Hospital: City Care Medical Centre
+Claim Reference: CLM0614
+Principal Diagnosis: Acute respiratory infection
+Treatment Administered: Diagnostic tests and medical management
+Date of Admission: 29/01/2026
+Date of Release: 01/02/2O26
+Status on Release: Stable",discharge_summary,test
+"FINAL INVOICE
+Billed To: Diya Iyer
+Invoice Reference: CLM0879
+Provider: Metro Health Centre
+Bed and Nursing Charges: INR 24000
+Doctor Fees: INR 1500
+Pharmacy: INR 5500
+Amount Payable: INR 31000",hospital_bill,train
+SUMMARY OF PATIENT CARE Patient: Reyansh Shah Provider: Sunrise Multispeciality Hospital Case Reference: CLM0368 Inpatient Period: 16/03/2026 - 17/03/2026 Medical Assessment: Community acquired pneumonia Care Administered: Medication and clinical observation Disposition: Discharged,discharge_summary,validation
+"CLINICAL DISCHARGE DOCUMENT
+Name of Patient: Aditi Joshi
+Medical Facility: National Medical Institute
+Reference: CLM0822
+Diagnosis: Community acquired pneumonia
+Procedures and Treatment: Intravenous fluids and medication
+Date Released: 03/02/2026
+Clinical Condition: Stable
+Next Review: Return for clinical assessment",discharge_summary,validation
+"HEALTH INSURANCE CLAIM FORM
+Insured Patient Name: Kabir Mehta
+Claim Number: CLM0999
+Hospital Name: Sunrise Multispeciality Hospital
+Type of Claim: Medical Reimbursement
+Bank and Policy Details: Provided separately
+Declaration: I confirm that the information provided is accurate.
+Signature of Claimant: SIMULATED SIGNATURE",signed_claim_form,train
+INPAT1ENT ADMISSION NOTICE This is to inform that Vivaan Rao was admitted to Hopewell Hospital. Reference Number: CLM0748 Admission Date: 27/04/2026 Reason for Admission: Gastrointestinal infection Consultant: Dr. Priya Mehta Department: General Surgery,admission_advice,train
+"ADMISSION INTIMATION
+Insured Person: Meera Nair
+Claim ID: CLM0535
+Hospital Name: National Medical Institute
+Admission Date: 24/08/2026
+Treatment Category: Inpatient
+Ward: Neurology
+This document confirms the patient's hospital admission.",admission_advice,train
+"ITEMIZED HOSPITAL INVOICE
+Account Holder: Diya Iyer
+Billing Reference: CLM0927
+Medical Provider: City Care Medical Centre
+Accommodation Charges: INR 10500
+Clinical Services: INR 2000
+Pharmacy Expenses: INR 12000
+Invoice Total: INR 24500
+Status: Paid",hospital_bill,validation
+PATIENT DISCHARGE REPORT Patient: Aarav Sharma Case Number: CLM0328 Facility: Metro Health Centre Final Diagnosis: Post-operative recovery Hospital Stay: 03/08/2026 to 07/08/2026 Treatment Course: Medication and clinical observation Condi tion at Discharge: Stable Follow-up: Attend the outpatient department,discharge_summary,train
+"INPATIENT ADMISSION NOTICE
+This is to inform that Vivaan Rao was admitted to Hopewell Hospital.
+Reference Number: CLM0007
+Admission Date: 27/10/2026
+Reason for Admission: Acute abdominal pain
+Consultant: Dr. Priya Mehta
+Department: General Surgery",admission_advice,train
+"ITEMIZED HOSPITAL INVOICE
+Account Holder: Riya Patel
+Billing Reference: CLM0528
+Medical Provider: National Medical Institute
+Accommodation Charges: INR 10500
+Clinical Services: INR 2000
+Pharmacy Expenses: INR 1000
+Invoice Total: INR 13500
+Status: Pending",hospital_bill,validation
+"HOSPITAL BILL
+Patient Name: Sara Khan
+Claim Reference: CLM0991
+Hospital: Silverline Hospital
+Room Charges: INR 11000
+Consultation Charges: INR 2000
+Medicine Charges: INR 9500
+Total Amount: INR 2250O
+Payment Status: Pending",hospital_bill,train
+"CLAIM REIMBURSEMENT APPLICATION
+Name of Insured: Ananya Verma
+Reference ID: CLM0712
+Name of Hospital: National Medical Institute
+Claim Category: Inpatient Treatment
+Patient Declaration: I request reimbursement of eligible expenses.
+Claimant Signature: SIMULATED SIGNATURE
+Date of Submission: 14/04/2026",signed_claim_form,train
+"INSURANCE CLAIM SUBMISSION FORM
+Policy Holder: Ananya Verma
+Claim ID: CLM0602
+Healthcare Provider: Hopewell Hospital
+Patient Relationship: Self
+Declaration by Insured: Details submitted are true to my knowledge.
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+FINAL INPATIENT CARE REPORT Patient Name Diya Iyer Hospital: Silverline Hospital Claim Reference: CLM0703 Principal Diagnosis: Acute abdominal pain Treatment Administered: Surgical treatment and monitoring Date of Admission: 04/04/2026 Date of Release: 14/04/2026 Status on Release: Stable,discharge_summary,test
+INPATIENT ADMISSION NOTICE This is to inform that Meera Nair was admitted to Sunrise Multispeciality Hospital. Reference Number: CLM0624 Admission Date: 18/04/2026 Reason for Admission: Viral fever Consultant: Dr. Amit Shah Department: Emergency Medicine,admission_advice,train
+ADMISSION ADVICE Patient Name: Arjun Malhotra Claim Reference: CLM0708 Hospital: City Care Medical Centre Date of Admission: 13/02/2026 Department: Emergency Medicine Reason for Admission: Community acquired pneumonia The patient has been admitted for inpatient treatment. Attending Doctor: Dr. Neha Kapoor,admission_advice,train
+"REIMBURSEMENT CLAIM APPLICATION
+Insured Member Sara Khan
+Reference Number: CLM0969
+Hospital Attended: Hopewell Hospital
+Benefit Requested: Inpatient Treatment
+Declaration of Claimant: I request payment under my policy.
+Signature of Applicant: SIMULATED SIGNATURE",signed_claim_form,validation
+INPATIENT ADMISSION NOTICE This is to inform that Aditi Joshi was admitted to National Medical Institute. Reference Number: CLM0705 Admission Date: 16/07/2026 Reason for Admission: Acute respiratory infection Consultant: Dr. Anjali Verma Department: General Surgery,admission_advice,train
+ITEMIZED HOSPITAL INVOICE Account Holder: Aarav Sharma Billing Reference: CLM0668 Medical Provider: Hopewell Hospital Accommodation Charges: INR 5000 Clinical Services: INR 2000 Pharmacy Expenses: INR 2000 Invoice Total: INR 9000 Status: Pending,hospital_bill,validation
+INPATIENT REGISTRATION SLIP Patient: Aditi Joshi Facility: Metro Health Centre Case Reference: CLM0310 Admission Time: 13/06/2026 Current Status: Patient admitted Assigned Department: Neurology,admission_advice,test
+"ADMISSION ADVICE
+Patient Name: Meera Nair
+Claim Reference: CLM0600
+Hospital: Metro Health Centre
+Date of Admission: 17/O3/2026
+Department: Neurology
+Reason for Admission: Acute abdominal pain
+The patient has been admitted for inpatient treatment.
+Attending Doctor: Dr. Anjali Verma",admission_advice,train
+INPATIENT REGISTRATION SLIP Patient Reyansh Shah Facility: Green Valley Hospital Case Reference: CLM0946 Admission Time: 27/08/2026 Current Status: Patient admitted Assigned Department: General Medicine,admission_advice,test
+"PATIENT ADMISSION CONFIRMATION
+Name of Patient: Aarav Sharma
+Hospital: Silverline Hospital
+Reference ID: CLM0043
+Date: 09/07/2026
+Status: Admitted
+Medical Department: General Medicine
+The patient is registered for hospital treatment.",admission_advice,train
+ADMISSION INTIMATION Insured Person: Arjun Malhotra Claim ID: CLM0465 Hospital Name: Metro Health Centre Admission Date: 26/06/2026 Treatment Category: Inpatient Ward: Orthopaedics This document confirms the patient's hospital admission.,admission_advice,train
+"HOSPITAL ADMISSION RECORD
+Patient: Arjun Malhotra
+Case ID: CLM0046
+Facility: Hopewell Hospital
+Admission Details:
+The above patient has been registered for inpatient care
+beginning 09/05/2O26.
+Initial Assessment: Acute respiratory infection
+Responsible Physician: Dr. Rahul Nair",admission_advice,train
+FINAL DISCHARGE RECORD Patient Name Ishaan Gupta Hospital: Sunrise Multispeciality Hospital Claim Number: CLM0334 Admission Date: 04/02/2026 Discharge Date: 06/02/2026 Diagnosis at Discharge: Post-operative recovery Outcome: Discharged after completion of treatment. Physician: Dr. Karan Rao,discharge_summary,train
+FINAL INVOICE Billed To: Meera Nair Invoice Reference: CLM0639 Provider: Sunrise Multispeciality Hospital Bed and Nursing Charges: INR 10000 Doctor Fees: INR 3500 Pharmacy: INR 10500 Amount Payable: INR 24000,hospital_bill,train
+"INPATIENT REGISTRATION SLIP
+Patient: Diya Iyer
+Facility: Hopewell Hospital
+Case Reference: CLM0053
+Admission Time: 16/05/2026
+Current Status: Patient admitted
+Assigned Department: Neurology",admission_advice,test
+DISCHARGE SUMMARY Patient Name Riya Patel Claim Reference: CLM0393 Hospital: Metro Health Centre Date of Admission: 21/02/2026 Date of Discharge: 26/02/2026 Final Diagnosis: Community acquired pneumonia Treatment Provided: Supporti ve care and observation Discharge Status: Stable Consultant: Dr. Rahul Nair,discharge_summary,train
+"INPATIENT ADMISSION NOTICE
+This is to inform that Ishaan Gupta was admitted to Silverline Hospital.
+Reference Number: CLM0153
+Admission Date: 12/04/2026
+Reason for Admission: Post-operative recovery
+Consultant: Dr. Anjali Verma
+Department: General Medicine",admission_advice,train
+SIGNED MEDICAL INSURANCE FORM Applicant Name: Vivaan Rao Claim Identifier: CLM0066 Healthcare Institution: Hopewell Hospital Claim Purpose: Hospitalization Expenses I certify the information in this application is correct. Applicant Authorization: SIMULATED SIGNATURE,signed_claim_form,test
+"ADMISSION INTIMATION
+Insured Person: Diya Iyer
+Claim ID: CLM0774
+Hospital Name: Hopewell Hospital
+Admission Date: 05/07/2026
+Treatment Category: Inpatient
+Ward: Cardiology
+This document confirms the patient's hospital admission.",admission_advice,train
+"INPATIENT ADMISSION NOTICE
+This is to inform that Reyansh Shah was admitted to Hopewell Hospital.
+Reference Number: CLM0659
+Admission Date: 26/08/2026
+Reason for Admission: Acute abdominal pain
+Consultant: Dr. Karan Rao
+Department: Orthopaedics",admission_advice,train
+FINAL DISCHARGE RECORD Patient Name: Ishaan Gupta Hospital: Silverline Hospital Claim Number: CLM0829 Admission Date: 08/02/2026 Discharge Date: 09/02/2026 Diagnosis at Discharge: Viral fever Outcome: Discharged after completion of treatment. Physician: Dr. Priya Mehta,discharge_summary,train
+"DISCHARGE SUMMARY
+Patient Name: Reyansh Shah
+Claim Reference: CLM0524
+Hospital: Metro Health Centre
+Date of Admission: 19/05/2026
+Date of Discharge: 29/05/2026
+Final Diagnosis: Gastrointestinal infection
+Treatment Provided: Antibiotic therapy
+Discharge Status: Stable
+Consultant: Dr. Amit Shah",discharge_summary,train
+DISCHARGE SUMMARY Patient Name Sara Khan Claim Reference: CLM0942 Hospital: Silverline Hospital Date of Admission: 11/08/2026 Date of Discharge: 22/08/2026 Final Diagnosis: Acute respiratory infection Treatment Provided: Intravenous fluids and medication Discharge Status: Stable Consultant: Dr. Karan Rao,discharge_summary,train
+PATIENT DISCHARGE REPORT Patient Aditi Joshi Case Number: CLM0403 Facility: Silverline Hospital Final Diagnosis: Community acquired pneumonia Hospital Stay: 09/03/2026 to 13/03/2026 Treatment Course: Intravenous fluids and medication Condition at Discharge: Stable Follow-up: Attend the outpatient department,discharge_summary,train
+INPATIENT ADMISSION NOTICE This is to inform that Diya 1yer was admitted to Hopewell Hospital. Reference Number: CLM0936 Admission Date: 30/04/2026 Reason for Admission: Urinary tract infection Consultant: Dr. Anjali Verma Department: Emergency Medicine,admission_advice,train
+"FINAL INPATIENT CARE REPORT
+Patient Name: Meera Nair
+Hospital: Silverline Hospital
+Claim Reference: CLM0622
+Principal Diagnosis: Gastrointestinal infection
+Treatment Administered: Antibiotic therapy
+Date of Admission: 06/06/2026
+Date of Release: 14/06/2026
+Status on Release: Stable",discharge_summary,test
+HOSPITAL ADMISSION RECORD Patient: Vivaan Rao Case ID: CLM0594 Facility: Sunrise Multispeciality Hospital Admission Details: The above patient has been registered for inpatient care beginning 17/09/2026. Initial Assessment: Community acquired pneumonia Responsible Physician: Dr. Karan Rao,admission_advice,train
+"1NSURANCE CLAIM SUBMISSION FORM
+Policy Holder: Ananya Verma
+Claim ID: CLM0814
+Healthcare Provider: Green Valley Hospital
+Patient Relationship: Self
+Declaration by Insured: Details submitted are true to my knowledge.
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+HEALTH INSURANCE CLAIM F0RM Insured Patient Name: Arjun Malhotra Claim Number: CLM0315 Hospital Name: City Care Medical Centre Type of Claim: Inpatient Treatment Bank and Policy Details: Provided separately Declaration: I confirm that the information provided is accurate. Signature of Claimant: SIMULATED SIGNATURE,signed_claim_form,train
+MEDICAL CLAIM FORM Patient Name: Sara Khan Claim Reference Number: CLM0775 Hospital: Hopewell Hospital Requested Benefit: Hospitalization Expenses Authorization: I authorize processing of this claim. Signed By: Sara Khan Signature: SIMULATED SIGNATURE,signed_claim_form,train
+"PATIENT BILLING RECORD
+Name: Meera Nair
+Reference Number: CLM0564
+Hospital: National Medical Institute
+Treatment Charges: INR 4500
+Room Charges: INR 24000
+Supplies and Medicines: INR 6500
+Total Bill: INR 35000
+Balance Due: INR 0",hospital_bill,train
+"INPATIENT REGISTRATION SLIP
+Patient: Arjun Malhotra
+Facility: Green Valley Hospital
+Case Reference: CLM0863
+Admission Time: 08/02/2026
+Current Status: Patient admitted
+Assigned Department: Emergency Medicine",admission_advice,test
+ADMISSION INTIMATION Insured Person: Ishaan Gupta Claim ID: CLM0233 Hospital Name: National Medical Institute Admission Date: 26/09/2026 Treatment Category: Inpatient Ward: Orthopaedics This document confirms the patient's hospital admission.,admission_advice,train
+FINAL INPATIENT CARE REPORT Patient Name: Ishaan Gupta Hospital: Sunrise Multispeciality Hospital Claim Reference: CLM0391 Principal Diagnosis: Post-operative recovery Trea tment Administered: Surgical treatment and monitoring Date of Admission: 16/06/2026 Date of Release: 27/06/2026 Status on Release: Stable,discharge_summary,test
+"MEDICAL EXPENSE STATEMENT
+Patient: Sara Khan
+Claim ID: CLM0400
+Healthcare Facility: Green Valley Hospital
+Accommodation: INR 25000
+Professional Services: INR 1000
+Medical Supplies: INR 1500
+Grand Total: INR 27500",hospital_bill,train
+"INSURANCE CLAIM SUBMISSION FORM
+Policy Holder: Diya Iyer
+Claim ID: CLMO518
+Healthcare Provider: Hopewell Hospital
+Patient Relationship: Self
+Declaration by Insured: Details submitted are true to my knowledge.
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+"INPATIENT BILLING SUMMARY
+Patient Name: Arjun Malhotra
+Hospital Name: City Care Medical Centre
+Bill Reference: CLM0702
+Room and Nursing: INR 9500
+Medical Services: INR 2500
+Drugs and Supplies: INR 3000
+Total Invoice Value: INR 1500O
+Payment: Paid",hospital_bill,test
+"SIGNED MEDICAL INSURANCE FORM
+Applicant Name: Kabir Mehta
+Claim Identifier: CLM050I
+Healthcare Institution: National Medical Institute
+Claim Purpose: Hospitalization Expenses
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+"HOSPITAL BILL
+Patient Name: Vivaan Rao
+Claim Reference: CLM0206
+Hospital: Metro Health Centre
+Room Charges: INR 13000
+Consultation Charges: INR 2000
+Medicine Charges: INR 1500
+Total Amount: INR 16500
+Payment Status: Paid",hospital_bill,train
+HOSPITAL ADMISSION RECORD Patient: Riya Patel Case ID: CLM0232 Facility: City Care Medical Centre Admission Details: The above patient has been registered for inpatient care beginning 02/03/2026. Initial Assessment: Urinary tract infection Responsible Physician: Dr. Karan Rao,admission_advice,train
+COMPLETED CLAIM APPLICATION Insured Person: Sara Khan Claim Reference: CLM0789 Hospital Details: National Medical Institute Claim Type: Cashless Hospitalization Declaration: I certify that the attached details are correct. Signature of Insured: SIMULATED SIGNA TURE,signed_claim_form,train
+"SUMMARY OF HOSPITAL1ZATION
+Name: Sara Khan
+Reference ID: CLM0967
+Hospital Name: Silverline Hospital
+Admission: 02/03/2026
+Discharge: 10/03/2026
+Clinical Findings: Gastrointestinal infection
+Advice: Follow up with the treating consultant
+Treating Doctor: Dr. Karan Rao",discharge_summary,train
+"MEDICAL EXPENSE STATEMENT
+Patient Sara Khan
+Claim ID: CLM0680
+Healthcare Facility: National Medical Institute
+Accommodation: INR 21500
+Professional Services: INR 2000
+Medical Supplies: INR 1000
+Grand Total: INR 24500",hospital_bill,train
+"MEDICAL EXPENSE STATEMENT
+Patient: Sara Khan
+Claim ID: CLM0473
+Healthcare Facility: Hopewell Hospital
+Accommodation: INR 20000
+Professional Services: INR 1500
+Medical Supplies: INR 6500
+Grand Total: INR 280O0",hospital_bill,train
+SUMMARY OF PATIENT CARE Patient: Arjun Malhotra Provider: Metro Health Centre Case Reference: CLM0837 1npatient Period: 16/04/2026 - 27/04/2026 Medical Assessment: Dehydration Care Administered: Surgi cal treatment and monitoring Disposition: Discharged,discharge_summary,validation
+INSURANCE CLAIM SUBMISSION FORM Policy Holder: Kabir Mehta Claim ID: CLM0892 Healthcare Provider: National Medical Institute Patient Relationship: Self Declaration by Insured: Details submitted are true to my knowledge. Signature: SIMUL ATED SIGNATURE,signed_claim_form,train
+FINAL INPATIENT CARE REPORT Patient Name: Aditi Joshi Hospital: National Medical Institute Claim Reference: CLM0385 Principal Diagnosis: Dehydration Treatment Administered: Diagnostic tests and medical management Date of Admission: 04/01/2026 Date of Release: 14/01/2026 Status on Release: Stable,discharge_summary,test
+"ITEMIZED HOSPITAL INVOICE
+Account Holder: Meera Nair
+Billing Reference: CLM0313
+Medical Provider: Sunrise Multispeciality Hospital
+Accommodation Charges: INR 7500
+Clinical Services: INR 1000
+Pharmacy Expenses: INR 8500
+Invoice Total: INR 17000
+Status: Pending",hospital_bill,validation
+INSURANCE CLAIM SUBMISSION FORM Policy Holder: Ananya Verma Claim ID: CLM0062 Healthcare Provider: Silverline Hospital Patient Relationship: Self Declaration by Insured: Details submitted are true to my knowledge. Signature: SIMULATED SIGNATURE,signed_claim_form,train
+"COMPLETED CLAIM APPLICATION
+Insured Person: Meera Nair
+Claim Reference: CLM0539
+Hospital Details: Hopewell Hospital
+Claim Type: Hospitalization Expenses
+Declaration: I certify that the attached details are correct.
+Signature of Insured: SIMULATED SIGNATURE",signed_claim_form,train
+INPATIENT BILLING SUMMARY Patient Name: Meera Nair Hos pital Name: Metro Health Centre Bill Reference: CLM0150 Room and Nursing: INR 13000 Medical Services: INR 2000 Drugs and Supplies: INR 10000 Total Invoice Value: INR 25000 Payment: Partially Paid,hospital_bill,test
+"SIGNED MEDICAL INSURANCE FORM
+Applicant Name: Ishaan Gupta
+Claim Identifier: CLM0647
+Healthcare 1nstitution: Sunrise Multispeciality Hospital
+Claim Purpose: Hospitalization Expenses
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+DISCHARGE NOTE Patient Details: Aditi Joshi Claim ID: CLM0967 Hospital: Silverline Hospital Diagnosis: Dehydration Treatment Course: Intravenous fluids and medication Discharged On: 23/06/2026 Discharge Condition: Stable Follow-up Instructions: Review after seven days,discharge_summary,train
+HOSPITAL BILL Patient Name: Meera Nair Claim Reference: CLM0283 Hospital: National Medical Institute Room Charges: INR 25000 Consultation Charges: INR 300O Medicine Charges: INR 4500 Total Amount: INR 32500 Payment Status: Paid,hospital_bill,train
+FINAL INVOICE Billed To: Diya Iyer Invoice Reference: CLM0905 Provider: Metro Health Centre Bed and Nursing Charges: INR 25000 Doctor Fees: INR 4500 Pharmacy: INR 8500 Amount Payable: INR 38000,hospital_bill,train
+DISCHARGE NOTE Patient Details: Kabir Mehta Claim ID: CLM0814 Hospital: Hopewell Hospital Diagnosis: Acute respiratory infection Treatment Course: Surgical treatment and monitoring Disc harged On: 24/04/2026 Discharge Condition: Stable Follow-up Instructions: Attend the outpatient department,discharge_summary,train
+INPATIENT BILLING SUMMARY Patient Name: Vivaan Rao Hospital Name: Hopewell Hospital Bill Reference: CLM0182 Room and Nursing: INR 19000 Medical Services: INR 4500 Drugs and Supplies: INR 1500 Total Invoice Value: INR 25000 Payment: Partially Paid,hospital_bill,test
+"SIGNED MEDICAL INSURANCE FORM
+Applicant Name: Ishaan Gupta
+Claim Identifier: CLM0125
+Healthcare Institution: National Medical Institute
+Claim Purpose: Cashless Hospitalization
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+"INPATIENT BILLING SUMMARY
+Patient Name: Kabir Mehta
+Hospital Name: National Medical Institute
+Bill Reference: CLM0146
+Room and Nursing: INR 8500
+Medical Services: INR 2500
+Drugs and Supplies: INR 30O0
+Total Invoice Value: INR 14000
+Payment: Paid",hospital_bill,test
+"INSURANCE CLAIM SUBMISSION FORM
+Policy Holder: Diya Iyer
+Claim ID: CLM0782
+Healthcare Provider: Green Valley Hospital
+Patient Relationship: Self
+Declaration by Insured: Details submitted are true to my knowledge.
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+"ADMISSION INTIMATION
+Insured Person Riya Patel
+Claim ID: CLM0083
+Hospital Name: National Medical Institute
+Admission Date: 27/05/2026
+Treatment Category: Inpatient
+Ward: Cardiology
+This document confirms the patient's hospital admission.",admission_advice,train
+"HOSPITAL BILL
+Patient Name: Sara Khan
+Claim Reference: CLM0060
+Hospital: Silverline Hospital
+Room Charges: INR 22500
+Consultation Charges: INR 4000
+Medicine Charges: INR 6500
+Total Amount: INR 33000
+Payment Status: Partially Paid",hospital_bill,train
+"INPATIENT BILLING SUMMARY
+Patient Name Sara Khan
+Hospital Name: Metro Health Centre
+Bill Reference: CLM0487
+Room and Nursing: INR 8500
+Medical Services: INR 3500
+Drugs and Supplies: INR 9500
+Total Invoice Value: INR 21500
+Payment: Partially Paid",hospital_bill,test
+TAX INVOICE - HOSPITAL SERVICES Customer Name: Sara Khan Bill Number: CLM0223 Hospital Name: Silverline Hospital Inpatient Room: INR 5000 Medical Consultation: INR 5500 Pharmacy Expenses: INR 8500 Net Bill Amount: INR 19000,hospital_bill,train
+"DISCHARGE SUMMARY
+Patient Name: Ishaan Gupta
+Claim Reference: CLM0103
+Hospital: Green Valley Hospital
+Date of Admission: 30/08/2026
+Date of Discharge: 08/09/2026
+Final Diagnosis: Dehydration
+Treatment Provided: Diagnostic tests and medical management
+Discharge Status: Stable
+Consultant: Dr. Neha Kapoor",discharge_summary,train
+"HOSPITAL BILL
+Patient Name: Ananya Verma
+Claim Reference: CLM0537
+Hospital: National Medical Institute
+Room Charges: INR 25000
+Consultation Charges: INR 4000
+Medicine Charges: INR 1500
+Total Amount: INR 30500
+Payment Status: Paid",hospital_bill,train
+MEDICAL EXPENSE STATEMENT Patient: Aditi Joshi Claim ID: CLM0940 Healthcare Facility: National Medical Institute Accommodation: INR 18500 Professional Services: INR 2O00 Medical Supplies: INR 11000 Grand Total: INR 31500,hospital_bill,train
+INSURANCE CLAIM SUBMISSION FORM Policy Holder: Sara Khan Claim ID: CLM0064 Healthcare Provider: Green Valley Hospital Patient Relationship: Self Declaration by Insured: Details submitted are true to my knowledge. Signature: SIMULATED SIGNATURE,signed_claim_form,train
+ADMISSION INTIMATION Insured Person Reyansh Shah Claim ID: CLM0449 Hospital Name: Hopewell Hospital Admission Date: 27/01/2026 Treatment Category: Inpatient Ward: General Medicine This document confirms the patient's hospital admission.,admission_advice,train
+HOSPITAL ADMISSION RECORD Patient: Kabir Mehta Case ID: CLM0928 Facility: Green Valley Hospital Admission Details: The above patient has been registered for inpatient care beginning 19/09/2026. Initial Assessment: Acute abdominal pain Responsible Physician: Dr. Neha Kapoor,admission_advice,train
+FINAL INVOICE Billed To Aditi Joshi Invoice Reference: CLM0321 Provider: National Medical Institute Bed and Nursing Charges: INR 15500 Doctor Fees: INR 6000 Pharmacy: INR 12000 Amount Payable: INR 33500,hospital_bill,train
+"MEDICAL CLAIM FORM
+Patient Name Arjun Malhotra
+Claim Reference Number: CLM0591
+Hospital: Metro Health Centre
+Requested Benefit: Hospitalization Expenses
+Authorization: I authorize processing of this claim.
+Signed By: Arjun Malhotra
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+"NOTICE OF INPATIENT REGISTRATION
+Patient Details: Diya Iyer
+Provider: Green Valley Hospital
+Authorization Reference: CLM0788
+Registered On: 03/02/2026
+Admission Reason: Urinary tract infection
+The patient has been accepted for inpatient care.",admission_advice,validation
+"SUMMARY OF PATIENT CARE
+Patient: Diya Iyer
+Provider: National Medical Institute
+Case Reference: CLM0958
+Inpatient Period: 20/09/2026 - 25/09/2026
+Medical Assessment: Dehydration
+Care Administered: Intravenous fluids and medication
+Disposition: Discharged",discharge_summary,validation
+"ADMISSION INTIMATION
+Insured Person: Riya Patel
+Claim ID: CLM0722
+Hospital Name: Metro Health Centre
+Admission Date: 31/05/2026
+Treatment Category: Inpatient
+Ward: Emergency Medicine
+This document confirms the patient's hospital admission.",admission_advice,train
+COMPLETED CLAIM APPLICATION Insured Person: Kabir Mehta Claim Reference: CLM0460 Hospital Details: Silverline Hospital Claim Type: Hospitalization Expenses Declaration: I certify that the attached details are correct. Signature of Insured: S1MULATED SIGNATURE,signed_claim_form,train
+"DISCHARGE NOTE
+Patient Details: Aarav Sharma
+Claim 1D: CLM0778
+Hospital: City Care Medical Centre
+Diagnosis: Urinary tract infection
+Treatment Course: Diagnostic tests and medical management
+Discharged On: 11/10/2026
+Discharge Condition: Stable
+Follow-up Instructions: Attend the outpatient department",discharge_summary,train
+"INPATIENT ADMISSION NOTICE
+This is to inform that Riya Patel was admitted to Metro Health Centre.
+Reference Number: CLM0253
+Admission Date: 04/02/2026
+Reason for Admission: Acute respiratory infection
+Consultant: Dr. Karan Rao
+Department: General Medicine",admission_advice,train
+"MEDICAL EXPENSE STATEMENT
+Patient: Meera Nair
+Claim ID: CLM0278
+Healthcare Facility: National Medical Institute
+Accommodation: INR 13500
+Professional Services: INR 5500
+Medical Supplies: INR 11000
+Grand Total: INR 30000",hospital_bill,train
+MEDICAL EXPENSE STATEMENT Patient: Aditi Joshi Claim ID: CLM0785 Healthcare Facility: Green Valley Hospital Accommodation: INR 11000 Professional Services: INR 5000 Medical Supplies: INR 11500 Grand Total: INR 27500,hospital_bill,train
+HEALTH INSURANCE CLAIM FORM Insured Patient Name Diya Iyer Claim Number: CLM0042 Hospital Name: Silverline Hospital Type of Claim: Inpatient Treatment Bank and Policy Details: Provided separately Declaration: I confirm that the information provided is accurate. Signature of Claimant: SIMULATED SIGNATURE,signed_claim_form,train
+"INPATIENT BILLING SUMMARY
+Patient Name Reyansh Shah
+Hospital Name: City Care Medical Centre
+Bill Reference: CLM0847
+Room and Nursing: INR 10000
+Medical Services: INR 5000
+Drugs and Supplies: INR 6000
+Total Invoice Value: INR 21000
+Payment: Paid",hospital_bill,test
+INPATIENT REGISTRATION SLIP Patient: Meera Nair Facility: Hopewell Hospital Case Reference: CLM0278 Admission Time: 12/05/2026 Current Status: Patient admitted Assig ned Department: General Medicine,admission_advice,test
+"HOSPITAL BILL
+Patient Name: Ishaan Gupta
+Claim Reference: CLM0136
+Hospital: Hopewell Hospital
+Room Charges: INR 21000
+Consultation Charges: INR 1500
+Medicine Charges: INR 5000
+Total Amount: INR 27500
+Payment Status: Pending",hospital_bill,train
+INPATIENT BILLING SUMMARY Patient Name: Ananya Verma Hospital Name: Metro Health Centre Bill Reference: CLM0962 Room and Nursing: INR 18500 Medical Services: INR 2500 Drugs and Supplies: 1NR 2000 Total Invoice Value: INR 23000 Payment: Pending,hospital_bill,test
+MEDICAL CLAIM FORM Patient Name: Aarav Sharma Claim Reference Number: CLM0697 Hospital: Hopewell Hospital Requested Benefit: Medical Reimbursement Authorization: I authorize processing of this claim. Signed By: Aarav Sharma Signature: SIMULATED SIGNATURE,signed_claim_form,train
+SIGNED MEDICAL INSURANCE FORM Applicant Name: Diya Iyer Claim Identifier: CLM0376 Healthcare Institution: Hopewell Hospital Claim Purpose: Hospitalization Expenses I certify the information in this application is correct. Applicant Authorization: SIMULATED SIGNATURE,signed_claim_form,test
+"FINAL INPATIENT CARE REPORT
+Patient Name: Diya Iyer
+Hospital: Metro Health Centre
+Claim Reference: CLM0557
+Principal Diagnosis: Community acquired pneumonia
+Treatment Administered: Diagnostic tests and medical management
+Date of Admission: 27/07/2026
+Date of Release: O6/08/2026
+Status on Release: Stable",discharge_summary,test
+DISCHARGE SUMMARY Patient Name: Arjun Malhotra Claim Reference: CLM0178 Hospital: Metro Health Centre Date of Admission: 22/09/2026 Date of Discharge: 02/10/2026 Final Diagnosis: Viral fever Treatment Provided: Intravenous fluids and medication Discharge Status: Stable Consultant: Dr. Priya Mehta,discharge_summary,train
+MEDICAL CLAIM FORM Patient Name Sara Khan Claim Reference Number: CLM0392 Hospital: Hopewell Hospital Requested Benefit: Cashless Hospitalization Authorization: I authorize processing of this claim. Signed By: Sara Khan Signature: SIMULATED SIGNATURE,signed_claim_form,train
+"MEDICAL CLAIM FORM
+Patient Name Ishaan Gupta
+Claim Reference Number: CLM0378
+Hospital: City Care Medical Centre
+Requested Benefit: Medical Reimbursement
+Authorization: I authorize processing of this claim.
+Signed By: Ishaan Gupta
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+"HOSPITALIZATION ADMISSION LETTER
+To Whom It May Concern,
+This confirms the admission of Kabir Mehta at National Medical Institute.
+Claim Reference: CLM0520
+Date of Entry: 13/02/2026
+Unit: General Surgery
+Attending Consultant: Dr. Karan Rao",admission_advice,validation
+HOSPITAL BILL Patient Name: Arjun Malhotra Claim Reference: CLM0406 Hospital: Green Valley Hospital Room Charges: INR 6000 Consultation Charges: INR 2500 Medicine Charges: INR 9000 Total Amount: INR 17500 Payment Status: Pending,hospital_bill,train
+"REIMBURSEMENT CLAIM APPLICATION
+Insured Member: Reyansh Shah
+Reference Number: CLM0754
+Hospital Attended: National Medical Institute
+Benefit Requested: Cashless Hospitalization
+Declaration of Claimant: I request payment under my policy.
+Signature of Applicant: SIMULATED SIGNATURE",signed_claim_form,validation
+ITEMIZED HOSPITAL INVOICE Account Holder: Ishaan Gupta Billing Reference: CLM0181 Medical Provider: Green Valley Hospital Accommodation Charges: INR 9500 Clinical Services: INR 6000 Pharmacy Expenses: INR 8500 Invoice Total: INR 24000 Status: Pending,hospital_bill,validation
+"DISCHARGE SUMMARY
+Patient Name: Aarav Sharma
+Claim Reference: CLM0098
+Hospital: City Care Medical Centre
+Date of Admission: 24/09/2026
+Date of Discharge: 01/10/2026
+Final Diagnosis: Viral fever
+Treatment Provided: Diagnostic tests and medical management
+Discharge Status: Stable
+Consultant: Dr. Karan Rao",discharge_summary,train
+"HOSPITALIZATION ADMISSION LETTER
+To Whom It May Concern,
+This confirms the admission of Aarav Sharma at City Care Medical Centre.
+Claim Reference: CLM0034
+Date of Entry: 04/02/2026
+Unit: General Surgery
+Attending Consultant: Dr. Karan Rao",admission_advice,validation
+"DISCHARGE NOTE
+Patient Details: Reyansh Shah
+Claim ID: CLM0457
+Hospital: Hopewell Hospital
+Diagnosis: Viral fever
+Treatment Course: Medication and clinical observation
+Discharged On: 05/04/2026
+Discharge Condition: Stable
+Follow-up Instructions: Follow up with the treating consultant",discharge_summary,train
+MEDICAL CLAIM FORM Patient Name: Kabir Mehta Claim Reference Number: CLM0055 Hospital: Sunrise Multispeciality Hospital Requested Benefit: Cashless Hospitaliza tion Authorization: I authorize processing of this claim. Signed By: Kabir Mehta Signature: SIMULATED S1GNATURE,signed_claim_form,train
+"ADMISSION ADVICE
+Patient Name: Aarav Sharma
+Claim Reference: CLM0850
+Hospital: Silverline Hospital
+Date of Admission: 20/06/2026
+Department: Cardiology
+Reason for Admission: Dehydration
+The patient has been admitted for inpatient treatment.
+Attending Doctor: Dr. Amit Shah",admission_advice,train
+SIGNED MEDICAL INSURANCE FORM Applicant Name: Aditi Joshi Claim Identifier: CLM0402 Healthcare Institution: Silverline Hospital Claim Purpose: Hospitalization Expenses I certify the information in this application is correct. Applicant Authorization: SIMULATED SIGNATURE,signed_claim_form,test
+"PATIENT INSURANCE DECLARATION
+Name of Policy Holder: Reyansh Shah
+Claim Reference: CLM0172
+Treatment Provider: National Medical Institute
+Requested Coverage: Inpatient Treatment
+I declare that the attached claim information is correct.
+Authorized Signature: SIMULATED SIGNATURE",signed_claim_form,validation
+"CLAIM REIMBURSEMENT APPLICATION
+Name of Insured: Riya Patel
+Reference ID: CLM0046
+Name of Hospital: Sunrise Multispeciality Hospital
+Claim Category: Inpatient Treatment
+Patient Declaration: I request reimbursement of eligible expenses.
+Claimant Signature: SIMULATED SIGNATURE
+Date of Submission: 29/09/2026",signed_claim_form,train
+PATIENT DISCHARGE REPORT Patient: Sara Khan Case Number: CLM0771 Facility: Metro Health Centre Final Diagnosis: Gastrointestinal infection Hospital Stay: 08/08/2026 to 15/08/2026 Treatment Course: Supportive care and observation Condition at Discharge: Stable Follow-up: Follow up with the treating consultant,discharge_summary,train
+PATIENT ADMISSION C0NFIRMATION Name of Patient: Riya Patel Hospital: Sunrise Multispeciality Hospital Reference ID: CLM0499 Date: 09/08/2026 Status: Admitted Medical Department: Cardiology The patient is registered for hospital treatment.,admission_advice,train
+"FINAL DISCHARGE RECORD
+Patient Name: Ishaan Gupta
+Hospital: City Care Medical Centre
+Claim Number: CLM0587
+Admission Date: 23/08/2026
+Discharge Date: 02/09/2026
+Diagnosis at Discharge: Gastrointestinal infection
+Outcome: Discharged after completion of treatment.
+Physician: Dr. Amit Shah",discharge_summary,train
+"HOSPITALIZATION ADMISSION LETTER To Whom It May Concern, This confirms the admission of Vivaan Rao at Hopewell Hospital. Claim Reference: CLM0343 Date of Entry: 23/06/2026 Unit: General Medicine Attending Consultant: Dr. Anjali Verma",admission_advice,validation
+"MEDICAL CLAIM FORM
+Patient Name: Sara Khan
+Claim Reference Number: CLM0209
+Hospital: Hopewell Hospital
+Requested Benefit: Medical Reimbursement
+Authorization: I authorize processing of this claim.
+Signed By: Sara Khan
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+"DISCHARGE SUMMARY
+Patient Name: Aarav Sharma
+Claim Reference: CLMO697
+Hospital: City Care Medical Centre
+Date of Admission: 02/09/2026
+Date of Discharge: 04/09/2026
+Final Diagnosis: Community acquired pneumonia
+Treatment Provided: Medication and clinical observation
+Discharge Status: Stable
+Consultant: Dr. Karan Rao",discharge_summary,train
+"INPATIENT BILLING SUMMARY
+Patient Name: Kabir Mehta
+Hospital Name: Green Valley Hospital
+Bill Reference: CLM0629
+Room and Nursing: INR 21000
+Medical Services: INR 2500
+Drugs and Supplies: INR 4000
+Total Invoice Value: INR 27500
+Payment: Paid",hospital_bill,test
+COMPLETED CLAIM APPLICATION Insured Person: Arjun Malhotra Claim Reference: CLM0299 Hospital Details: Silverline Hospital Claim Type: Medical Reimbursement Declaration: I certify that the attached details are correct. Signature of Insured: SIMULATED SIGNATURE,signed_claim_form,train
+INPATIENT REGISTRATION SLIP Patient: Reyansh Shah Facility: National Medical Institute Case Reference: CLM0472 Admission Time: 06/10/2026 Current Status: Patient admitted Assigned Department: Orthopaedics,admission_advice,test
+"HOSPITALIZATION ADMISSION LETTER To Whom It May Concern, This confirms the admission of Kabir Mehta at National Medical Institute. Claim Reference: CLM0446 Date of Entry: 16/08/2026 Unit: General Medicine Attending Consultant: Dr. Karan Rao",admission_advice,validation
+"CLAIM REIMBURSEMENT APPLICATION
+Name of 1nsured: Aarav Sharma
+Reference ID: CLM0805
+Name of Hospital: Sunrise Multispeciality Hospital
+Claim Category: Cashless Hospitalization
+Patient Declaration: I request reimbursement of eligible expenses.
+Claimant Signature: SIMULATED SIGNATURE
+Date of Submission: 11/10/2026",signed_claim_form,train
+"MEDICAL CLAIM FORM
+Patient Name: Diya Iyer
+Claim Reference Number: CLM0009
+Hospital: City Care Medical Centre
+Requested Benefit: Hospitalization Expenses
+Authorization: I authorize processing of this claim.
+Signed By: Diya Iyer
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+"PATIENT DISCHARGE REPORT
+Patient: Riya Patel
+Case Number: CLM0284
+Facility: Metro Health Centre
+Final Diagnosis: Gastrointestinal infection
+Hospital Stay: 16/07/2026 to 22/07/2026
+Treatment Course: Intravenous fluids and medication
+Condition at Discharge: Stable
+Follow-up: Follow up with the treating consultant",discharge_summary,train
+"INPATIENT REGISTRATION SLIP
+Patient Aditi Joshi
+Facility: Green Valley Hospital
+Case Reference: CLMO047
+Admission Time: 22/07/2026
+Current Status: Patient admitted
+Assigned Department: Emergency Medicine",admission_advice,test
+"INPATIENT BILLING SUMMARY
+Patient Name: Aditi Joshi
+Hospital Name: Silverline Hospital
+Bill Reference: CLM0581
+Room and Nursing: INR 23500
+Medical Services: INR 3500
+Drugs and Supplies: INR 5000
+Total Invoice Value: INR 32000
+Payment: Paid",hospital_bill,test
+FINAL DISCHARGE RECORD Patient Name: Kabir Mehta Hospital: Sunrise Multispeciality Hospital Claim Number: CLM0988 Admission Date: 14/06/2026 Discharge Date: 24/06/2026 Diagnosis at Discharge: Urinary tract infection Outcome: Discharged after completion of treatment. Physician: Dr. Neha Kapoor,discharge_summary,train
+"HEALTH INSURANCE CLAIM FORM
+Insured Patient Name: Ananya Verma
+Claim Number: CLM0417
+Hospital Name: Sunrise Multispeciality Hospital
+Type of Claim: Hospitalization Expenses
+Bank and Policy Details: Provided separately
+Declaration: I confirm that the information provided is accurate.
+Signature of Claimant: SIMULATED SIGNATURE",signed_claim_form,train
+"INPATIENT BILLING SUMMARY
+Patient Name: Ananya Verma
+Hospital Name: Green Valley Hospital
+Bill Reference: CLM0122
+Room and Nursing: INR 21000
+Medical Services: INR 5500
+Drugs and Supplies: INR 1500
+Total Invoice Value: INR 28000
+Payment: Pending",hospital_bill,test
+"FINAL INPATIENT CARE REPORT
+Patient Name: Kabir Mehta
+Hospital: Metro Health Centre
+Claim Reference: CLM0899
+Principal Diagnosis: Gastrointestinal infection
+Treatment Administered: Medication and clinical observation
+Date of Admission: 19/02/2026
+Date of Release: 22/02/2026
+Status on Release: Stable",discharge_summary,test
+"TAX INVOICE - HOSPITAL SERVICES
+Customer Name: Aditi Joshi
+Bill Number: CLM0549
+Hospital Name: Green Valley Hospital
+Inpatient Room: INR 23000
+Medical Consultation: INR 6000
+Pharmacy Expenses: INR 6000
+Net Bill Amount: INR 35000",hospital_bill,train
+"PATIENT INSURANCE DECLARATION
+Name of Policy Holder: Aarav Sharma
+Claim Reference: CLM0535
+Treatment Provider: Sunrise Multispeciality Hospital
+Requested Coverage: Hospitalization Expenses
+I declare that the attached claim information is correct.
+Authorized Signature: SIMULATED SIGNATURE",signed_claim_form,validation
+INPATIENT REGISTRATION SLIP Patient: Kabir Mehta Facility: Sunrise Multispeciality Hospital Case Reference: CLM0598 Admission Time: 24/09/2026 Current Status: Patient admitted Assigned Department: Neurology,admission_advice,test
+"NOTICE OF INPATIENT REGISTRATION
+Patient Details Meera Nair
+Provider: City Care Medical Centre
+Authorization Reference: CLM0141
+Registered On: 15/01/2026
+Admission Reason: Acute respiratory infection
+The patient has been accepted for inpatient care.",admission_advice,validation
+"ADMISSION INTIMATION
+Insured Person: Diya Iyer
+Claim ID: CLM0221
+Hospital Name: Sunrise Multispeciality Hospital
+Admission Date: 04/01/2026
+Treatment Category: Inpatient
+Ward: General Medicine
+This document confirms the patient's hospital admission.",admission_advice,train
+"COMPLETED CLAIM APPLICATION
+Insured Person: Vivaan Rao
+Claim Reference: CLM0546
+Hospital Details: National Medical Institute
+Claim Type: Hospitalization Expenses
+Declaration: I certify that the attached details are correct.
+Signature of Insured: SIMULATED SIGNATURE",signed_claim_form,train
+INPATIENT REGISTRATION SLIP Patient Riya Patel Facility: National Medical Institute Case Reference: CLM0958 Admission Time: 12/03/2026 Current Status: Patient admitted Assigned Department: Emergency Medicine,admission_advice,test
+"SUMMARY OF HOSPITALIZATI0N
+Name: Diya Iyer
+Reference ID: CLM0633
+Hospital Name: Hopewell Hospital
+Admission: 20/07/2026
+Discharge: 30/07/2026
+Clinical Findings: Viral fever
+Advice: Attend the outpatient department
+Treating Doctor: Dr. Priya Mehta",discharge_summary,train
+"CLAIM REIMBURSEMENT APPLICATION
+Name of Insured: Riya Patel
+Reference ID: CLM0877
+Name of Hospital: Metro Health Centre
+Claim Category: Cashless Hospitalization
+Patient Declaration: I request reimbursement of eligible expenses.
+Claimant Signature: SIMULATED SIGNATURE
+Date of Submission: 07/03/2026",signed_claim_form,train
+"SIGNED MEDICAL INSURANCE FORM
+Applicant Name Aditi Joshi
+Claim Identifier: CLM0131
+Healthcare Institution: National Medical Institute
+Claim Purpose: Medical Reimbursement
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+FINAL INVOICE Billed To Meera Nair Invoice Reference: CLM0430 Provider: Metro Health Centre Bed and Nursing Charges: INR 9500 Doctor Fees: INR 2000 Pharmacy: INR 12000 Amount Payable: INR 23500,hospital_bill,train
+STATEMENT OF MEDICAL CHARGES Patient: Aditi Joshi Facility: Hopewell Hospital Account Number: CLM0311 Ward Charges: INR 24000 Professional Fees: INR 1500 Medication Cost: INR 3000 Amount Due: INR 28500,hospital_bill,validation
+"PATIENT BILLING RECORD
+Name: Kabir Mehta
+Reference Number: CLM0634
+Hospital: Sunrise Multispeciality Hospital
+Treatment Charges: INR 4500
+Room Charges: INR 10000
+Supplies and Medicines: INR 2000
+Total Bill: INR 16500
+Balance Due: INR 0",hospital_bill,train
+SUMMARY OF PATIENT CARE Patient: Aditi Joshi Provider: Metro Health Centre Case Reference: CLM0173 Inpatient Period: 20/03/2026 - 30/03/2026 Medical Assessment: Acute respiratory infection Care Administered: Antibiotic therapy Disposition: Discharged,discharge_summary,validation
+"NOTICE OF INPATIENT REGISTRATION
+Patient Details Diya Iyer
+Provider: National Medical Institute
+Authorization Reference: CLM0834
+Registered On: 20/06/2026
+Admission Reason: Viral fever
+The patient has been accepted for inpatient care.",admission_advice,validation
+"ITEMIZED HOSPITAL INVOICE
+Account Holder: Diya Iyer
+Billing Reference: CLM0606
+Medical Provider: Metro Health Centre
+Accommodation Charges: INR 18000
+Clinical Services: INR 5000
+Pharmacy Expenses: INR 8500
+Invoice Total: INR 31500
+Status: Pending",hospital_bill,validation
+"TAX INVOICE - HOSPITAL SERVICES
+Customer Name: Ishaan Gupta
+Bill Number: CLM0303
+Hospital Name: Silverline Hospital
+Inpatient Room: INR 7000
+Medical Consultation: INR 5000
+Pharmacy Expenses: INR 3000
+Net Bill Amount: INR 15000",hospital_bill,train
+"TAX INVOICE - HOSPITAL SERVICES
+Customer Name: Diya Iyer
+Bill Number: CLM0152
+Hospital Name: Metro Health Centre
+Inpatient Room: INR 12000
+Medical Consultation: INR 4000
+Pharmacy Expenses: INR 5500
+Net Bill Amount: INR 21500",hospital_bill,train
+TAX INVOICE - HOSPITAL SERVICES Customer Name: Reyansh Shah Bill Number: CLM0318 Hospital Name: National Medical Institute Inpatient Room: INR 21500 Medical Consultation: INR 60O0 Pharmacy Expenses: INR 11000 Net Bill Amount: INR 38500,hospital_bill,train
+"SUMMARY OF PATIENT CARE
+Patient: Riya Patel
+Provider: Hopewell Hospital
+Case Reference: CLM0013
+Inpatient Period: 14/08/2026 - 15/08/2026
+Medical Assessment: Dehydration
+Care Administered: Diagnostic tests and medical management
+Disposition: Discharged",discharge_summary,validation
+"MEDICAL CLAIM FORM
+Patient Name: Meera Nair
+Claim Reference Number: CLM0310
+Hospital: Metro Health Centre
+Requested Benefit: Cashless Hospitalization
+Authorization: I authorize processing of this claim.
+Signed By: Meera Nair
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+"INSURANCE CLAIM SUBMISSION FORM
+Policy Holder: Arjun Malhotra
+Claim ID: CLM0681
+Healthcare Provider: City Care Medical Centre
+Patient Relationship: Self
+Declaration by Insured: Details submitted are true to my knowledge.
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+"HOSPITAL BILL
+Patient Name: Kabir Mehta
+Claim Reference: CLM0684
+Hospital: City Care Medical Centre
+Room Charges: INR 16000
+Consultation Charges: INR 1000
+Medicine Charges: INR 3000
+Total Amount: INR 20000
+Payment Status: Paid",hospital_bill,train
+"INPATIENT ADMISSION NOTICE
+This is to inform that Diya Iyer was admitted to Metro Health Centre.
+Reference Number: CLM0216
+Admission Date: 04/06/2026
+Reason for Admission: Urinary tract infection
+Consultant: Dr. Rahul Nair
+Department: Neurology",admission_advice,train
+"REIMBURSEMENT CLAIM APPLICATION
+Insured Member Diya Iyer
+Reference Number: CLM0796
+Hospital Attended: Sunrise Multispeciality Hospital
+Benefit Requested: Hospitalization Expenses
+Declaration of Claimant: I request payment under my policy.
+Signature of Applicant: SIMULATED SIGNATURE",signed_claim_form,validation
+STATEMENT OF MEDICAL CHARGES Patient: Sara Khan Facility: Sunrise Multispeciality Hospital Account Number: CLM0706 Ward Charges: INR 9500 Professional Fees: INR 5500 Medication Cost: INR 8000 Amount Due: INR 23000,hospital_bill,validation
+"HEALTH INSURANCE CLAIM FORM
+Insured Patient Name: Riya Patel
+Claim Number: CLM0021
+Hospital Name: Hopewell Hospital
+Type of Claim: Cashless Hospitalization
+Bank and Policy Details: Provided separately
+Declaration: I confirm that the information provided is accurate.
+Signature of Claimant: SIMULATED SIGNATURE",signed_claim_form,train
+TAX INVOICE - HOSPITAL SERVICES Customer Name: Meera Nair Bill Number: CLM0830 Hospital Name: Hopewell Hospital Inpatient Room: INR 11500 Medical Consultation: INR 2000 Pharmacy Expenses: INR 10000 Net Bill Amount: INR 23500,hospital_bill,train
+"NOTICE OF INPATIENT REGISTRATION
+Patient Details: Ananya Verma
+Provider: Green Valley Hospital
+Authorization Reference: CLM0260
+Registered On: 11/06/2026
+Admission Reason: Acute respiratory infection
+The patient has been accepted for inpatient care.",admission_advice,validation
+"ADMISSION ADVICE
+Patient Name Vivaan Rao
+Claim Reference: CLM0460
+Hospital: National Medical Institute
+Date of Admission: 23/06/2026
+Department: Cardiology
+Reason for Admission: Viral fever
+The patient has been admitted for inpatient treatment.
+Attending Doctor: Dr. Karan Rao",admission_advice,train
+HEALTH INSURANCE CLAIM FORM Insured Patient Name: Kabir Mehta Claim Number: CLM0671 Hospital Name: Silverline Hospital Type of Claim: Medical Reimbursement Bank and Policy Details: Provided separately Declaration: I confirm that the information provided is accurate. Signature of Claimant: SIMULATED SIGNATURE,signed_claim_form,train
+"INSURANCE CLAIM SUBMISSION FORM
+Policy Holder: Ishaan Gupta
+Claim ID: CLM0358
+Healthcare Provider: City Care Medical Centre
+Patient Relationship: Self
+Declaration by Insured: Details submitted are true to my knowledge.
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+STATEMENT OF MEDICAL CHARGES Patient: Meera Nair Facility: City Care Medical Centre Account Number: CLM0125 Ward Charges: INR 22000 Professional Fees: INR 2000 Medication Cost: INR 9500 Amount Due: INR 33500,hospital_bill,validation
+FINAL INPATIENT CARE REPORT Patient Name: Kabir Mehta Hospital: Silverline Hospital Claim Reference: CLM0138 Principal Diagnosis: Acute abdominal pain Treatment Administered: Surgical treatment and monitoring Date of Admission: 18/03/2026 Date of Release: 26/03/2026 Status on Release: Stable,discharge_summary,test
+"HOSPITAL ADMISSION RECORD
+Patient: Sara Khan
+Case ID: CLM0030
+Facility: City Care Medical Centre
+Admission Details:
+The above patient has been registered for inpatient care
+beginning 26/08/2026.
+Initial Assessment: Community acquired pneumonia
+Responsible Physician: Dr. Rahul Nair",admission_advice,train
+"SUMMARY OF PATIENT CARE
+Patient: Reyansh Shah
+Provider: Green Valley Hospital
+Case Reference: CLM0366
+Inpatient Period: 09/05/2026 - 11/05/2026
+Medical Assessment: Viral fever
+Care Administered: Diagnostic tests and medical management
+Disposition: Discharged",discharge_summary,validation
+PATIENT ADMISSION CONFIRMATION Name of Patient: Ishaan Gupta Hospital: Silverline Hospital Reference ID: CLM0809 Date: 31/03/2026 Status: Admitted Medical Department: Orthopaedics The patient is registered for hospital treatment.,admission_advice,train
+FINAL INPATIENT CARE REPORT Patient Name Arjun Malhotra Hospital: Sunrise Multispeciality Hospital Claim Reference: CLM0499 Principal Diagnosis: Community acquired pneumonia Treatment Administered: Supportive care and observation Date of Admission: 12/07/2026 Date of Release: 16/07/2026 Status on Release: Stable,discharge_summary,test
+PATIENT DISCHARGE REPORT Patient: Reyansh Shah Case Number: CLM0010 Facility: City Care Medical Centre Final Diagnosis: Community acquired pneumonia Hospital Stay: 18/05/2026 to 29/05/2026 Treatment Course: Intravenous fluids and medication Condition at Discharge: Stable Follow-up: Continue prescribed medicines,discharge_summary,train
+"DISCHARGE NOTE
+Patient Details: Kabir Mehta
+Claim ID: CLM0641
+Hospital: Green Valley Hospital
+Diagnosis: Community acquired pneumonia
+Treatment Course: Intravenous fluids and medication
+Discharged 0n: 05/07/2026
+Discharge Condition: Stable
+Follow-up Instructions: Review after seven days",discharge_summary,train
+"FINAL INVOICE
+Billed To: Sara Khan
+Invoice Reference: CLM0724
+Provider: Green Valley Hospital
+Bed and Nursing Charges: INR 10000
+Doctor Fees: INR 1500
+Pharmacy: INR 2O00
+Amount Payable: INR 13500",hospital_bill,train
+INPATIENT BILLING SUMMARY Patient Name: Aditi Joshi Hospital Name: Hopewell Hospital Bill Reference: CLM0888 Room and Nursing: INR 7500 Medical Services: INR 3500 Drugs and Supplies: INR 10500 Total Invoice Value: INR 2I500 Payment: Partially Paid,hospital_bill,test
+TAX INVOICE - HOSPITAL SERVIC ES Customer Name: Vivaan Rao Bill Number: CLM0110 Hospital Name: Sunrise Multispeciality Hospital Inpatient Room: INR 25000 Medical Consultation: INR 3000 Pharmacy Expenses: INR 3000 Net Bill Amount: INR 31000,hospital_bill,train
+"CLAIM RE1MBURSEMENT APPLICATION
+Name of Insured: Sara Khan
+Reference ID: CLM0929
+Name of Hospital: Metro Health Centre
+Claim Category: Inpatient Treatment
+Patient Declaration: I request reimbursement of eligible expenses.
+Claimant Signature: SIMULATED SIGNATURE
+Date of Submission: 26/09/2026",signed_claim_form,train
+STATEMENT OF MEDICAL CHARGES Patient Reyansh Shah Facility: Hopewell Hos pital Account Number: CLM0544 Ward Charges: INR 7000 Professional Fees: INR 4000 Medication Cost: INR 12000 Amount Due: INR 23000,hospital_bill,validation
+"PATIENT ADMISSION CONFIRMATION
+Name of Patient: Arjun Malhotra
+Hospital: City Care Medical Centre
+Reference ID: CLM0866
+Date: 21/03/2026
+Status: Admitted
+Medical Department: Orthopaedics
+The patient is registered for hospital treatment.",admission_advice,train
+INPATIENT ADMISSION NOTICE This is to inform that Meera Nair was admitted to Hopewell Hospital. Reference Number: CLM0869 Admission Date: 05/02/2O26 Reason for Admission: Gastrointestinal infection Consultant: Dr. Anjali Verma Department: Orthopaedics,admission_advice,train
+PATIENT INSURANCE DECLARATION Name of Policy Holder: Aarav Sharma Claim Reference: CLM021O Treatment Provider: City Care Medical Centre Requested Coverage: Inpatient Treatment I declare that the attached claim information is correct. Authorized Signature: SIMULATED SIGNATURE,signed_claim_form,validation
+"FINAL INVOICE
+Billed To: Sara Khan
+Invoice Reference: CLM0575
+Provider: Metro Health Centre
+Bed and Nursing Charges: INR 17500
+Doctor Fees: INR 6000
+Pharmacy: INR 10000
+Amount Payable: INR 33500",hospital_bill,train
+"INPATIENT REGISTRATION SLIP
+Patient: Aditi Joshi
+Facility: National Medical Institute
+Case Reference: CLM0281
+Admission Time: 08/09/2026
+Current Status: Patient admitted
+Assigned Department: Neurology",admission_advice,test
+COMPLETED CLAIM APPLICATION Insured Person: Ishaan Gupta Claim Reference: CLM0776 Hospital Details: Green Valley Hospital Claim Type: Hospitalization Expenses Declaration: I certify that the attached details are correct. Signature of Insured: SIMULATED SIGNATURE,signed_claim_form,train
+"FINAL DISCHARGE RECORD
+Patient Name: Vivaan Rao
+Hospital: Hopewell Hospital
+Claim Number: CLM0157
+Admission Date: 25/07/2026
+Discharge Date: 27/07/2026
+Diagnosis at Discharge: Post-operative recovery
+Outcome: Discharged after completion of treatment.
+Physician: Dr. Karan Rao",discharge_summary,train
+"REIMBURSEMENT CLAIM APPLICATION
+Insured Member: Kabir Mehta
+Reference Number: CLM0175
+Hospital Attended: Hopewell Hospital
+Benefit Requested: Inpatient Treatment
+Declaration of Claimant: I request payment under my policy.
+Signature of Applicant: SIMULATED SIGNATURE",signed_claim_form,validation
+REIMBURSEMENT CLAIM APPLICATION Insured Member: Aarav Sharma Reference Number: CLM0929 Hos pital Attended: City Care Medical Centre Benefit Requested: Hospitalization Expenses Declaration of Claimant: 1 request payment under my policy. Signature of Applicant: SIMULATED SIGNATURE,signed_claim_form,validation
+PATIENT BILLING RECORD Name Reyansh Shah Reference Number: CLM0994 Hospital: National Medical Institute Treatment Charges: INR 5500 Room Charges: INR 12500 Supplies and Medicines: INR 3000 Total Bill: INR 21000 Balance Due: INR 0,hospital_bill,train
+"ADMISSION INT1MATION
+Insured Person Riya Patel
+Claim ID: CLM0349
+Hospital Name: Silverline Hospital
+Admission Date: 07/01/2026
+Treatment Category: Inpatient
+Ward: Orthopaedics
+This document confirms the patient's hospital admission.",admission_advice,train
+PATIENT ADMISSION CONFIRMATION Name of Patient Riya Patel Hospital: City Care Medical Centre Reference ID: CLM0721 Date: 28/05/2026 Status: Admitted Medical Department: Cardiology The patient is registered for hospital treatment.,admission_advice,train
+"FINAL INPATIENT CARE REPORT
+Patient Name: Ishaan Gupta
+Hospital: Sunrise Multispeciality Hospital
+Claim Reference: CLM0481
+Principal Diagnosis: Community acquired pneumonia
+Treatment Administered: Medication and clinical observation
+Date of Admission: 30/04/2026
+Date of Release: O1/05/2026
+Status on Release: Stable",discharge_summary,test
+"SIGNED MEDICAL INSURANCE FORM
+Applicant Name: Aditi Joshi
+Claim Identifier: CLM0188
+Healthcare Institution: Silverline Hospital
+Claim Purpose: Inpatient Treatment
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+"HOSPITALIZATION ADMISSION LETTER To Whom It May Concern, This confirms the admission of Ishaan Gupta at Metro Health Centre. Claim Reference: CLM0375 Date of Entry: 05/01/2026 Unit: General Medicine Attending Consultant: Dr. Anjali Verma",admission_advice,validation
+ITEMIZED HOSPITAL INVOICE Account Holder: Diya Iyer Billing Reference: CLM0436 Medical Provider: Green Valley Hospital Accommodation Charges: INR 6000 Clinical Services: INR 4500 Pharmacy Expenses: INR 9000 Invoice Total: INR 19500 Status: Partially Paid,hospital_bill,validation
+"HOSPITAL BILL
+Patient Name: Ananya Verma
+Claim Reference: CLM0824
+Hospital: Metro Health Centre
+Room Charges: INR 15000
+Consultation Charges: INR 3000
+Medicine Charges: INR 30O0
+Total Amount: INR 21000
+Payment Status: Paid",hospital_bill,train
+HOSPITAL ADMISSION RECORD Patient: Aarav Sharma Case ID: CLM0119 Facility: Green Valley Hospital Admission Details: The above patient has been registered for inpatient care beginning 11/08/2026. Initial Assessment: Urinary tract infection Responsible Physician: Dr. Karan Rao,admission_advice,train
+INSURANCE CLAIM SUBMISSION FORM Policy Holder: Riya Patel Claim ID: CLM0202 Healthcare Provider: Metro Health Centre Patient Relationship: Self Declaration by Insured: Details submitted are true to my knowledge. Signature: SIMULATED SIGNATURE,signed_claim_form,train
+"FINAL INVOICE
+Billed To: Vivaan Rao
+Invoice Reference: CLM0446
+Provider: National Medical Institute
+Bed and Nursing Charges: INR 15000
+Doctor Fees: INR 4000
+Pharmacy: INR 7000
+Amount Payable: INR 26000",hospital_bill,train
+"SIGNED MEDICAL INSURANCE FORM
+Applicant Name: Ishaan Gupta
+Claim Identifier: CLM0246
+Healthcare Institution: Hopewell Hospital
+Claim Purpose: Inpatient Treatment
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+"SIGNED MEDICAL INSURANCE FORM
+Applicant Name: Aarav Sharma
+Claim Identifier: CLM0204
+Healthcare Institution: City Care Medical Centre
+Claim Purpose: Hospitalization Expenses
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+INPATIENT ADMISSION NOTICE This is to inform that Reyansh Shah was admitted to Green Valley Hospital. Reference Number CLM0750 Admission Date: 21/01/2026 Reason for Admission: Viral fever Consultant: Dr. Rahul Nair Department: Orthopaedics,admission_advice,train
+"INPATIENT ADMISSION N0TICE
+This is to inform that Meera Nair was admitted to Hopewell Hospital.
+Reference Number: CLM0091
+Admission Date: 11/09/2026
+Reason for Admission: Acute abdominal pain
+Consultant: Dr. Priya Mehta
+Department: Orthopaedics",admission_advice,train
+SUMMARY OF HOSPITALIZATION Name: Sara Khan Reference ID: CLM0745 Hospital Name: Sunrise Multispeciality Hospital Admission: 07/04/2026 Discharge: 10/04/2026 Clinical Findings: Viral fever Advice: Review after seven days Treating Doctor: Dr. Neha Kapoor,discharge_summary,train
+HOSPITAL BILL Patient Name: Diya Iyer Claim Reference: CLM0294 Hospital: Silverline Hospital Room Charges: INR 11500 Consultation Charges: INR 3500 Medicine Charges: INR 4000 Total Amount: INR 19000 Payment Status: Pending,hospital_bill,train
+"INPATIENT REGISTRATION SLIP
+Patient: Arjun Malhotra
+Facility: Hopewell Hospital
+Case Reference: CLM0470
+Admission Time: 20/05/2O26
+Current Status: Patient admitted
+Assigned Department: Cardiology",admission_advice,test
+DISCHARGE NOTE Patient Details Kabir Mehta Claim ID: CLM0702 Hospital: City Care Medical Centre Diagnosis: Community acquired pneumonia Treatment Course: Surgical treatment and monitoring Discharged On: 25/07/2026 Discharge Condition: Stable Follow-up Instructions: Return for clinical assessment,discharge_summary,train
+ITEMIZED HOSPITAL INVOICE Account Holder: Riya Patel Billing Reference: CLM0600 Medical Provider: City Care Medical Centre Accommodation Charges: INR I7000 Clinical Services: INR 2500 Pharmacy Expenses: INR 2000 Invoice Total: INR 21500 Status: Paid,hospital_bill,validation
+"SIGNED MEDICAL INSURANCE FORM
+Applicant Name: Diya Iyer
+Claim Identifier: CLM0515
+Healthcare Institution: Sunrise Multispeciality Hospital
+Claim Purpose: Medical Reimbursement
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+"SUMMARY OF HOSPITALIZATION
+Name: Vivaan Rao
+Reference ID: CLM0836
+Hospital Name: Hopewell Hospital
+Admission: 18/07/2026
+Discharge: 30/07/2026
+Clinical Findings: Dehydration
+Advice: Continue prescribed medicines
+Treating Doctor: Dr. Karan Rao",discharge_summary,train
+"FINAL INVOICE
+Billed To: Kabir Mehta
+Invoice Reference: CLM0448
+Provider: Green Valley Hospital
+Bed and Nursing Charges: INR 5500
+Doctor Fees: INR 2000
+Pharmacy: INR 8500
+Amount Payable: INR 16000",hospital_bill,train
+"HOSPITAL BILL
+Patient Name: Aditi Joshi
+Claim Reference: CLM0658
+Hospital: Sunrise Multispeciality Hospital
+Room Charges: INR 20500
+Consultation Charges: INR 5500
+Medicine Charges: INR 2500
+Total Amount: INR 28500
+Payment Status: Partially Paid",hospital_bill,train
+"HOSPITAL BILL
+Patient Name: Riya Patel
+Claim Reference: CLM0611
+Hospital: Hopewell Hospital
+Room Charges: INR 18500
+Consultation Charges: INR 4000
+Medicine Charges: INR 3500
+Total Amount: INR 26000
+Payment Status: Partially Paid",hospital_bill,train
+"PATIENT DISCHARGE REPORT
+Patient: Ananya Verma
+Case Number: CLM0941
+Facility: Silverline Hospital
+Final Diagnosis: Acute abdominal pain
+Hospital Stay: I3/04/2026 to 14/04/2026
+Treatment Course: Diagnostic tests and medical management
+Condition at Discharge: Stable
+Follow-up: Attend the outpatient department",discharge_summary,train
+"FINAL DISCHARGE RECORD
+Patient Name: Reyansh Shah
+Hospital: Green Valley Hospital
+Claim Number: CLM0889
+Admission Date: 07/04/2026
+Discharge Date: 15/04/2026
+Diagnosis at Discharge: Acute abdominal pain
+Outcome: Discharged after completion of treatment.
+Physician: Dr. Karan Rao",discharge_summary,train
+"PATIENT DISCHARGE REPORT
+Patient: Kabir Mehta
+Case Number: CLM0718
+Facility: City Care Medical Centre
+Final Diagnosis: Acute abdominal pain
+Hospital Stay: 12/06/2026 to 24/06/2026
+Treatment Course: Supportive care and observation
+Condition at Discharge: Stable
+Follow-up: Continue prescribed medicines",discharge_summary,train
+ADMISSION ADVICE Patient Name: Diya Iyer Claim Reference: CLM0944 Hospital: National Medical Institute Date of Admission: 17/O5/2026 Department: General Medicine Reason for Admission: Acute abdominal pain The patient has been admitted for inpatient treatment. Attending Doctor: Dr. Rahul Nair,admission_advice,train
+"FINAL INVOICE
+Billed To Arjun Malhotra
+Invoice Reference: CLM0486
+Provider: Silverline Hospital
+Bed and Nursing Charges: INR 16500
+Doctor Fees: INR 2000
+Pharmacy: INR 7000
+Amount Payable: INR 25500",hospital_bill,train
+"ITEMIZED HOSPITAL INVOICE
+Account Holder: Ananya Verma
+Billing Reference: CLM0855
+Medical Provider: City Care Medical Centre
+Accommodation Charges: INR 22500
+Clinical Services: INR 4500
+Pharmacy Expenses: INR 1500
+Invoice Total: INR 28500
+Status: Paid",hospital_bill,validation
+"SIGNED MEDICAL INSURANCE FORM
+Applicant Name: Aditi Joshi
+Claim Identifier: CLM0386
+Healthcare Institution: National Medical Institute
+Claim Purpose: Inpatient Treatment
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+"STATEMENT OF MEDICAL CHARGES
+Patient: Sara Khan
+Facility: Metro Health Centre
+Account Number: CLM0136
+Ward Charges: INR 19000
+Professional Fees: INR 4500
+Medication Cost: INR 5500
+Amount Due: INR 29000",hospital_bill,validation
+"ADMISSION INTIMATION
+Insured Person: Aarav Sharma
+Claim ID: CLM0347
+Hospital Name: National Medical Institute
+Admission Date: 15/03/2026
+Treatment Category: Inpatient
+Ward: General Medicine
+This document confirms the patient's hospital admission.",admission_advice,train
+"ADMISSION INTIMATION
+Insured Person: Riya Patel
+Claim ID: CLM0687
+Hospital Name: Green Valley Hospital
+Admission Date: 01/05/2026
+Treatment Category: Inpatient
+Ward: Emergency Medicine
+This document confirms the patient's hospital admission.",admission_advice,train
+MEDICAL CLAIM FORM Patient Name: Aarav Sharma Claim Reference Number: CLM0238 Hospital: City Care Medical Centre Requested Benefit: Hospitalization Expenses Authorization: I authorize processing of this claim. Signed By: Aarav Sharma Signature: SIMULATED SIGNATURE,signed_claim_form,train
+"PATIENT DISCHARGE REPORT
+Patient: Riya Patel
+Case Number: CLM0406
+Facility: Silverline Hospital
+Final Diagnosis: Gastrointestinal infection
+Hospital Stay: 27/09/2026 to 03/10/2026
+Treatment Course: Antibiotic therapy
+Condition at Discharge: Stable
+Follow-up: Attend the outpatient department",discharge_summary,train
+CLAIM REIMBURSEMENT APPLICATION Name of Insured: Reyansh Shah Reference ID: CLM0789 Name of Hospital: City Care Medical Centre Claim Category: Cashless Hospitalization Patient Declaration: I request reimbursement of eligible expenses. Claimant Signature: SIMULATED SIGNATURE Date of Submission: 12/08/2026,signed_claim_form,train
+"HOSPITAL BILL
+Patient Name Ananya Verma
+Claim Reference: CLM0056
+Hospital: City Care Medical Centre
+Room Charges: INR 8000
+Consultation Charges: INR 1500
+Medicine Charges: INR 8500
+Total Amount: INR 18000
+Payment Status: Paid",hospital_bill,train
+SUMMARY OF HOSPITALIZATION Name Meera Nair Reference ID: CLM0105 Hospital Name: Green Valley Hospital Admission: 16/02/2026 Discharge: 17/02/2026 Clinical Findings: Viral fever Advice: Return for clinical assessment Treating Doctor: Dr. Rahul Nair,discharge_summary,train
+"NOTICE OF INPATIENT REGISTRATION
+Patient Details: Sara Khan
+Provider: National Medical Institute
+Authorization Reference: CLM04I6
+Registered On: 07/10/2026
+Admission Reason: Post-operative recovery
+The patient has been accepted for inpatient care.",admission_advice,validation
+"CLINICAL DISCHARGE DOCUMENT
+Name of Patient: Aditi Joshi
+Medical Facility: Silverline Hospital
+Reference: CLM0309
+Diagnosis: Gastrointestinal infection
+Procedures and Treatment: Antibiotic therapy
+Date Released: 13/02/2026
+Clinical Condition: Stable
+Next Review: Return for clinical assessment",discharge_summary,validation
+"ADMISSION INTIMATION
+Insured Person: Diya Iyer
+Claim ID: CLM0635
+Hospital Name: National Medical Institute
+Admission Date: 03/04/2026
+Treatment Category: Inpatient
+Ward: Neurology
+This document confirms the patient's hospital admission.",admission_advice,train
+"FINAL INVOICE
+Billed To: Kabir Mehta
+Invoice Reference: CLM0276
+Provider: Hopewell Hospital
+Bed and Nursing Charges: INR 20500
+Doctor Fees: INR 2500
+Pharmacy: INR 12000
+Amount Payable: INR 35000",hospital_bill,train
+MED1CAL CLAIM FORM Patient Name: Reyansh Shah Claim Reference Number: CLM0690 Hospital: National Medical Institute Requested Benefit: Cashless Hospitalization Authorization: I authorize processing of this claim. Signed By: Reyansh Shah Signature: SIMULATED SIGNATURE,signed_claim_form,train
+FINAL INPATIENT CARE REPORT Patient Name: Aditi Joshi Hospital: Hopewell Hospital Claim Reference: CLM0698 Principal Diagnosis: Community acquired pneumonia Treatment Administered: Supportive care and observation Date of Admission: 13/07/2026 Date of Release: 23/07/2026 Status on Release: Stable,discharge_summary,test
+SUMMARY OF HOSPITALIZATION Name: Aditi Joshi Reference ID: CLM0096 Hospital Name: Sunrise Multispeciality Hospital Admission: 21/08/2026 Discharge: 29/08/2026 Clinical Findings: Community acquired pneumonia Advice: Attend the outpatient department Treating Doctor: Dr. Anjali Verma,discharge_summary,train
+INPATIENT REGISTRATION SLIP Patient: Arjun Malhotra Facility: Sunrise Multispeciality Hospital Case Reference: CLM0332 Admi ssion Time: 14/02/2026 Current Status: Patient admitted Assigned Department: Orthopaedics,admission_advice,test
+PATIENT DISCHARGE REPORT Patient: Aarav Sharma Case Number: CLM0105 Facility: Hopewell Hospital Final Diagnosis: Viral fever Hospital Stay: 20/08/2026 to 29/08/2026 Treatment Course: Medication and clinical observation Condition at Discharge: Stable Follow-up: Review after seven days,discharge_summary,train
+"INSURANCE CLAIM SUBMISSION FORM
+Policy Holder Aditi Joshi
+Claim ID: CLM0844
+Healthcare Provider: Hopewell Hospital
+Patient Relationship: Self
+Declaration by Insured: Details submitted are true to my knowledge.
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+ITEMIZED HOSPITAL INVOICE Account Holder Vivaan Rao Billing Reference: CLM0664 Medical Provider: Sunrise Multispeciality Hospital Accommodation Charges: INR 6000 Clinical Services: INR 3500 Pharmacy Expenses: INR 6500 Invoice Total: INR 16000 Status: Paid,hospital_bill,validation
+INSURANCE CLAIM SUBMISSION FORM Policy Holder: Sara Khan Claim ID: CLM0089 Healthcare Provider: Silverline Hospital Patient Relationship: Self Declaration by Insured: Details submitted are true to my knowledge. Signature: SIMULATED SIGNATURE,signed_claim_form,train
+ADMISSION ADVICE Patient Name: Aarav Sharma Claim Reference: CLM0759 Hospital: National Medical Institute Date of Admission: 21/05/2O26 Department: General Surgery Reason for Admission: Gastrointestinal infection The patient has been admitted for inpatient treatment. Attending Doctor: Dr. Anjali Verma,admission_advice,train
+"ADMISSION INT1MATION
+Insured Person: Meera Nair
+Claim ID: CLM0337
+Hospital Name: Sunrise Multispeciality Hospital
+Admission Date: 27/04/2026
+Treatment Category: Inpatient
+Ward: Orthopaedics
+This document confirms the patient's hospital admission.",admission_advice,train
+"HOSPITALIZATION ADMISSION LETTER
+To Whom It May Concern,
+This confirms the admission of Diya Iyer at Metro Health Centre.
+Claim Reference: CLM0176
+Date of Entry: 17/02/2026
+Unit: General Medicine
+Attending Consultant: Dr. Neha Kapoor",admission_advice,validation
+INPATIENT ADMISSION NOTICE This is to inform that Reyansh Shah was admitted to Green Valley Hospital. Referen ce Number: CLM0839 Admission Date: 26/05/2026 Reason for Admission: Dehydration Consultant: Dr. Amit Shah Department: Orthopaedics,admission_advice,train
+"PATIENT DISCHARGE REPORT
+Patient: Sara Khan
+Case Number: CLM0312
+Facility: Sunrise Multispeciality Hospital
+Final Diagnosis: Acute respiratory infection
+Hospital Stay: 26/08/2026 to 31/08/2026
+Treatment Course: Intravenous fluids and medication
+Condition at Discharge: Stable
+Follow-up: Continue prescribed medicines",discharge_summary,train
+CLAIM REIMBURSEMENT APPLICATION Name of Insured Kabir Mehta Reference 1D: CLM0619 Name of Hospital: Silverline Hospital Claim Category: Hospitalization Expenses Patient Declaration: I request reimbursement of eligible expenses. Claimant Signature: SIMULATED SIGNATURE Date of Submission: 16/04/2026,signed_claim_form,train
+CLINICAL DISCHARGE DOCUMENT Name of Patient: Vivaan Rao Medical Facility: Green Valley Hospital Reference: CLM0599 Diagnosis: Post-operative recovery Procedures and Treatment: Medication and clinical observation Date Released: 13/08/2026 Clinical Condition: Stable Next Review: Return for clinical assessment,discharge_summary,validation
+INPATIENT BILLING SUMMARY Patient Name: Sara Khan Hospital Name: Metro Health Centre Bill Reference: CLM0606 Room and Nursing: INR 6500 Medical Services: INR 4000 Drugs and Supplies: INR 5000 Total Invoice Value: INR 15500 Payment: Partially Paid,hospital_bill,test
+"DISCHARGE SUMMARY
+Patient Name: Reyansh Shah
+Claim Reference: CLM0861
+Hospital: Sunrise Multispeciality Hospital
+Date of Admission: 05/10/2026
+Date of Discharge: 12/10/2026
+Final Diagnosis: Urinary tract infection
+Treatment Provided: Supportive care and observation
+Discharge Status: Stable
+Consultant: Dr. Amit Shah",discharge_summary,train
+PATIENT INSUR ANCE DECLARATION Name of Policy Holder: Reyansh Shah Claim Reference: CLM0455 Treatment Provider: Silverline Hospital Requested Coverage: Medical Reimbursement I declare that the attached claim information is correct. Authorized Signature: S1MULATED SIGNATURE,signed_claim_form,validation
+DISCHARGE NOTE Patient Details: Kabir Mehta Claim ID: CLM0858 Hospital: Silverline Hospital Diagnosis: Post-operative recovery Treatment Course: Diagnostic tests and medical management Discharged On: 10/09/2026 Discharge Condition: Stable Follow-up Instructions: Review after seven days,discharge_summary,train
+"DISCHARGE SUMMARY
+Patient Name: Reyansh Shah
+Claim Reference: CLM0164
+Hospital: Silverline Hospital
+Date of Admission: 26/03/2026
+Date of Discharge: 07/04/2026
+Final Diagnosis: Acute abdominal pain
+Treatment Provided: Supportive care and observation
+Discharge Status: Stable
+Consultant: Dr. Karan Rao",discharge_summary,train
+"SIGNED MEDICAL INSURANCE FORM
+Applicant Name Vivaan Rao
+Claim Identifier: CLM0701
+Healthcare Institution: Green Valley Hospital
+Claim Purpose: Inpatient Treatment
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+DISCHARGE SUMMARY Patient Name: Ishaan Gupta Claim Reference: CLMO947 Hospital: National Medical Institute Date of Admission: 12/08/2026 Date of Discharge: 24/08/2026 Final Diagnosis: Urinary tract infection Treatment Provided: Medication and clinical observation Discharge Status: Stable Consultant: Dr. Amit Shah,discharge_summary,train
+"INSURANCE CLAIM SUBMISSION FORM
+Policy Holder: Ananya Verma
+Claim ID: CLM0412
+Healthcare Provider: City Care Medical Centre
+Patient Relationship: Self
+Declaration by Insured: Details submitted are true to my knowledge.
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+"ITEMIZED HOSPITAL INVOICE
+Account Holder: Diya Iyer
+Billing Reference: CLM0429
+Medical Provider: City Care Medical Centre
+Accommodation Charges: INR 7500
+Clinical Services: INR 6000
+Pharmacy Expenses: INR 5500
+Invoice Total: INR 19000
+Status: Paid",hospital_bill,validation
+SIGNED MEDICAL INSURANCE FORM Applicant Name: Aditi Joshi Claim Identifier: CLM0877 Healthcare Institution: Green Valley Hospital Claim Purpose: Inpatient Treatment I certify the information in this application is correct. Applicant Authorization: SIMULATED SIGNATURE,signed_claim_form,test
+REIMBURSEMENT CLAIM APPLICATION Insured Member: Diya Iyer Reference Number: CLM0983 Hospital Attended: Hopewell Hospital Benefit Requested: Medical Reimbursement Declaration of Claimant: I request payment under my policy. Signature of Applicant: SIMULATED SIGNATURE,signed_claim_form,validation
+"ADMISSION INTIMATION
+Insured Person: Reyansh Shah
+Claim ID: CLM0621
+Hospital Name: Green Valley Hospital
+Admission Date: 16/10/2026
+Treatment Category: Inpatient
+Ward: Orthopaedics
+This document confirms the patient's hospital admission.",admission_advice,train
+"REIMBURSEMENT CLAIM APPL1CATION
+Insured Member: Arjun Malhotra
+Reference Number: CLM0191
+Hospital Attended: Hopewell Hospital
+Benefit Requested: Cashless Hospitalization
+Declaration of Claimant: I request payment under my policy.
+Signature of Applicant: SIMULATED SIGNATURE",signed_claim_form,validation
+MEDICAL CLAIM FORM Patient Name: Ananya Verma Claim Reference Number: CLM0337 Hospital: Hopewell Hospital Req uested Benefit: Cashless Hospitalization Authorization: I authorize processing of this claim. Signed By: Ananya Verma Signature: SIMULATED SIGNATURE,signed_claim_form,train
+"FINAL DISCHARGE RECORD
+Patient Name: Aditi Joshi
+Hospital: Metro Health Centre
+Claim Number: CLM0752
+Admission Date: 02/O7/2026
+Discharge Date: 06/07/2026
+Diagnosis at Discharge: Post-operative recovery
+Outcome: Discharged after completion of treatment.
+Physician: Dr. Rahul Nair",discharge_summary,train
+"1NPATIENT REGISTRATION SLIP
+Patient: Reyansh Shah
+Facility: National Medical Institute
+Case Reference: CLM0083
+Admission Time: 04/08/2026
+Current Status: Patient admitted
+Assigned Department: Orthopaedics",admission_advice,test
+INPAT1ENT REGISTRATION SLIP Patient: Vivaan Rao Facility: Metro Health Centre Case Reference: CLM0339 Admission Time: 29/09/2026 Current Status: Patient admitted Assigned Department: Orthopaedics,admission_advice,test
+COMPLETED CLAIM APPLICATION Insured Person Aarav Sharma Claim Reference: CLM0348 Hospital Details: Hopewell Hospital Claim Type: Medical Reimbursement Declaration: I certify that the attached details are correct. Signature of Insured: SIMULATED SIGNATURE,signed_claim_form,train
+"COMPLETED CLAIM APPLICATION
+Insured Person: 1shaan Gupta
+Claim Reference: CLM0894
+Hospital Details: Silverline Hospital
+Claim Type: Cashless Hospitalization
+Declaration: I certify that the attached details are correct.
+Signature of Insured: SIMULATED SIGNATURE",signed_claim_form,train
+PATIENT DISCHARGE REPORT Patient Sara Khan Case Number: CLM0768 Facility: Sunrise Multispeciality Hospital Final Diagnosis: Post-operative recovery Hospital Stay: 25/09/2026 to 04/10/2026 Treatment Course: Diagnostic tests and medical managem ent Condition at Discharge: Stable Follow-up: Review after seven days,discharge_summary,train
+"MEDICAL EXPENSE STATEMENT
+Patient Meera Nair
+Claim ID: CLM0017
+Healthcare Facility: Hopewell Hospital
+Accommodation: INR 5000
+Professional Services: INR 1000
+Medical Supplies: INR 5500
+Grand Total: INR 11500",hospital_bill,train
+"SUMMARY OF PATIENT CARE
+Patient Riya Patel
+Provider: Silverline Hospital
+Case Reference: CLM0791
+Inpatient Period: 01/08/2026 - 02/08/2026
+Medical Assessment: Community acquired pneumonia
+Care Administered: Surgical treatment and monitoring
+Disposition: Discharged",discharge_summary,validation
+DISC HARGE SUMMARY Patient Name: Kabir Mehta Claim Reference: CLM0393 Hospital: Metro Health Centre Date of Admission: 11/08/2026 Date of Discharge: 22/08/2026 Final Diagnosis: Acute respiratory infection Treatment Provided: Medication and clinical observation Discharge Status: Stable Consultant: Dr. Priya Mehta,discharge_summary,train
+SIGNED MEDICAL INSURANCE FORM Applicant Name: Vivaan Rao Claim Identifier: CLM0605 Healthcare Institution: Hopewell Hospital Claim Purpose: Hospitalization Expenses I certify the information in this application is correct. Applicant Authorization: SIMULATED SIGNATURE,signed_claim_form,test
+ADMISSION ADVICE Patient Name: Sara Khan Claim Reference: CLM0426 Hospital: Green Valley Hospital Date of Admission: 20/03/2026 Department: Cardiology Reason for Admission: Community acquired pneumonia The patient has been admitted for inpatient treatment. Attending Doctor: Dr. Rahul Nair,admission_advice,train
+"INPATIENT REGISTRATION SLIP
+Patient: Sara Khan
+Facility: Metro Health Centre
+Case Reference: CLM0823
+Admission Time: 25/06/2026
+Current Status: Patient admitted
+Assigned Department: General Surgery",admission_advice,test
+"MEDICAL EXPENSE STATEMENT
+Patient: Aarav Sharma
+Claim ID: CLM0488
+Healthcare Facility: National Medical Institute
+Accommodation: INR 6500
+Professional Services: INR 2000
+Medical Supplies: INR 8000
+Grand Total: INR 16500",hospital_bill,train
+"INPATIENT ADMISSION NOTICE
+This is to inform that Ananya Verma was admitted to Green Valley Hospital.
+Reference Number: CLM0226
+Admission Date: 23/06/2026
+Reason for Admission: Acute respiratory infection
+Consultant: Dr. Karan Rao
+Department: Emergency Medicine",admission_advice,train
+"CLINICAL DISCHARGE DOCUMENT
+Name of Patient: Reyansh Shah
+Medical Facility: Green Valley Hospital
+Reference: CLM0856
+Diagnosis: Gastrointestinal infection
+Procedures and Treatment: Intravenous fluids and medication
+Date Released: 29/04/2026
+Clinical Condition: Stable
+Next Review: Return for clinical assessment",discharge_summary,validation
+"HOSPITAL ADMISSION RECORD
+Patient: Diya Iyer
+Case ID: CLM0732
+Facility: Hopewell Hospital
+Admission Details:
+The above patient has been registered for inpatient care
+beginning 14/09/2026.
+Initial Assessment: Gastrointestinal infection
+Responsible Physician: Dr. Rahul Nair",admission_advice,train
+"NOTICE OF INPATIENT REGISTRATION
+Patient Details: Kabir Mehta
+Provider: Green Valley Hospital
+Authorization Reference: CLMO204
+Registered On: 21/07/2026
+Admission Reason: Urinary tract infection
+The patient has been accepted for inpatient care.",admission_advice,validation
+FINAL DISCHARGE RECORD Patient Name: Vivaan Rao Hospital: Hopewell Hospital Claim Number: CLM0651 Admission Date: 12/03/2026 Discharge Date: 22/03/2026 Diagnosis at Discharge: Viral fever Outcome: Discharged after completion of treatment. Physician: Dr. Priya Mehta,discharge_summary,train
+"INPATIENT ADMISSION NOTICE
+This is to inform that Ananya Verma was admitted to Silverline Hospital.
+Reference Number CLM0947
+Admission Date: 25/03/2026
+Reason for Admission: Acute abdominal pain
+Consultant: Dr. Anjali Verma
+Department: Emergency Medicine",admission_advice,train
+"CLINICAL DISCHARGE DOCUMENT
+Name of Patient: Riya Patel
+Medical Facility: Hopewell Hospital
+Reference: CLMO324
+Diagnosis: Gastrointestinal infection
+Procedures and Treatment: Surgical treatment and monitoring
+Date Released: 26/08/2026
+Clinical Condition: Stable
+Next Review: Review after seven days",discharge_summary,validation
+"SIGNED MEDICAL INSURANCE FORM
+Applicant Name: Vivaan Rao
+Claim Identifier: CLM0098
+Healthcare Institution: Green Valley Hospital
+Claim Purpose: Inpatient Treatment
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+"HOSPITAL ADMISSION RECORD
+Patient: Arjun Malhotra
+Case ID: CLM0745
+Facility: Metro Health Centre
+Admission Details:
+The above patient has been registered for inpatient care
+beginning 25/02/2026.
+Initial Assessment: Post-operative recovery
+Responsible Physician: Dr. Amit Shah",admission_advice,train
+INPATIENT REGISTRATION SLIP Patient: Arjun Malhotra Facility: Hopewell Hospital Case Reference: CLM0427 Admission Time: 25/O1/2026 Current Status: Patient admitted Assigned Department: Orthopaedics,admission_advice,test
+"HOSPITALIZATION ADMISSION LETTER
+To Whom It May Concern,
+This confirms the admission of Riya Patel at Metro Health Centre.
+Claim Reference: CLM0402
+Date of Entry: 14/03/2026
+Unit: Emergency Medicine
+Attending Consultant: Dr. Anjali Verma",admission_advice,validation
+FINAL INVOICE Billed To: Kabir Mehta Invoice Reference: CLM0065 Provider: Green Valley Hospital Bed and Nursing Charges: INR 23500 Doctor Fees: INR 2500 Pharmacy: INR 8500 Amount Payable: INR 34500,hospital_bill,train
+"HOSPITAL BILL
+Patient Name: Arjun Malhotra
+Claim Reference: CLM0958
+Hospital: City Care Medical Centre
+Room Charges: INR 20000
+Consultation Charges: INR 1500
+Medicine Charges: INR 10000
+Total Amount: INR 31500
+Payment Status: Partially Paid",hospital_bill,train
+"TAX INVOICE - HOSPITAL SERVICES
+Customer Name: Diya Iyer
+Bill Number: CLM0701
+Hospital Name: City Care Medical Centre
+Inpatient Room: INR 19500
+Medical Consultation: INR 1500
+Pharmacy Expenses: INR 8000
+Net Bill Amount: INR 29000",hospital_bill,train
+"NOTICE OF INPATIENT REGISTRATION
+Patient Details: Meera Nair
+Provider: Metro Health Centre
+Authorization Reference: CLM0511
+Registered On: 10/06/2O26
+Admission Reason: Post-operative recovery
+The patient has been accepted for inpatient care.",admission_advice,validation
+"NOTICE OF INPATIENT REGISTRATION
+Patient Details: Kabir Mehta
+Provider: Hopewell Hospital
+Authorization Reference: CLM0169
+Registered On: 15/09/2026
+Admission Reason: Viral fever
+The patient has been accepted for inpatient care.",admission_advice,validation
+"TAX INVOICE - HOSPITAL SERVICES
+Customer Name: Diya Iyer
+Bill Number: CLM0037
+Hospital Name: National Medical Institute
+Inpatient Room: INR 16000
+Medical Consultation: INR 3000
+Pharmacy Expenses: INR 5500
+Net Bill Amount: INR 24500",hospital_bill,train
+TAX INVOICE - HOSPITAL SERVICES Customer Name: Ishaan Gupta Bill Number: CLM0864 Hospit al Name: Silverline Hospital Inpatient Room: INR 19500 Medical Consultation: INR 1000 Pharmacy Expenses: INR 6000 Net Bill Amount: INR 26500,hospital_bill,train
+"REIMBURSEMENT CLAIM APPLICATION
+Insured Member: Riya Patel
+Reference Number: CLM0656
+Hospital Attended: Sunrise Multispeciality Hospital
+Benefit Requested: Cashless Hospitalization
+Declaration of Claimant: I request payment under my policy.
+Signature of Applicant: SIMULATED SIGNATURE",signed_claim_form,validation
+CLAIM REIMBURSEMENT APPLICATION Name of Insured: Arjun Malhotra Reference ID: CLM0755 Name of Hospital: Sunrise Multispeciality Hospital Claim Category: Inpatient Treatment Patient Declaration: I request reimbursement of eligible expenses. Claimant Signature: SIMULATED SIGNATURE Date of Submission: 19/10/2026,signed_claim_form,train
+"HOSPITAL ADMISSION RECORD
+Patient: Reyansh Shah
+Case ID: CLM0655
+Facility: Metro Health Centre
+Admission Details:
+The above patient has been registered for inpatient care
+beginning 22/03/2026.
+Initial Assessment: Urinary tract infection
+Responsible Physician: Dr. Rahul Nair",admission_advice,train
+INSURANCE CLAIM SUBMISSION FORM Policy Holder: Reyansh Shah Claim ID: CLM0317 Hea lthcare Provider: Green Valley Hospital Patient Relationship: Self Declaration by Insured: Details submitted are true to my knowledge. Signature: SIMULATED SIGNATURE,signed_claim_form,train
+HEALTH INSURANCE CLAIM FORM Insured Patient Name: Aarav Sharma Claim Number: CLM0827 Hospital Name: Sunrise Multispeciality Hospital Type of Claim: Medical Reimbursement Bank and Policy Details: Provided separately Declaration: I confirm that the information provided is accurate. Signature of Claimant: SIMULATED SIGNATURE,signed_claim_form,train
+INPATIENT BILLING SUMMARY Patient Name: Meera Nair Hospit al Name: Hopewell Hospital Bill Reference: CLM0111 Room and Nursing: INR 21000 Medical Services: INR 3000 Drugs and Supplies: INR 3000 Total Invoice Value: INR 27000 Payment: Paid,hospital_bill,test
+"FINAL INPATIENT CARE REPORT
+Patient Name: Vivaan Rao
+Hospital: Sunrise Multispeciality Hospital
+Claim Reference: CLM0096
+Principal Diagnosis: Urinary tract infection
+Treatment Administered: Diagnostic tests and medical management
+Date of Admission: 22/09/2026
+Date of Release: 01/10/2026
+Status on Release: Stable",discharge_summary,test
+"INPATIENT REGISTRATION SLIP
+Patient: Meera Nair
+Facility: Hopewell Hospital
+Case Reference: CLM0943
+Admission Time: 19/03/2026
+Current Status: Patient admitted
+Assigned Department: Emergency Medicine",admission_advice,test
+"REIMBURSEMENT CLAIM APPLICATION
+Insured Member: Reyansh Shah
+Reference Number: CLMO172
+Hospital Attended: City Care Medical Centre
+Benefit Requested: Hospitalization Expenses
+Declaration of Claimant: I request payment under my policy.
+Signature of Applicant: SIMULATED SIGNATURE",signed_claim_form,validation
+"COMPLETED CLAIM APPLICATION
+Insured Person: Ishaan Gupta
+Claim Reference: CLM0092
+Hospital Details: Green Valley Hospital
+Claim Type: Inpatient Treatment
+Declaration: I certify that the attached details are correct.
+Signature of Insured: SIMULATED SIGNATURE",signed_claim_form,train
+"ITEMIZED HOSPITAL INVOICE
+Account Holder: Ishaan Gupta
+Billing Reference: CLM0756
+Medical Provider: Hopewell Hospital
+Accommodation Charges: INR 20000
+Clinical Services: INR 3500
+Pharmacy Expenses: INR 7500
+Invoice Total: INR 31000
+Status: Paid",hospital_bill,validation
+"PATIENT INSURANCE DECLARATION
+Name of Policy Holder: Ananya Verma
+Claim Reference: CLM0520
+Treatment Provider: City Care Medical Centre
+Requested Coverage: Medical Reimbursement
+I declare that the attached claim information is correct.
+Authorized Signature: SIMULATED SIGNATURE",signed_claim_form,validation
+"INPATIENT BILLING SUMMARY
+Patient Name: Meera Nair
+Hospital Name: Green Valley Hospital
+Bill Reference: CLM0722
+Room and Nursing: INR 21500
+Medical Services: INR 2000
+Drugs and Supplies: INR 8500
+Total Invoice Value: INR 32000
+Payment: Paid",hospital_bill,test
+D1SCHARGE SUMMARY Patient Name: Sara Khan Claim Reference: CLM0429 Hospital: Metro Health Centre Date of Admission: 03/09/2026 Date of Discharge: 13/09/2026 Final Diagnosis: Acute respiratory infection Treatment Provided: Antibiotic therapy Discharge Status: Stable Consultant: Dr. Anjali Verma,discharge_summary,train
+INSURANCE CLAIM SUBMISSION FORM Policy Holder: Ananya Verma Claim ID: CLM0342 Healthcare Provider: Green Valley Hospital Patient Relationship: Self Declaration by Insured: Details submitted are true to my knowledge. Signature: SIMULATED SIGNATURE,signed_claim_form,train
+"INPATIENT ADMISSION NOTICE
+This is to inform that Sara Khan was admitted to Hopewell Hospital.
+Reference Number: CLM0924
+Admission Date: 01/05/2026
+Reason for Admission: Acute abdominal pain
+Consultant: Dr. Karan Rao
+Department: General Surgery",admission_advice,train
+"SIGNED MEDICAL INSURANCE FORM
+Applicant Name: Ishaan Gupta
+Claim Identifier: CLM0332
+Healthcare Institution: National Medical Institute
+Claim Purpose: Medical Reimbursement
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+"PATIENT DISCHARGE REPORT
+Patient: Ishaan Gupta
+Case Number: CLM0887
+Facility: Silverline Hospital
+Final Diagnosis: Gastrointestinal infection
+Hospital Stay: 17/01/2026 to 25/01/2026
+Treatment Course: Intravenous fluids and medication
+Condition at Discharge: Stable
+Follow-up: Follow up with the treating consultant",discharge_summary,train
+"PATIENT DISCHARGE REPORT
+Patient: Aditi Joshi
+Case Number: CLM0238
+Facility: National Medical Institute
+Final Diagnosis: Gastrointestinal infection
+Hospital Stay: 10/02/2026 to 19/02/2026
+Treatment Course: Antibiotic therapy
+Condition at Discharge: Stable
+Follow-up: Follow up with the treating consultant",discharge_summary,train
+"HOSPITALIZATION ADMISSION LETTER To Whom It May Concern, This confirms the admission of Vivaan Rao at City Care Medical Centre. Claim Reference: CLM0478 Date of Entry: 09/07/2026 Unit: General Surgery Attending Consultant: Dr. Neha Kapoor",admission_advice,validation
+"MEDICAL EXPENSE STATEMENT
+Patient: Sara Khan
+Claim ID: CLM0921
+Healthcare Facility: National Medical Institute
+Accommodation: INR 17000
+Professional Services: INR 3500
+Medical Supplies: INR 3000
+Grand Total: INR 23500",hospital_bill,train
+INPATIENT BILLING SUMMARY Patient Name: Sara Khan Hospital Name: Green Valley Hospital Bill Reference: CLM0755 Room and Nursing: INR 8500 Medical Services: INR 3500 Drugs and Supplies: INR 6000 Total Invoice Value: INR 18000 Payment: Partially Paid,hospital_bill,test
+"NOTICE OF INPATIENT REGISTRATION
+Patient Details: Reyansh Shah
+Provider: Sunrise Multispeciality Hospital
+Authorization Reference: CLM0852
+Registered On: 09/03/2026
+Admission Reason: Viral fever
+The patient has been accepted for inpatient care.",admission_advice,validation
+MEDICAL EXPENSE STATEMENT Patient Sara Khan Claim ID: CLM0363 Healthcare Facility: Hopewell Hospital Accommodation: INR 6000 Professional Services: INR 1500 Medical Supplies: INR 9500 Grand Total: INR 17000,hospital_bill,train
+"DISCHARGE SUMMARY
+Patient Name: Kabir Mehta
+Claim Reference: CLM0841
+Hospital: Silverline Hospital
+Date of Admission: 11/06/2026
+Date of Discharge: 12/06/2026
+Final Diagnosis: Urinary tract infection
+Treatment Provided: Medication and clinical observation
+Discharge Status: Stable
+Consultant: Dr. Anjali Verma",discharge_summary,train
+"REIMBURSEMENT CLAIM APPLICATION
+Insured Member Vivaan Rao
+Reference Number: CLM0730
+Hospital Attended: Hopewell Hospital
+Benefit Requested: Medical Reimbursement
+Declaration of Claimant: I request payment under my policy.
+Signature of Applicant: SIMULATED SIGNATURE",signed_claim_form,validation
+"MEDICAL CLAIM FORM
+Patient Name: Riya Patel
+Claim Reference Number: CLM0771
+Hospital: Green Valley Hospital
+Requested Benefit: 1npatient Treatment
+Authorization: I authorize processing of this claim.
+Signed By: Riya Patel
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+HOSPITAL ADMISSION RECORD Patient: Aditi Joshi Case ID: CLM0613 Facility: Hopewell Hospital Admission Details: The above patient has been registered for inpatient care beginning 20/05/2026. Initial Assessment: Acute respiratory infection Responsible Physician: Dr. Amit Shah,admission_advice,train
+"FINAL INPATIENT CARE REPORT
+Patient Name: Sara Khan
+Hospital: National Medical Institute
+Claim Reference: CLM0955
+Principal Diagnosis: Post-operative recovery
+Treatment Administered: Antibiotic therapy
+Date of Admission: 21/06/2026
+Date of Release: 26/06/2026
+Status on Release: Stable",discharge_summary,test
+PATIENT DISCHARGE REPORT Patient: Aarav Sharma Case Number: CLM0332 Facility: Metro Health Centre Final Diagnosis: Post-operative recovery Hospital Stay: 29/O6/2026 to 08/07/2026 Treatment Course: Antibiotic therapy Condition at Discharge: Stable Follow-up: Attend the outpatient department,discharge_summary,train
+"PATIENT DISCHARGE REPORT
+Patient: Reyansh Shah
+Case Number: CLM0085
+Facility: Sunrise Multispeciality Hospital
+Final Diagnosis: Acute abdominal pain
+Hospital Stay: 23/03/2026 to 28/03/2026
+Treatment Course: Diagnostic tests and medical management
+Condition at Discharge: Stable
+Follow-up: Continue prescribed medicines",discharge_summary,train
+FINAL INPATIENT CARE REPORT Patient Name: Sara Khan Hospital: Green Valley Hospital Claim Reference: CLM0216 Principal Diagnosis: Urinary tract infection Treatment Administered: Supportive care and observation Date of Admission: 23/09/2026 Date of Release: 01/10/2026 Status on Release: Stable,discharge_summary,test
+"SUMMARY OF PATIENT CARE
+Patient: Ananya Verma
+Provider: Hopewell Hospital
+Case Reference: CLM0855
+Inpatient Period: 20/09/2026 - 23/09/2026
+Medical Assessment: Post-operative recovery
+Care Administered: Intravenous fluids and medication
+Disposition: Discharged",discharge_summary,validation
+ADMISSION ADVICE Patient Name Ananya Verma Claim Reference: CLM0936 Hospital: Silverline Hospital Date of Admission: 17/01/2026 Department: Emergency Medicine Reason for Admission: Acute abdominal pain The patient has been admitted for inpatient treatment. Attending Doctor: Dr. Neha Kapoor,admission_advice,train
+"CLAIM REIMBURSEMENT APPLICATION
+Name of Insured: Aditi Joshi
+Reference ID: CLM0833
+Name of Hospital: Sunrise Multispeciality Hospital
+Claim Category: Medical Reimbursement
+Patient Declaration: I request reimbursement of eligible expenses.
+Claimant Signature: SIMULATED SIGNATURE
+Date of Submission: 17/09/2026",signed_claim_form,train
+PATIENT BILLING RECORD Name: Aditi Joshi Reference Number: CLM0607 Hospital: City Care Medical Centre Treatment Charges: INR 5500 Room Charges: INR 7000 Supplies and Medicines: INR 8500 Total Bill: INR 21000 Balance Due: INR 0,hospital_bill,train
+CLINICAL DISCHARGE DOCUMENT Name of Patient: Kabir Mehta Medical Facility: Silverline Hospital Reference: CLM0418 Diagnosis: Urinary tract infection Procedures and Treatment: Surgical treatment and monitoring Date Released: 18/05/2026 Clinical Condition: Stable Next Review: Return for clinical assessment,discharge_summary,validation
+"PATIENT DISCHARGE REPORT
+Patient: Kabir Mehta
+Case Number: CLM0975
+Facility: Hopewell Hospital
+Final Diagnosis: Gastrointestinal infection
+Hospital Stay: 07/02/2026 to 08/02/2O26
+Treatment Course: Medication and clinical observation
+Condition at Discharge: Stable
+Follow-up: Continue prescribed medicines",discharge_summary,train
+INSURANCE CLAIM SUBMISSION FORM Policy Holder: Aarav Sharma Claim ID: CLM0841 Healthcare Provider: Sunrise Multispeciality Hospital Patient Relationship: Self Declaration by Insured: Details submitted are true to my knowledge. Signature: SIMULATED SIGNATURE,signed_claim_form,train
+"STATEMENT OF MEDICAL CHARGES
+Patient: Vivaan Rao
+Facility: City Care Medical Centre
+Account Number: CLM0354
+Ward Charges: INR 17000
+Professional Fees: INR 3500
+Medication Cost: INR 1000
+Amount Due: INR 21500",hospital_bill,validation
+"PATIENT ADMISSION CONFIRMATION
+Name of Patient: Arjun Malhotra
+Hospital: Metro Health Centre
+Reference ID: CLM0457
+Date: 12/06/2026
+Status: Admitted
+Medical Department: General Surgery
+The patient is registered for hospital treatment.",admission_advice,train
+"INPATIENT REGISTRATION SLIP
+Patient: Ishaan Gupta
+Facility: City Care Medical Centre
+Case Reference: CLM0512
+Admission Time: 11/04/2026
+Current Status: Patient admitted
+Assigned Department: General Surgery",admission_advice,test
+"INPATIENT BILLING SUMMARY
+Patient Name: Reyansh Shah
+Hospital Name: National Medical Institute
+Bill Reference: CLM0251
+Room and Nursing: INR 10500
+Medical Services: INR 4500
+Drugs and Supplies: INR 12000
+Total Invoice Value: INR 27000
+Payment: Paid",hospital_bill,test
+COMPLETED CLAIM APPLICATION Insured Person: Riya Patel Claim Reference: CLMO583 Hospital Details: Metro Health Centre Claim Type: Cashless Hospitalization Declaration: I certify that the attached details are correct. Signa ture of Insured: SIMULATED SIGNATURE,signed_claim_form,train
+"PATIENT ADMISSION CONFIRMATION
+Name of Patient: Aarav Sharma
+Hospital: National Medical Institute
+Reference ID: CLMO115
+Date: 28/02/2026
+Status: Admitted
+Medical Department: Cardiology
+The patient is registered for hospital treatment.",admission_advice,train
+"SIGNED MEDICAL INSURANCE FORM
+Applicant Name: Riya Patel
+Claim Identifier: CLM0104
+Healthcare Institution: Green Valley Hospital
+Claim Purpose: Medical Reimbursement
+I certify the information in this application is correct.
+Applicant Authorization: SIMULATED SIGNATURE",signed_claim_form,test
+"DISCHARGE NOTE
+Patient Details: Aditi Joshi
+Claim ID: CLM0055
+Hospital: Green Valley Hospital
+Diagnosis: Gastrointestinal infection
+Treatment Course: Antibiotic therapy
+Discharged On: 20/08/2026
+Discharge Condition: Stable
+Follow-up Instructions: Continue prescribed medicines",discharge_summary,train
+"HOSPITALIZATI0N ADMISSION LETTER To Whom It May Concern, This confirms the admission of Ananya Verma at Metro Health Centre. Claim Reference: CLM0970 Date of Entry: 03/05/2026 Unit: Orthopae dics Attending Consultant: Dr. Anjali Verma",admission_advice,validation
+"ADMISSION ADVICE
+Patient Name: Aditi Joshi
+Claim Reference: CLM0576
+Hospital: National Medical Institute
+Date of Admission: 10/07/2026
+Department: General Medicine
+Reason for Admission: Acute abdominal pain
+The patient has been admitted for inpatient treatment.
+Attending Doctor: Dr. Karan Rao",admission_advice,train
+"INPATIENT ADMISSION NOTICE
+This is to inform that Arjun Malhotra was admitted to City Care Medical Centre.
+Reference Number: CLM0195
+Admission Date: 20/10/2026
+Reason for Admission: Gastrointestinal infection
+Consultant: Dr. Priya Mehta
+Department: Emergency Medicine",admission_advice,train
+"COMPLETED CLAIM APPLICATION
+Insured Person: Ishaan Gupta
+Claim Reference: CLM0009
+Hospital Details: Hopewell Hospital
+Claim Type: Hospitalization Expenses
+Declaration: I certify that the attached details are correct.
+Signature of Insured: SIMULATED SIGNATURE",signed_claim_form,train
+HOSPITAL ADMISSION REC0RD Patient: Kabir Mehta Case ID: CLM0145 Facility: Sunrise Multispeciality Hospital Admission Details: The above patient has been registered for inpatient care beginning 04/09/2026. Initial Assessment: Dehydration Responsible Physician: Dr. Amit Shah,admission_advice,train
+"H0SPITAL ADMISSION RECORD
+Patient: Diya Iyer
+Case ID: CLM0906
+Facility: Hopewell Hospital
+Admission Details:
+The above patient has been registered for inpatient care
+beginning 10/07/2026.
+Initial Assessment: Acute abdominal pain
+Responsible Physician: Dr. Karan Rao",admission_advice,train
+ADMISSION INTIMATION Insured Person: Sara Khan Claim ID: CLM0087 Hospital Name: Sunrise Multispeciality Hospital Admission Date: 22/03/2026 Treatment Category: Inpatient Ward: Cardiology This document confirms the patient's hospital admission.,admission_advice,train
+DISCHARGE NOTE Patient Details Ishaan Gupta Claim ID: CLM0339 Hospital: City Care Medical Centre Diagnosis: Dehydration Treatment Course: Medication and clinical observation Discharged On: 30/01/2026 Discharge Condition: Stable Follow-up Instructions: Review after seven days,discharge_summary,train
+"MEDICAL CLAIM FORM
+Patient Name: Arjun Malhotra
+Claim Reference Number: CLM0080
+Hospital: National Medical Institute
+Requested Benefit: Hospitalization Expenses
+Authorization: I authorize processing of this claim.
+Signed By: Arjun Malhotra
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+COMPLETED CLAIM APPLICATION Insured Person: Kabir Mehta Claim Reference: CLM0636 Hospital Details: National Medical Institute Claim Type: Cashless Hospitalization Declaration: I certify that the attached details are correct. Signature of Insured: SIMULATED SIGNATURE,signed_claim_form,train
+"INSURANCE CLAIM SUBMISSION FORM
+Policy Holder: Ananya Verma
+Claim ID: CLM0230
+Healthcare Provider: Green Valley Hospital
+Patient Relationship: Self
+Declaration by Insured: Details submitted are true to my knowledge.
+Signature: SIMULATED SIGNATURE",signed_claim_form,train
+"PATIENT INSURANCE DECLARATION
+Name of Policy Holder: Meera Nair
+Claim Reference: CLM0654
+Treatment Provider: Hopewell Hospital
+Requested Coverage: Inpatient Treatment
+I declare that the attached claim information is correct.
+Authorized Signature: SIMULATED SIGNATURE",signed_claim_form,validation
+INPATIENT BILLING SUMMARY Patient Name Ananya Verma Hospital Name: Green Valley Hospital Bill Reference: CLM0498 Room and Nursing: INR 5500 Medical Services: INR 2500 Drugs and Supplies: INR 5500 Total Invoice Value: INR 13500 Payment: Paid,hospital_bill,test
+"MEDICAL EXPENSE STATEMENT
+Patient: Aditi Joshi
+Claim ID: CLM0993
+Healthcare Facility: Metro Health Centre
+Accommodation: INR 15000
+Professional Services: INR 1000
+Medical Supplies: INR 30O0
+Grand Total: INR 19000",hospital_bill,train
+"CLINICAL DISCHARGE DOCUMENT
+Name of Patient Arjun Malhotra
+Medical Facility: Metro Health Centre
+Reference: CLM0891
+Diagnosis: Viral fever
+Procedures and Treatment: Medication and clinical observation
+Date Released: 29/01/2026
+Clinical Condition: Stable
+Next Review: Attend the outpatient department",discharge_summary,validation
+REIMBURSEMENT CLAIM APPLICATION Insured Member: Arjun Malhotra Reference Number: CLM0462 Hospital Attended: Green Valley Hospital Benefit Requested: Hospitalization Expenses Declaration of Claimant: I request payment under my policy. Signature of Applicant: SIMULATED SIGNATURE,signed_claim_form,validation
