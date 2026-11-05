@@ -1,6 +1,7 @@
 
 from fastapi import APIRouter, File, Form, HTTPException, UploadFile, status
 
+from backend.app.models import claim
 from backend.app.services.document_processing import validate_and_extract
 from backend.app.services.document_storage import (
     MAX_FILE_SIZE,
@@ -10,13 +11,20 @@ from backend.app.services.document_storage import (
     save_document as save_local_document,
     upload_document_to_blob,
 )
-from backend.app.services.document_classifier import classify_document
+
+# rule based classification
+# from backend.app.services.document_classifier import classify_document
+
+from backend.app.services.ml_document_classifier import (
+    classify_document_ml as classify_document
+)
+
 from backend.app.services.document_checklist import generate_checklist
 from backend.app.services.claim_summary import generate_claim_summary
 from backend.app.services.claim_document_status import (
     REQUIRED_DOCUMENTS,
     initialize_document_status,
-    mark_document_received,
+    reconcile_document_status,
     verify_claim_documents,
 )
 from backend.app.services.claim_repository import (
@@ -184,12 +192,10 @@ async def upload_document(
 
 
 
-    if metadata.get("document_status") == "received" and document_type:
-        mark_document_received(
-            claim,
-            document_type,
-            metadata["document_id"],
-        )
+    reconcile_document_status(
+        claim,
+        get_documents_for_claim(claim_id),
+    )
 
     verification = verify_claim_documents(claim)
     claim["verification_status"] = verification["verification_status"]
@@ -254,10 +260,20 @@ def remove_document(claim_id: str, document_id: str):
             detail=str(exc),
         ) from exc
 
+    reconcile_document_status(
+        claim,
+        get_documents_for_claim(claim_id),
+    )
+
+    verification = verify_claim_documents(claim)
+    claim["verification_status"] = verification["verification_status"]
+    update_claim(claim)
+
     return {
         "message": "Document deleted successfully",
         "document_id": document_id,
         "claim_id": claim_id,
+        "verification": verification,
     }
 
 
@@ -291,28 +307,40 @@ def classify_uploaded_document(claim_id: str, document_id: str):
         raise HTTPException(status_code=404, detail="Document not found")
 
     result = classify_document(document["extracted_text"])
-    document["classification"] = result
-    update_document(document)
 
-    # Update claim document status only for a supplied expected document type
-    # whose classification is confidently accepted.
+    document["classification"] = result
+
     expected_type = document.get("document_type")
-    claim = get_claim_by_id(claim_id)
 
     if (
         expected_type in REQUIRED_DOCUMENTS
         and result["predicted_type"] == expected_type
-        and not result["needs_review"]
+        and result["needs_review"] is False
     ):
-        mark_document_received(claim, expected_type, document_id)
         document["document_status"] = "received"
-        update_document(document)
+    else:
+        document["document_status"] = "needs_review"
+
+    update_document(document)
+
+    claim = get_claim_by_id(claim_id)
+
+    reconcile_document_status(
+        claim,
+        get_documents_for_claim(claim_id),
+    )
 
     verification = verify_claim_documents(claim)
+
     claim["verification_status"] = verification["verification_status"]
     update_claim(claim)
 
-    return {"document_id": document_id, **result}
+    return {
+        "document_id": document_id,
+        **result,
+        "document_status": document["document_status"],
+        "verification": verification,
+    }
 
 
 @router.get("/{claim_id}/checklist")
