@@ -13,6 +13,7 @@ from backend.app.services.document_storage import (
 from backend.app.services.claim_document_status import (
     initialize_document_status,
     mark_document_missing,
+    reconcile_document_status,
     verify_claim_documents,
 )
 
@@ -99,9 +100,8 @@ def get_claim_verification(claim_id: str):
     if claim is None:
         raise HTTPException(status_code=404, detail="Claim not found")
 
-    if not claim.get("document_status"):
-        claim["document_status"] = initialize_document_status()
-
+    documents = get_documents_for_claim(claim_id)
+    reconcile_document_status(claim, documents)
     verification = verify_claim_documents(claim)
     claim["verification_status"] = verification["verification_status"]
     update_claim(claim)

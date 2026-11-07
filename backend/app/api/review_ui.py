@@ -48,7 +48,15 @@ def _claim_document(claim_id: str, document_id: str):
 
 class DocumentAcceptance(BaseModel):
     reviewer_name: str = Field(min_length=2, max_length=100)
-    reason: str = Field(min_length=1, max_length=1000)
+    reason: str = Field(min_length=10, max_length=1000)
+    reviewed_original: bool
+    document_type: str
+
+
+class DocumentCategoryCorrection(BaseModel):
+    reviewer_name: str = Field(min_length=2, max_length=100)
+    reason: str = Field(min_length=10, max_length=1000)
+    document_type: str
 
 
 @router.post("/{claim_id}/documents/{document_id}/accept")
@@ -70,6 +78,11 @@ def accept_document(
             status_code=409,
             detail="Document processing is not complete",
         )
+    if review.document_type not in REQUIRED_DOCUMENTS:
+        raise HTTPException(
+            status_code=400,
+            detail="Invalid document category",
+        )
 
     classification = dict(document.get("classification") or {})
     previous_review = classification.get("human_review") or {}
@@ -81,12 +94,14 @@ def accept_document(
 
     classification["human_review"] = {
         "accepted": True,
+        "accepted_document_type": review.document_type,
         "reviewer_name": review.reviewer_name.strip(),
         "reason": review.reason.strip(),
         "reviewed_at": datetime.now(timezone.utc).isoformat(),
     }
 
     # Preserve the ML prediction and confidence.
+    document["document_type"] = review.document_type
     document["classification"] = classification
     document["document_status"] = "received"
     update_document(document)
@@ -101,9 +116,63 @@ def accept_document(
         "message": "Document accepted by human reviewer",
         "claim_id": claim_id,
         "document_id": document_id,
-        "document_type": expected_type,
+        "document_type": review.document_type,
         "document_status": "received",
         "human_review": classification["human_review"],
+        "verification": verification,
+    }
+
+
+@router.patch("/{claim_id}/documents/{document_id}/category")
+def correct_document_category(
+    claim_id: str,
+    document_id: str,
+    review: DocumentCategoryCorrection,
+):
+    claim, document = _claim_document(claim_id, document_id)
+
+    if review.document_type not in REQUIRED_DOCUMENTS:
+        raise HTTPException(400, "Invalid document category")
+
+    classification = dict(document.get("classification") or {})
+    human_review = dict(classification.get("human_review") or {})
+    if human_review.get("accepted") is not True:
+        raise HTTPException(
+            409,
+            "Document must be accepted by a reviewer first",
+        )
+
+    previous_type = document.get("document_type")
+    history = list(classification.get("category_corrections") or [])
+    history.append(
+        {
+            "previous_type": previous_type,
+            "corrected_type": review.document_type,
+            "reviewer_name": review.reviewer_name.strip(),
+            "reason": review.reason.strip(),
+            "reviewed_at": datetime.now(timezone.utc).isoformat(),
+        }
+    )
+    classification["category_corrections"] = history
+    human_review["accepted_document_type"] = review.document_type
+    classification["human_review"] = human_review
+    document["document_type"] = review.document_type
+    document["document_status"] = "received"
+    document["classification"] = classification
+
+    update_document(document)
+
+    documents = get_documents_for_claim(claim_id)
+    reconcile_document_status(claim, documents)
+    verification = verify_claim_documents(claim)
+    claim["verification_status"] = verification["verification_status"]
+    update_claim(claim)
+
+    return {
+        "message": "Document category corrected",
+        "document_id": document_id,
+        "previous_type": previous_type,
+        "document_type": review.document_type,
         "verification": verification,
     }
 

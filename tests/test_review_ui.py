@@ -56,7 +56,12 @@ def test_accept_document_records_review_and_preserves_classification(monkeypatch
 
     response = client.post(
         "/api/claims/claim-123/documents/document-123/accept",
-        json={"reviewer_name": "  A Reviewer  ", "reason": "  Verified manually  "},
+        json={
+            "reviewer_name": "  A Reviewer  ",
+            "reason": "  Verified manually  ",
+            "reviewed_original": True,
+            "document_type": "hospital_bill",
+        },
     )
 
     assert response.status_code == 200
@@ -73,6 +78,162 @@ def test_accept_document_records_review_and_preserves_classification(monkeypatch
     assert claim["verification_status"] == "incomplete"
 
 
+def test_accept_document_corrects_category_without_changing_prediction(
+    monkeypatch,
+):
+    document = {
+        "claim_id": "claim-123",
+        "document_id": "document-123",
+        "document_type": "hospital_bill",
+        "document_status": "needs_review",
+        "processing_status": "completed",
+        "classification": {
+            "predicted_type": "hospital_bill",
+            "needs_review": True,
+        },
+    }
+    setup_acceptance_case(monkeypatch, document)
+
+    response = client.post(
+        "/api/claims/claim-123/documents/document-123/accept",
+        json={
+            "reviewer_name": "A Reviewer",
+            "reason": "Confirmed against original file",
+            "reviewed_original": True,
+            "document_type": "admission_advice",
+        },
+    )
+
+    assert response.status_code == 200
+    assert document["document_type"] == "admission_advice"
+    assert response.json()["document_type"] == "admission_advice"
+    assert (
+        document["classification"]["human_review"]["accepted_document_type"]
+        == "admission_advice"
+    )
+    assert document["classification"]["predicted_type"] == "hospital_bill"
+
+
+def test_accept_document_rejects_invalid_category(monkeypatch):
+    document = {
+        "claim_id": "claim-123",
+        "document_id": "document-123",
+        "document_type": "hospital_bill",
+        "document_status": "needs_review",
+        "processing_status": "completed",
+        "classification": {},
+    }
+    setup_acceptance_case(monkeypatch, document)
+
+    response = client.post(
+        "/api/claims/claim-123/documents/document-123/accept",
+        json={
+            "reviewer_name": "A Reviewer",
+            "reason": "Confirmed against original file",
+            "reviewed_original": True,
+            "document_type": "passport",
+        },
+    )
+
+    assert response.status_code == 400
+    assert response.json()["detail"] == "Invalid document category"
+
+
+def test_correct_document_category_records_history_and_preserves_prediction(
+    monkeypatch,
+):
+    document = {
+        "claim_id": "claim-123",
+        "document_id": "document-123",
+        "document_type": "hospital_bill",
+        "document_status": "received",
+        "classification": {
+            "predicted_type": "discharge_summary",
+            "human_review": {
+                "accepted": True,
+                "accepted_document_type": "hospital_bill",
+            },
+        },
+    }
+    claim = setup_acceptance_case(monkeypatch, document)
+
+    response = client.patch(
+        "/api/claims/claim-123/documents/document-123/category",
+        json={
+            "reviewer_name": "A Reviewer",
+            "reason": "Confirmed against original file",
+            "document_type": "admission_advice",
+        },
+    )
+
+    assert response.status_code == 200
+    assert response.json()["previous_type"] == "hospital_bill"
+    assert response.json()["document_type"] == "admission_advice"
+    assert document["document_type"] == "admission_advice"
+    assert document["classification"]["predicted_type"] == "discharge_summary"
+    history = document["classification"]["category_corrections"]
+    assert len(history) == 1
+    assert history[0]["previous_type"] == "hospital_bill"
+    assert history[0]["corrected_type"] == "admission_advice"
+    assert history[0]["reviewer_name"] == "A Reviewer"
+    assert history[0]["reason"] == "Confirmed against original file"
+    assert (
+        document["classification"]["human_review"][
+            "accepted_document_type"
+        ]
+        == "admission_advice"
+    )
+    assert claim["verification_status"] == "incomplete"
+
+
+def test_correct_document_category_requires_prior_acceptance(monkeypatch):
+    document = {
+        "claim_id": "claim-123",
+        "document_id": "document-123",
+        "document_type": "hospital_bill",
+        "document_status": "needs_review",
+        "classification": {"human_review": {"accepted": False}},
+    }
+    setup_acceptance_case(monkeypatch, document)
+
+    response = client.patch(
+        "/api/claims/claim-123/documents/document-123/category",
+        json={
+            "reviewer_name": "A Reviewer",
+            "reason": "Confirmed against original file",
+            "document_type": "admission_advice",
+        },
+    )
+
+    assert response.status_code == 409
+    assert response.json()["detail"] == (
+        "Document must be accepted by a reviewer first"
+    )
+
+
+def test_correct_document_category_rejects_invalid_category(monkeypatch):
+    document = {
+        "claim_id": "claim-123",
+        "document_id": "document-123",
+        "document_type": "hospital_bill",
+        "document_status": "received",
+        "classification": {"human_review": {"accepted": True}},
+    }
+    setup_acceptance_case(monkeypatch, document)
+
+    response = client.patch(
+        "/api/claims/claim-123/documents/document-123/category",
+        json={
+            "reviewer_name": "A Reviewer",
+            "reason": "Confirmed against original file",
+            "document_type": "passport",
+        },
+    )
+
+    assert response.status_code == 400
+    assert response.json()["detail"] == "Invalid document category"
+
+
 def test_accept_document_rejects_incomplete_processing(monkeypatch):
     document = {
         "claim_id": "claim-123",
@@ -85,7 +246,12 @@ def test_accept_document_rejects_incomplete_processing(monkeypatch):
 
     response = client.post(
         "/api/claims/claim-123/documents/document-123/accept",
-        json={"reviewer_name": "A Reviewer", "reason": "Verified manually"},
+        json={
+            "reviewer_name": "A Reviewer",
+            "reason": "Verified manually",
+            "reviewed_original": True,
+            "document_type": "hospital_bill",
+        },
     )
 
     assert response.status_code == 409
@@ -104,7 +270,12 @@ def test_accept_document_rejects_duplicate_acceptance(monkeypatch):
 
     response = client.post(
         "/api/claims/claim-123/documents/document-123/accept",
-        json={"reviewer_name": "A Reviewer", "reason": "Verified manually"},
+        json={
+            "reviewer_name": "A Reviewer",
+            "reason": "Verified manually",
+            "reviewed_original": True,
+            "document_type": "hospital_bill",
+        },
     )
 
     assert response.status_code == 409

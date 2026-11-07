@@ -208,6 +208,20 @@ export default function ClaimDetail({ id, go }) {
 
         if (!reviewerName) return;
 
+        const selectedDocumentType = window
+            .prompt(
+                `Enter the correct document category:\n${TYPES.map(
+                    ([type, label]) => `${type} — ${label}`
+                ).join('\n')}`,
+                doc.document_type
+            )
+            ?.trim();
+
+        if (!TYPES.some(([type]) => type === selectedDocumentType)) {
+            setError('Please select a valid document type.');
+            return;
+        }
+
         const reason = window
             .prompt('Explain why this document is correct:')
             ?.trim();
@@ -221,7 +235,7 @@ export default function ClaimDetail({ id, go }) {
 
         const confirmed = window.confirm(
             `Accept "${doc.filename}" as ` +
-                `"${pretty(doc.document_type)}"?\n\n` +
+                `"${pretty(selectedDocumentType)}"?\n\n` +
                 'Confirm only after inspecting the original file.'
         );
 
@@ -242,6 +256,7 @@ export default function ClaimDetail({ id, go }) {
                         reviewer_name: reviewerName,
                         reason,
                         reviewed_original: true,
+                        document_type: selectedDocumentType,
                     },
                 }
             );
