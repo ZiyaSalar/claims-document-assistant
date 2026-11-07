@@ -4,14 +4,9 @@ import pandas as pd
 from datasets import Dataset, DatasetDict
 from transformers import AutoTokenizer
 
-# ----------------------------------------
-# 1. Configuration
-# ----------------------------------------
-
-DATASET_PATH = "data/hf_dataset/classifier_dataset_v2.csv"
-
+# Configuration
+DATASET_PATH = "data/synthetic_data/classifier_dataset_v3.csv"
 MODEL_NAME = "distilbert/distilbert-base-uncased"
-
 MAX_LENGTH = 256
 
 label2id = {
@@ -21,35 +16,22 @@ label2id = {
     "signed_claim_form": 3,
 }
 
-id2label = {
-    value: key for key, value in label2id.items()
-}
-
-# ----------------------------------------
-# 2. Load CSV
-# ----------------------------------------
-
+# Load CSV
 df = pd.read_csv(DATASET_PATH)
 
 print("Original dataset:", df.shape)
 
-# ----------------------------------------
-# 3. Load tokenizer
-# ----------------------------------------
+if df[["text", "label", "split"]].isnull().any().any():
+    raise ValueError("Dataset contains missing values.")
 
+# Load tokenizer
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
-# ----------------------------------------
-# 4. Create dataset splits
-# ----------------------------------------
-
+# Prepare all four splits
 datasets = {}
 
-for split in ["train", "validation", "test"]:
-
-    split_df = df[df["split"] == split][
-        ["text", "label"]
-    ].copy()
+for split in ["train", "validation", "test", "challenge"]:
+    split_df = df[df["split"] == split][["text", "label"]].copy()
 
     split_df["labels"] = split_df["label"].map(label2id)
 
@@ -63,41 +45,26 @@ for split in ["train", "validation", "test"]:
 
 dataset_dict = DatasetDict(datasets)
 
-# ----------------------------------------
-# 5. Tokenization function
-# ----------------------------------------
-
+# Tokenization
 def tokenize_function(examples):
-
     return tokenizer(
         examples["text"],
         truncation=True,
-        max_length=MAX_LENGTH,
+        max_length=MAX_LENGTH
     )
-
-# ----------------------------------------
-# 6. Tokenize all splits
-# ----------------------------------------
 
 tokenized_datasets = dataset_dict.map(
     tokenize_function,
     batched=True,
+    remove_columns=["text"]
 )
 
-# ----------------------------------------
-# 7. Display results
-# ----------------------------------------
-
 print("\nPrepared dataset:")
-
 for split, dataset in tokenized_datasets.items():
     print(f"{split}: {len(dataset)} examples")
 
 print("\nFeatures:")
 print(tokenized_datasets["train"].features)
-
-print("\nFirst tokenized example:")
-print(tokenized_datasets["train"][0])
 
 print("\nLabel mapping:")
 print(label2id)

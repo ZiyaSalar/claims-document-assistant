@@ -25,12 +25,12 @@ from sklearn.metrics import (
 
 MODEL_NAME = "distilbert/distilbert-base-uncased"
 
-DATASET_PATH = "data/hf_dataset/classifier_dataset_v2.csv"
+DATASET_PATH = "data/synthetic_data/classifier_dataset_v3.csv"
 
-OUTPUT_DIR = "models/claims-document-classifier"
+OUTPUT_DIR = "models/claims-document-classifier-v3"
 
-MAX_LENGTH = 256
-EPOCHS = int(os.getenv("TRAIN_EPOCHS", "5"))
+MAX_LENGTH = 1024
+EPOCHS = int(os.getenv("TRAIN_EPOCHS", "3"))
 BATCH_SIZE = 8
 LEARNING_RATE = 2e-5
 

@@ -12,6 +12,13 @@ from backend.app.services.document_storage import (
     upload_document_to_blob,
 )
 
+from openai import OpenAIError
+
+from backend.app.services.llm_summary import (
+    generate_llm_claim_summary,
+)
+
+
 # rule based classification
 # from backend.app.services.document_classifier import classify_document
 
@@ -37,6 +44,8 @@ from backend.app.services.claim_repository import (
     delete_document,
 )
 from azure.core.exceptions import AzureError
+
+from backend.app.services.rag_sync import sync_claim_search
 
 router = APIRouter(prefix="/api/claims", tags=["Documents"])
 
@@ -206,6 +215,8 @@ async def upload_document(
     if document_type is not None:
         response["verification"] = verification
 
+    response["rag_indexing"] = sync_claim_search(claim_id)
+
     return response
 
 
@@ -274,6 +285,7 @@ def remove_document(claim_id: str, document_id: str):
         "document_id": document_id,
         "claim_id": claim_id,
         "verification": verification,
+        "rag_indexing": sync_claim_search(claim_id),
     }
 
 
@@ -355,17 +367,44 @@ def get_claim_checklist(claim_id: str):
 
 
 @router.get("/{claim_id}/summary")
-def get_claim_summary(claim_id: str):
+def get_claim_summary(
+    claim_id: str,
+    llm: bool = False,
+):
     claim = get_claim_by_id(claim_id)
 
     if claim is None:
-        raise HTTPException(status_code=404, detail="Claim not found")
+        raise HTTPException(
+            status_code=404,
+            detail="Claim not found",
+        )
 
     claim_documents = get_documents_for_claim(claim_id)
     checklist_result = generate_checklist(claim_documents)
 
-    return generate_claim_summary(
+    baseline = generate_claim_summary(
         claim=claim,
         checklist_result=checklist_result,
         documents=claim_documents,
     )
+
+    # Preserve existing behavior unless LLM is requested.
+    if not llm:
+        return baseline
+
+    try:
+        return generate_llm_claim_summary(
+            claim=claim,
+            documents=claim_documents,
+            baseline_summary=baseline,
+        )
+    except (OpenAIError, OSError) as exc:
+        raise HTTPException(
+            status_code=503,
+            detail="LLM summarization service unavailable",
+        ) from exc
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=502,
+            detail="LLM summary failed citation validation",
+        ) from exc

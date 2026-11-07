@@ -73,3 +73,28 @@ def test_mismatched_document_does_not_count():
 
     assert result["checklist"]["hospital_bill"] == "missing"
     assert result["review_required"] is True
+
+
+def test_human_accepted_document_counts_without_changing_classification():
+    classification = {
+        "predicted_type": "discharge_summary",
+        "needs_review": True,
+        "human_review": {"accepted": True},
+    }
+    documents = [
+        {
+            "document_id": "test-human-accepted",
+            "document_type": "hospital_bill",
+            "document_status": "received",
+            "classification": classification,
+        }
+    ]
+
+    result = generate_checklist(documents)
+
+    assert result["checklist"]["hospital_bill"] == "present"
+    assert classification == {
+        "predicted_type": "discharge_summary",
+        "needs_review": True,
+        "human_review": {"accepted": True},
+    }

@@ -10,8 +10,8 @@ from transformers import (
 # 1. CONFIGURATION
 # ==================================================
 
-MODEL_DIR = "models/claims-document-classifier"
-MAX_LENGTH = 256
+MODEL_DIR = "models/claims-document-classifier-v3"
+MAX_LENGTH = 512
 CONFIDENCE_THRESHOLD = 0.70
 
 # ==================================================

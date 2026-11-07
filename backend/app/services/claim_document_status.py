@@ -48,13 +48,21 @@ def mark_document_received(claim, document_type, document_id):
 
 
 def is_accepted_document(document):
-    classification = document.get("classification") or {}
     expected_type = document.get("document_type")
+    classification = document.get("classification") or {}
+    human_review = classification.get("human_review") or {}
 
+    if expected_type not in REQUIRED_DOCUMENTS:
+        return False
+    if document.get("document_status") != "received":
+        return False
+    # Explicit human acceptance is a separate decision
+    # from the ML model's prediction.
+    if human_review.get("accepted") is True:
+        return True
+    # Existing automatic acceptance path.
     return (
-        expected_type in REQUIRED_DOCUMENTS
-        and document.get("document_status") == "received"
-        and classification.get("predicted_type") == expected_type
+        classification.get("predicted_type") == expected_type
         and classification.get("needs_review") is False
     )
 
@@ -63,11 +71,9 @@ def reconcile_document_status(claim, documents):
     """
     Rebuild the claim's document checklist from saved documents.
 
-    A document counts only when:
-    - It has a supported expected type.
-    - The model predicts that same type.
-    - Human review is not required.
-    - The document status is 'received'.
+    A received document counts when it has a supported expected type and is
+    either explicitly accepted by a human reviewer or automatically accepted
+    by the classifier.
     """
     previous = get_document_status(claim)
     updated = initialize_document_status()

@@ -26,6 +26,8 @@ from backend.app.services.claim_repository import (
     delete_claim,
 )
 
+from backend.app.services.rag_sync import sync_claim_search
+
 router = APIRouter(prefix="/api/claims", tags=["Claims"])
 
 
@@ -154,4 +156,5 @@ def remove_claim(claim_id: str):
     return {
         "message": "Claim and all associated documents deleted successfully",
         "claim_id": claim_id,
+        "rag_indexing": sync_claim_search(claim_id),
     }
