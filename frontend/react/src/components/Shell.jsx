@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import {
     Activity,
     Bot,
-    ChevronRight,
     CircleHelp,
     Command,
     FilePlus2,
@@ -19,9 +18,9 @@ import {
 import { useApp } from '../context/AppContext';
 
 const NAV = [
-    { href: '/', label: 'Overview', icon: House },
+    { href: '/', label: 'Home', icon: House },
+    { href: '/claims/new', label: 'Create Claim', icon: FilePlus2 },
     { href: '/claims', label: 'All claims', icon: FolderClosed },
-    { href: '/claims/new', label: 'Create claim', icon: FilePlus2 },
     { href: '/agent', label: 'AI Assistant', icon: Bot },
 ];
 export function Shell({ path, go, children }) {
@@ -102,38 +101,13 @@ export function Shell({ path, go, children }) {
                 />
             )}
             <div className="app-main">
-                <header className="topbar">
-                    <div className="crumbs">
-                        <button
-                            className="mobile-menu"
-                            onClick={() => setMobile(true)}
-                            aria-label="Menu"
-                        >
-                            <Menu size={20} />
-                        </button>
-                        <span>Workspace</span>
-                        <ChevronRight size={14} />
-                        <strong>
-                            {path === '/'
-                                ? 'Overview'
-                                : path === '/claims'
-                                  ? 'All claims'
-                                  : path === '/claims/new'
-                                    ? 'New claim'
-                                    : path === '/agent'
-                                      ? 'AI Agent'
-                                      : 'Claim details'}
-                        </strong>
-                    </div>
-                    <div className="topbar-end">
-                        {/* <span className="env-chip">
-                            <span /> DEMO ENVIRONMENT
-                        </span>
-                        <button className="top-avatar" title="Demo reviewer">
-                            D
-                        </button> */}
-                    </div>
-                </header>
+                <button
+                    className="mobile-menu"
+                    onClick={() => setMobile(true)}
+                    aria-label="Open menu"
+                >
+                    <Menu size={20} />
+                </button>
                 <main className="page-content">{children}</main>
             </div>
         </div>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {
-    ArrowLeft,
     ArrowRight,
     CheckCircle2,
     FilePlus2,
@@ -55,7 +54,7 @@ export default function NewClaim({ go }) {
     return (
         <div className="view-enter">
             <PageHeading
-                eyebrow="CLAIM INTAKE"
+                eyebrow=""
                 title="Create a new claim"
                 description=""
             />
@@ -138,13 +137,6 @@ export default function NewClaim({ go }) {
                             </small> */}
                         </label>
                         <div className="create-actions">
-                            <Button
-                                variant="outline"
-                                type="button"
-                                onClick={() => go('/claims')}
-                            >
-                                <ArrowLeft size={16} /> Back to claims
-                            </Button>
                             <Button
                                 disabled={!valid}
                                 busy={busy}
