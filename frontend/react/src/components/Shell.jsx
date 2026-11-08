@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {
     Activity,
-    ArrowUpRight,
     Bot,
     ChevronRight,
     CircleHelp,
@@ -82,31 +81,18 @@ export function Shell({ path, go, children }) {
                     >
                         <Sparkles size={18} />
                         <span>AI Agent</span>
-                        <span className="nav-glint">NEW</span>
+                        {/* <span className="nav-glint">NEW</span> */}
                     </button>
                 </div>
                 <div className="sidebar-spacer" />
-                <div className="sidebar-assist">
-                    <div className="assist-spark">
-                        <Sparkles size={17} />
-                    </div>
-                    <h4>Work smarter with AI</h4>
-                    <p>
-                        Search documents, summarize claims and surface evidence
-                        in seconds.
-                    </p>
-                    <button onClick={() => go('/agent')}>
-                        Open AI assistant <ArrowUpRight size={14} />
-                    </button>
-                </div>
-                <div className="sidebar-footer">
+                {/* <div className="sidebar-footer">
                     <span className="footer-avatar">D</span>
                     <div>
                         <strong>Demo workspace</strong>
                         <small>Development environment</small>
                     </div>
                     <span className="footer-online" />
-                </div>
+                </div> */}
             </aside>
             {mobile && (
                 <button
@@ -140,12 +126,12 @@ export function Shell({ path, go, children }) {
                         </strong>
                     </div>
                     <div className="topbar-end">
-                        <span className="env-chip">
+                        {/* <span className="env-chip">
                             <span /> DEMO ENVIRONMENT
                         </span>
                         <button className="top-avatar" title="Demo reviewer">
                             D
-                        </button>
+                        </button> */}
                     </div>
                 </header>
                 <main className="page-content">{children}</main>

@@ -57,26 +57,19 @@ export default function NewClaim({ go }) {
             <PageHeading
                 eyebrow="CLAIM INTAKE"
                 title="Create a new claim"
-                description="Start with the essentials. You can attach documents and review evidence next."
+                description=""
             />
             <div className="create-layout">
-                <section className="card create-card">
-                    <div className="steps">
-                        <span className="step-number">01</span>
-                        <span className="step-line" />
-                        <span>Claim details</span>
-                        <span className="step-line" />
-                        <span className="step-muted">02 Documents & review</span>
-                    </div>
+                <section className="create-stage full-width-form">
                     <div className="create-intro">
-                        <div className="create-icon">
+                        {/* <div className="create-icon">
                             <FilePlus2 size={22} />
-                        </div>
-                        <h2>Let's get started</h2>
+                        </div> */}
+                        {/* <h2>Let's get started</h2>
                         <p>
                             Enter the information below to register a new
                             claim.
-                        </p>
+                        </p> */}
                     </div>
                     <Alert
                         message={error}
@@ -138,11 +131,11 @@ export default function NewClaim({ go }) {
                                     Medical reimbursement
                                 </option>
                             </select>
-                            <small>
+                            {/* <small>
                                 Other claim types may require different
                                 checklists; current checklist is a
                                 hospitalization prototype.
-                            </small>
+                            </small> */}
                         </label>
                         <div className="create-actions">
                             <Button
@@ -162,38 +155,6 @@ export default function NewClaim({ go }) {
                         </div>
                     </form>
                 </section>
-                <aside className="create-aside">
-                    <div className="aside-highlight">
-                        <Sparkles size={23} />
-                        <h3>An intelligent head start</h3>
-                        <p>
-                            Once created, your claim gets a dedicated
-                            workspace for:
-                        </p>
-                        <div>
-                            <CheckCircle2 size={17} /> Document uploads &
-                            classification
-                        </div>
-                        <div>
-                            <CheckCircle2 size={17} /> AI-powered summaries
-                        </div>
-                        <div>
-                            <CheckCircle2 size={17} /> Evidence-backed
-                            questions
-                        </div>
-                        <div>
-                            <CheckCircle2 size={17} /> Human verification &
-                            review
-                        </div>
-                    </div>
-                    <div className="aside-security">
-                        <ShieldCheck size={19} />
-                        <span>
-                            Final claim decisions always require a human
-                            reviewer. AI only supports the process.
-                        </span>
-                    </div>
-                </aside>
             </div>
         </div>
     );

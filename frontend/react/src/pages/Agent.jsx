@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import {
-    ArrowRight,
     Bot,
     Check,
     CheckCircle2,
@@ -8,7 +7,6 @@ import {
     CircleAlert,
     FileText,
     FileUp,
-    Lightbulb,
     LoaderCircle,
     MessageCircle,
     Paperclip,
@@ -29,13 +27,6 @@ const initial = [
         role: 'assistant',
         text: 'Hey there! 👋 I’m your claims copilot. I can create claims, guide document uploads, find missing requirements, summarize evidence, and answer document questions. What would you like to do?',
     },
-];
-
-const SUGGESTIONS = [
-    ['Create a claim', 'Create a hospitalization claim for Arav Sharma, policy POL12345.'],
-    ['Check requirements', 'What documents are required for hospitalization?'],
-    ['List my documents', 'What documents have been uploaded for a claim?'],
-    ['Analyze a claim', 'Give me an AI summary of a claim.'],
 ];
 
 export default function Agent() {
@@ -370,44 +361,6 @@ export default function Agent() {
                         </p>
                     </div>
                 </section>
-
-                <aside className="agent-side">
-                    <div className="agent-tip">
-                        <span>
-                            <Lightbulb size={21} />
-                        </span>
-                        <h3>Where should we start?</h3>
-                        <p>Try one of these to see what your AI copilot can do.</p>
-                    </div>
-
-                    <div className="agent-prompts">
-                        {SUGGESTIONS.map(([title, prompt], index) => (
-                            <button
-                                key={title}
-                                disabled={working || !!pending}
-                                onClick={() => send(null, prompt)}
-                            >
-                                <span className={`suggestion-mark sm${index}`}>
-                                    <ArrowRight size={18} />
-                                </span>
-                                <span>
-                                    <strong>{title}</strong>
-                                    <small>{prompt}</small>
-                                </span>
-                                <ArrowRight size={16} />
-                            </button>
-                        ))}
-                    </div>
-
-                    <div className="agent-info">
-                        <Sparkles size={20} />
-                        <strong>One assistant. Every workflow.</strong>
-                        <p>
-                            Create claims, upload documents, check missing items, summarize
-                            files and get cited answers in one place.
-                        </p>
-                    </div>
-                </aside>
             </div>
         </div>
     );

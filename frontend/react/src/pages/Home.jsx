@@ -47,15 +47,15 @@ export default function Home({ go }) {
                         <Sparkles size={14} /> Intelligent claims workspace
                     </div>
                     <h1>
-                        Claims made clearer.
+                        Claim Document Completeness
                         <br />
-                        <em>Decisions made better.</em>
+                        <em>& Case Summarizer</em>
                     </h1>
-                    <p>
+                    {/* <p>
                         One beautiful workspace for every document, every
                         insight, and every decision. Powered by AI, guided by
                         people.
-                    </p>
+                    </p> */}
                     <div className="hero-actions">
                         <Button onClick={() => go('/claims/new')}>
                             <FilePlus2 size={17} /> Create a claim{' '}
@@ -65,7 +65,7 @@ export default function Home({ go }) {
                             variant="light"
                             onClick={() => go('/agent')}
                         >
-                            <Sparkles size={16} /> Ask AI Copilot
+                            <Sparkles size={16} /> Claim AI Agent
                         </Button>
                     </div>
                 </div>
@@ -107,10 +107,10 @@ export default function Home({ go }) {
             </div>
             <div className="section-minihead">
                 <div>
-                    <h2>Workspace pulse</h2>
-                    <p>A live look at your claims activity</p>
+                    <h2>Workspace</h2>
+                    {/* <p>A live look at your claims activity</p> */}
                 </div>
-                <span className="subtle-label">LIVE OVERVIEW</span>
+                {/* <span className="subtle-label">LIVE OVERVIEW</span> */}
             </div>
             <div className="stats-grid">
                 <Stat
@@ -145,7 +145,7 @@ export default function Home({ go }) {
                 <section className="card activity-card">
                     <CardTitle
                         title="Recent claims"
-                        subtitle="Pick up where you left off"
+                        subtitle=""
                         action={
                             <button
                                 className="text-link"
@@ -195,8 +195,8 @@ export default function Home({ go }) {
                 </section>
                 <section className="card quick-card">
                     <CardTitle
-                        title="Your shortcuts"
-                        subtitle="Get things done in fewer steps"
+                        title="Shortcuts"
+                        subtitle=""
                     />
                     <button
                         className="shortcut"
@@ -234,7 +234,7 @@ export default function Home({ go }) {
                             <Bot size={19} />
                         </span>
                         <span>
-                            <strong>Talk to AI Copilot</strong>
+                            <strong>AI Agent</strong>
                             <small>
                                 Handle claims through conversation
                             </small>

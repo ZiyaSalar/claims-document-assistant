@@ -51,7 +51,7 @@ export default function Claims({ go }) {
             <PageHeading
                 eyebrow="CLAIM MANAGEMENT"
                 title="All claims"
-                description="A clear view of every claim, from intake to final review."
+                description=""
                 action={
                     <Button onClick={() => go('/claims/new')}>
                         <FilePlus2 size={17} /> New claim
