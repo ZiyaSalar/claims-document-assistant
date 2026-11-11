@@ -22,6 +22,13 @@ import { api } from '../api';
 import { Alert, Button } from '../components/Shared';
 import { pretty, useApp } from '../context/AppContext';
 
+const starterQuestions = [
+    'Create a new claim',
+    'Summarize a claim',
+    'What documents are required for a hospitalization claim?',
+    'Check missing documents for a claim',
+];
+
 const initial = [
     {
         role: 'assistant',
@@ -319,7 +326,21 @@ export default function Agent() {
                         <div ref={end} />
                     </div>
 
-                    <div className="agent-compose-area">
+                    <div className="agent-compose-area agent-compose-area--padded">
+                        {history.length === 1 && !working && !pending && (
+                            <div className="agent-starter-questions" aria-label="Suggested questions">
+                                {starterQuestions.map((question) => (
+                                    <button
+                                        key={question}
+                                        type="button"
+                                        className="agent-starter-chip"
+                                        onClick={() => send(null, question)}
+                                    >
+                                        {question}
+                                    </button>
+                                ))}
+                            </div>
+                        )}
                         <Alert message={error} onClose={() => setError('')} />
                         <form className="agent-compose" onSubmit={send}>
                             <textarea

@@ -2339,3 +2339,113 @@ a {
     margin: 7px 0 0;
     color: #7f809a;
 }
+
+
+.agent-compose-area--padded {
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+
+.agent-compose-area--padded .agent-compose textarea {
+    box-sizing: border-box;
+    min-width: 0;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+
+/* ==========================================
+   AI AGENT — SUGGESTED QUESTION CHIPS
+   ========================================== */
+
+.agent-compose-area .agent-starter-questions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+    margin: 0 0 16px;
+    padding: 0;
+}
+
+.agent-compose-area .agent-starter-chip {
+    appearance: none;
+    -webkit-appearance: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    padding: 10px 16px;
+
+    border: 1px solid #e4def9;
+    border-radius: 999px;
+
+    background: #f7f5ff;
+    color: #6756bc;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+
+    cursor: pointer;
+    white-space: normal;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.agent-compose-area .agent-starter-chip:hover {
+    background: #eeeaff;
+    border-color: #aa9cf1;
+    color: #5843be;
+    box-shadow: 0 3px 10px rgba(109, 86, 214, 0.10);
+    transform: translateY(-1px);
+}
+
+.agent-compose-area .agent-starter-chip:active {
+    transform: translateY(0);
+}
+
+.agent-compose-area .agent-starter-chip:focus-visible {
+    outline: 2px solid #8b7aeb;
+    outline-offset: 3px;
+}
+
+/* Input area spacing */
+.agent-compose-area--padded {
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+
+.agent-compose-area--padded .agent-compose textarea {
+    padding-left: 18px;
+    padding-right: 18px;
+    box-sizing: border-box;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+    .agent-compose-area .agent-starter-questions {
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    .agent-compose-area .agent-starter-chip {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+
+    .agent-compose-area--padded {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}

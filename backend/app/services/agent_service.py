@@ -12,6 +12,8 @@ from openai import OpenAI
 
 from backend.app.mcp.server import mcp
 
+from backend.app.services.agent_guardrails import check_input_guardrail
+
 load_dotenv('.env')
 
 READ_TOOLS = {
@@ -111,6 +113,13 @@ async def chat(session_id: str | None, question: str) -> dict:
         raise ValueError('Message cannot be empty')
 
     async with state.lock:
+        allowed, refusal = await check_input_guardrail(question)
+        if not allowed:
+            return {
+                'session_id': session_id,
+                'type': 'message',
+                'message': refusal,
+            }
         if state.pending_claim:
             return {'session_id': session_id, 'type': 'confirm_claim',
                     'message': 'Confirm or cancel the pending claim before continuing.',

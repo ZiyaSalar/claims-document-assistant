@@ -1,7 +1,7 @@
-
 import json
 import os
 import logging
+import re
 
 from azure.core.exceptions import AzureError
 from openai import OpenAIError
@@ -16,6 +16,47 @@ from backend.app.services.rag_search import (
 )
 
 logger = logging.getLogger(__name__)
+
+
+def contains_prompt_injection(text: str) -> bool:
+    """Detect common instruction-override attempts in retrieved evidence."""
+    patterns = [
+        r"\b(ignore|disregard|override|bypass|forget)\b"
+        r".{0,100}\b(previous|system|developer|instructions|rules|guardrails)\b",
+        r"\b(reveal|disclose|print|expose)\b"
+        r".{0,100}\b(api.key|secret|system.prompt|credentials)\b",
+        r"\b(pretend|act as|you are now)\b"
+        r".{0,100}\b(system|developer|administrator|unrestricted)\b",
+    ]
+    return any(
+        re.search(pattern, text, flags=re.IGNORECASE | re.DOTALL)
+        for pattern in patterns
+    )
+
+
+def contains_unsafe_rag_finding(finding: str) -> bool:
+    """Reject unauthorized claim decisions and payment instructions."""
+    patterns = [
+        # AI-generated approval or rejection conclusions
+        r"\b(?:this|the|your)\s+(?:insurance\s+)?claim\s+"
+        r"(?:is|was|has\s+been)\s+(?:approved|denied|rejected)\b",
+        # Instructions to change claim decisions
+        r"\b(?:approve|deny|reject)\s+"
+        r"(?:this|the|your)?\s*(?:insurance\s+)?claim\b",
+        # Instructions to release payments
+        r"\b(?:release|authorize|issue|process)\s+"
+        r"(?:the\s+)?(?:payment|payout)\b",
+        # Unauthorized payment eligibility
+        r"\b(?:eligible|authorized)\s+for\s+(?:payment|payout)\b",
+        # Prompt-injection instructions repeated in the answer
+        r"\b(?:ignore|override|bypass)\b.{0,80}"
+        r"\b(?:rules|instructions|checks|guardrails)\b",
+    ]
+    return any(
+        re.search(pattern, finding, flags=re.IGNORECASE | re.DOTALL)
+        for pattern in patterns
+    )
+
 
 def answer_claim_question(claim_id, question, documents):
     use_hybrid = (
@@ -65,6 +106,13 @@ def answer_claim_question(claim_id, question, documents):
             continue
 
         content = result.get("content") or ""
+        # Guardrail: don't pass suspicious retrieved instructions to the LLM.
+        if contains_prompt_injection(content):
+            logger.warning(
+                "Excluded suspicious RAG passage for claim %s",
+                claim_id,
+            )
+            continue
         page_number = result.get("page_number")
         pages = document.get("pages") or []
 
@@ -197,6 +245,7 @@ Rules:
         if (
             not source
             or not finding
+            or contains_unsafe_rag_finding(finding)
             or not (5 <= len(quote) <= 500)
             or normalize_text(quote)
             not in normalize_text(source["content"])
