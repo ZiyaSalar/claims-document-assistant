@@ -3,14 +3,11 @@ import {
     ArrowRight,
     ArrowUpRight,
     Bot,
-    CheckCircle2,
     ClipboardCheck,
     Clock3,
     FilePlus2,
     FolderOpen,
-    ScanText,
     ShieldCheck,
-    Sparkles,
 } from 'lucide-react';
 import {
     useApp,
@@ -41,70 +38,13 @@ export default function Home({ go }) {
 
     return (
         <div className="view-enter">
-            <div className="hero">
-                <div className="hero-copy">
-                    <div className="hero-tag">
-                        <Sparkles size={14} /> Intelligent claims workspace
-                    </div>
-                    <h1>
-                        Claim Document Completeness
-                        <br />
-                        <em>& Case Summarizer</em>
-                    </h1>
-                    {/* <p>
-                        One beautiful workspace for every document, every
-                        insight, and every decision. Powered by AI, guided by
-                        people.
-                    </p> */}
-                    <div className="hero-actions">
-                        <Button onClick={() => go('/claims/new')}>
-                            <FilePlus2 size={17} /> Create a claim{' '}
-                            <ArrowRight size={16} />
-                        </Button>
-                        <Button
-                            variant="light"
-                            onClick={() => go('/agent')}
-                        >
-                            <Sparkles size={16} /> Claim AI Agent
-                        </Button>
-                    </div>
-                </div>
-                <div className="hero-art" aria-hidden="true">
-                    <div className="orbit o1" />
-                    <div className="orbit o2" />
-                    <div className="hero-mini-card floating">
-                        <span>
-                            <ScanText size={19} />
-                        </span>
-                        <div>
-                            <small>DOCUMENT ANALYSIS</small>
-                            <strong>Evidence, connected.</strong>
-                        </div>
-                        <CheckCircle2 size={18} />
-                    </div>
-                    <div className="hero-stack">
-                        <div className="stack-top">
-                            <div className="mini-dots">
-                                <i />
-                                <i />
-                                <i />
-                            </div>
-                            <span>CLAIM INTELLIGENCE</span>
-                        </div>
-                        <div className="stack-icon">
-                            <ShieldCheck size={34} />
-                        </div>
-                        <div className="stack-lines">
-                            <b />
-                            <b />
-                            <b />
-                        </div>
-                        <div className="stack-status">
-                            <span /> Review ready
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <header className="home-title">
+                <h1>
+                    Claim Document Completeness
+                    <br />
+                    <em>&amp; Case Summarizer</em>
+                </h1>
+            </header>
             <div className="section-minihead">
                 <div>
                     <h2>Workspace</h2>

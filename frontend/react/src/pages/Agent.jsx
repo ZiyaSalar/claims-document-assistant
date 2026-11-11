@@ -25,7 +25,7 @@ import { pretty, useApp } from '../context/AppContext';
 const initial = [
     {
         role: 'assistant',
-        text: 'Hey there! 👋 I’m your claims copilot. I can create claims, guide document uploads, find missing requirements, summarize evidence, and answer document questions. What would you like to do?',
+        text: 'Hey there! 👋 I’m your AI agent. I can create claims, guide document uploads, find missing requirements, summarize evidence, and answer document questions. What would you like to do?',
     },
 ];
 
@@ -185,9 +185,6 @@ export default function Agent() {
                     </span>
                     <div>
                         <span className="eyebrow">YOUR AI WORKMATE</span>
-                        <h1>
-                            Meet your copilot<span>.</span>
-                        </h1>
                         <p>Ask anything about a claim. I'll help you get it done.</p>
                     </div>
                 </div>
@@ -203,14 +200,11 @@ export default function Agent() {
                             <Bot size={20} />
                         </span>
                         <div>
-                            <strong>Clarity Copilot</strong>
+                            <strong>AI Agent</strong>
                             <small>
                                 <span className="online-dot" /> Online · MCP connected
                             </small>
                         </div>
-                        <span className="chat-model">
-                            <Sparkles size={13} /> GPT-4.1-mini
-                        </span>
                     </div>
 
                     <div className="chat-stream">
@@ -226,7 +220,7 @@ export default function Agent() {
                                 )}
                                 <div className="chat-message-content">
                                     <small>
-                                        {item.role === 'assistant' ? 'CLARITY COPILOT' : 'YOU'}
+                                        {item.role === 'assistant' ? 'AI AGENT' : 'YOU'}
                                     </small>
                                     <p>{item.text}</p>
                                 </div>

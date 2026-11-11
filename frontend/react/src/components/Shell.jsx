@@ -7,7 +7,6 @@ import {
     FilePlus2,
     FolderClosed,
     House,
-    Layers3,
     Menu,
     PanelLeftClose,
     Search,
@@ -37,23 +36,6 @@ export function Shell({ path, go, children }) {
     return (
         <div className="shell">
             <aside className={`sidebar ${mobile ? 'mobile-open' : ''}`}>
-                <div
-                    className="brand"
-                    onClick={() => go('/')}
-                    role="button"
-                    tabIndex={0}
-                    onKeyDown={(e) => e.key === 'Enter' && go('/')}
-                >
-                    <span className="brand-icon">
-                        <Layers3 size={21} strokeWidth={2.3} />
-                    </span>
-                    <div>
-                        <strong>
-                            clarity<span>.</span>
-                        </strong>
-                        <small>CLAIMS INTELLIGENCE</small>
-                    </div>
-                </div>
                 <div className="nav-section">
                     <span className="nav-label">WORKSPACE</span>
                     {NAV.slice(0, 3).map(({ href, label, icon: Icon }) => (

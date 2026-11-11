@@ -397,19 +397,6 @@ export default function ClaimDetail({ id, go }) {
                                 <strong>{docs.length}</strong>
                             </div>
                         </div>
-                        <div className="insight-banner">
-                            <Sparkles size={24} />
-                            <div>
-                                <strong>Need a quick overview?</strong>
-                                <p>
-                                    Generate a claim-specific AI summary
-                                    directly from the documents.
-                                </p>
-                            </div>
-                            <Button onClick={() => setTab('summary')}>
-                                AI Summary <ArrowRight size={16} />
-                            </Button>
-                        </div>
                     </section>
                     <section className="card">
                         <CardTitle
@@ -478,45 +465,6 @@ export default function ClaimDetail({ id, go }) {
                         >
                             Go to final review <ArrowRight size={16} />
                         </Button>
-                    </section>
-                    <section className="card full">
-                        <CardTitle
-                            title="Documents on this claim"
-                            subtitle="Open a document to inspect its original content"
-                            action={
-                                <button
-                                    className="text-link"
-                                    onClick={() => setTab('documents')}
-                                >
-                                    Manage documents <ArrowRight size={15} />
-                                </button>
-                            }
-                        />
-                        {docs.length ? (
-                            <div className="compact-docs">
-                                {docs.map((d) => (
-                                    <button
-                                        key={d.document_id}
-                                        onClick={() => view(d)}
-                                    >
-                                        <FileText size={18} />
-                                        <span>{d.filename}</span>
-                                        <Badge value={d.document_status} />
-                                        <ScanEye size={17} />
-                                    </button>
-                                ))}
-                            </div>
-                        ) : (
-                            <Empty
-                                title="No documents uploaded yet"
-                                description="Upload a document to start building the evidence file."
-                                action={
-                                    <Button onClick={() => setTab('documents')}>
-                                        Upload document
-                                    </Button>
-                                }
-                            />
-                        )}
                     </section>
                 </div>
             )}
